@@ -1,0 +1,107 @@
+query,k,precision
+Antique shops,5,0.6
+Antique shops,10,0.3
+Architectural landmarks,5,0.8
+Architectural landmarks,10,0.6
+Architecture walking tours,5,0.6
+Architecture walking tours,10,0.5
+Artisan chocolate shops,5,0.6
+Artisan chocolate shops,10,0.6
+Artisanal bakeries,5,0.6
+Artisanal bakeries,10,0.5
+Beachfront promenades,5,0.2
+Beachfront promenades,10,0.3
+Best art galleries nearby,5,0.4
+Best art galleries nearby,10,0.3
+Botanical gardens,5,0.4
+Botanical gardens,10,0.4
+Children's playgrounds,5,0.4
+Children's playgrounds,10,0.2
+Classical music concerts,5,0.8
+Classical music concerts,10,0.6
+Cozy cafes for work,5,0.2
+Cozy cafes for work,10,0.3
+Craft beer pubs,5,0.6
+Craft beer pubs,10,0.8
+Cycling routes,5,0.8
+Cycling routes,10,0.4
+Family-friendly attractions,5,0.6
+Family-friendly attractions,10,0.6
+Food trucks hotspots,5,0.4
+Food trucks hotspots,10,0.6
+Hiking trails,5,0.8
+Hiking trails,10,0.6
+Historic cathedrals,5,0.8
+Historic cathedrals,10,0.4
+Historic city walls,5,0.0
+Historic city walls,10,0.0
+Historic forts,5,0.4
+Historic forts,10,0.6
+Indoor climbing gyms,5,0.4
+Indoor climbing gyms,10,0.4
+Jazz clubs,5,0.4
+Jazz clubs,10,0.3
+Live music venues,5,0.4
+Live music venues,10,0.4
+Local craft markets,5,0.4
+Local craft markets,10,0.4
+Local cuisine restaurants,5,1.0
+Local cuisine restaurants,10,0.7
+Local dessert specialties,5,0.6
+Local dessert specialties,10,0.8
+Looking for historical monuments,5,0.0
+Looking for historical monuments,10,0.1
+Minimalist cafes,5,0.0
+Minimalist cafes,10,0.0
+Modern art installations,5,1.0
+Modern art installations,10,0.7
+Museum gift shops,5,0.0
+Museum gift shops,10,0.0
+Museums with interactive exhibits,5,0.4
+Museums with interactive exhibits,10,0.6
+Nightlife bars,5,0.2
+Nightlife bars,10,0.4
+Open-air markets,5,0.4
+Open-air markets,10,0.5
+Outdoor cinemas,5,0.2
+Outdoor cinemas,10,0.3
+Outdoor sports facilities,5,0.0
+Outdoor sports facilities,10,0.1
+Photography spots,5,1.0
+Photography spots,10,0.7
+Places with panoramic views,5,0.0
+Places with panoramic views,10,0.0
+Public libraries,5,0.4
+Public libraries,10,0.3
+Quiet cafes with wifi,5,0.6
+Quiet cafes with wifi,10,0.5
+Quiet parks for reading,5,0.8
+Quiet parks for reading,10,0.6
+Rooftop bars,5,0.6
+Rooftop bars,10,0.7
+Scenic walking routes,5,0.4
+Scenic walking routes,10,0.2
+Science fairs,5,0.4
+Science fairs,10,0.6
+Science museums,5,0.4
+Science museums,10,0.4
+Secluded viewpoints,5,0.0
+Secluded viewpoints,10,0.0
+Street art tours,5,0.4
+Street art tours,10,0.5
+Street food markets,5,0.8
+Street food markets,10,0.6
+Sushi restaurants,5,0.6
+Sushi restaurants,10,0.6
+Urban green spaces,5,0.0
+Urban green spaces,10,0.0
+Urban street markets,5,1.0
+Urban street markets,10,0.7
+Vegan restaurants,5,1.0
+Vegan restaurants,10,0.9
+Want to visit a museum,5,0.6
+Want to visit a museum,10,0.6
+Wine tasting rooms,5,0.4
+Wine tasting rooms,10,0.7
+Yoga studios,5,0.4
+Yoga studios,10,0.3

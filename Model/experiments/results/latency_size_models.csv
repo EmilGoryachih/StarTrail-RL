@@ -1,0 +1,4 @@
+model,load_ms,index_mb,avg_enc_ms,avg_srch_ms
+LaBSE,20.8,2.3,27.8,0.4
+MiniLM-6-L12,8.3,1.7,9.2,0.1
+MiniLM-12-L6,10.5,1.7,15.1,0.1

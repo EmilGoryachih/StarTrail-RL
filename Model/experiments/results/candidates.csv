@@ -1,0 +1,531 @@
+query,rank,poi_id,name,type,city,relevant
+Want to visit a museum,1,12765977798,Братская могила жертв революции 1905 года,node,Казань,0
+Want to visit a museum,2,12803628465,Московский музей Рахманинова,node,Москва,1
+Want to visit a museum,3,5205110874,Все свободны,node,Санкт-Петербург,0
+Want to visit a museum,4,1295102291,Музейно-выставочный центр Петербургский Художник,node,Санкт-Петербург,1
+Want to visit a museum,5,12451669493,Музей кино,node,Москва,1
+Want to visit a museum,6,10592166414,Выставочный зал Объединения московских скульпторов,node,Москва,1
+Want to visit a museum,7,4991870185,Арт Виктория,node,Нижний Новгород,1
+Want to visit a museum,8,682347591,Толстый фраер,node,Санкт-Петербург,0
+Want to visit a museum,9,2032405389,Музей этнологии и географии,node,Уфа,1
+Want to visit a museum,10,2549226782,Продукты,node,Санкт-Петербург,0
+Looking for historical monuments,1,10902514311,Rich Shoes,node,Казань,0
+Looking for historical monuments,2,6666962585,Station K43,node,Санкт-Петербург,0
+Looking for historical monuments,3,1770434372,Перекрёсток джаза,node,Казань,0
+Looking for historical monuments,4,8960216638,Villa Verde,node,Санкт-Петербург,0
+Looking for historical monuments,5,5998564863,Greenbox,node,Санкт-Петербург,0
+Looking for historical monuments,6,3526774271,Харбин,node,Москва,0
+Looking for historical monuments,7,4163702191,Duck & Drake,node,Санкт-Петербург,0
+Looking for historical monuments,8,1808422815,Пиано,node,Нижний Новгород,1
+Looking for historical monuments,9,6815252185,Дорога Жизни 7/6,node,Санкт-Петербург,0
+Looking for historical monuments,10,10673330530,Baggins Coffee,node,Санкт-Петербург,0
+Best art galleries nearby,1,4350034894,Amo cucinare,node,Санкт-Петербург,0
+Best art galleries nearby,2,11789716100,Карета,node,Санкт-Петербург,0
+Best art galleries nearby,3,4635492306,На ход ноги,node,Санкт-Петербург,0
+Best art galleries nearby,4,10592166414,Выставочный зал Объединения московских скульпторов,node,Москва,1
+Best art galleries nearby,5,12765977798,Братская могила жертв революции 1905 года,node,Казань,1
+Best art galleries nearby,6,1808680312,Зоологический музей,node,Нижний Новгород,0
+Best art galleries nearby,7,5205110874,Все свободны,node,Санкт-Петербург,0
+Best art galleries nearby,8,4991870185,Арт Виктория,node,Нижний Новгород,1
+Best art galleries nearby,9,7988412241,Salut V,node,Санкт-Петербург,0
+Best art galleries nearby,10,3727984252,Клеопатра,node,Москва,0
+Places with panoramic views,1,10776389033,Христианская традиция,node,Санкт-Петербург,0
+Places with panoramic views,2,4031884148,Janita,node,Москва,0
+Places with panoramic views,3,11811990770,Алкмаркет,node,Санкт-Петербург,0
+Places with panoramic views,4,8300624543,Кони,node,Москва,0
+Places with panoramic views,5,4911875121,Автостекло,node,Екатеринбург,0
+Places with panoramic views,6,923876235,Магнит,node,Москва,0
+Places with panoramic views,7,11884679102,La Catrina,node,Санкт-Петербург,0
+Places with panoramic views,8,617306016,Центральная библиотека №35,node,Москва,0
+Places with panoramic views,9,11149377705,Обзор реки,node,Москва,0
+Places with panoramic views,10,4046035327,Местный,node,Санкт-Петербург,0
+Quiet parks for reading,1,4813291699,Стена с барельефами,node,Москва,1
+Quiet parks for reading,2,10838671120,Уе! Бар,node,Санкт-Петербург,0
+Quiet parks for reading,3,10821988179,Детская библиотека №44,node,Уфа,1
+Quiet parks for reading,4,5847224169,М. А. Балакиреву,node,Санкт-Петербург,1
+Quiet parks for reading,5,11077318721,Библиотека умного города,node,Москва,1
+Quiet parks for reading,6,12084711706,Sunlight,node,Уфа,0
+Quiet parks for reading,7,2486006867,Лиственная II,node,Екатеринбург,1
+Quiet parks for reading,8,11838335940,Детская библиотека,node,Уфа,1
+Quiet parks for reading,9,5632741924,Петербургские пышки,node,Санкт-Петербург,0
+Quiet parks for reading,10,4248243189,Gastroli,node,Санкт-Петербург,0
+Local cuisine restaurants,1,905018473,Патрику Гордону,node,Екатеринбург,1
+Local cuisine restaurants,2,9285901517,Ленин,node,Санкт-Петербург,1
+Local cuisine restaurants,3,2822556343,Guesthouse Dyagilev,node,Казань,1
+Local cuisine restaurants,4,1474117246,Пышка,node,Уфа,1
+Local cuisine restaurants,5,10051046502,Ртвели,node,Москва,1
+Local cuisine restaurants,6,10763621261,Лиговский,node,Санкт-Петербург,1
+Local cuisine restaurants,7,11755379908,Малинка,node,Санкт-Петербург,1
+Local cuisine restaurants,8,9447068695,585 Золотой,node,Санкт-Петербург,0
+Local cuisine restaurants,9,1683423878,Ведущие колеса,node,Санкт-Петербург,0
+Local cuisine restaurants,10,11653398094,Кроссовок,node,Санкт-Петербург,0
+Cozy cafes for work,1,7437501402,Кофе муз,node,Уфа,1
+Cozy cafes for work,2,2926971975,Позавчера,node,Нижний Новгород,0
+Cozy cafes for work,3,5018521573,Ювелирная,node,Москва,0
+Cozy cafes for work,4,7842256334,Слёзы матери,node,Москва,0
+Cozy cafes for work,5,3678991871,Пивотека 465,node,Москва,0
+Cozy cafes for work,6,4864393013,Мазилово,node,Москва,0
+Cozy cafes for work,7,6789886385,Каратэ Кёкусинкай Oyama do,node,Санкт-Петербург,0
+Cozy cafes for work,8,6786895854,МитСтар,node,Санкт-Петербург,1
+Cozy cafes for work,9,8972647869,Сотрудникам блокадного зоопарка,node,Санкт-Петербург,0
+Cozy cafes for work,10,2751337842,Гарсон,node,Санкт-Петербург,1
+Scenic walking routes,1,8380521909,Экологическая тропа,node,Екатеринбург,1
+Scenic walking routes,2,3096656981,Музыкальные инструменты,node,Москва,0
+Scenic walking routes,3,5161338721,ВкусВилл,node,Москва,0
+Scenic walking routes,4,12357639819,ВМФ,node,Санкт-Петербург,0
+Scenic walking routes,5,7945506593,"Тропа Здоровья, 3 км.",node,Екатеринбург,1
+Scenic walking routes,6,5180083721,exist.ru,node,Москва,0
+Scenic walking routes,7,5178183577,Варшавка,node,Москва,0
+Scenic walking routes,8,8370776400,Автодеталь96,node,Екатеринбург,0
+Scenic walking routes,9,6274827873,StandUp Store,node,Москва,0
+Scenic walking routes,10,6274813485,Авокадо,node,Москва,0
+Architectural landmarks,1,12785227337,Архитекторам,node,Москва,1
+Architectural landmarks,2,5862916845,Лялина площадь,node,Москва,1
+Architectural landmarks,3,766765388,№22 Здание УрГУ,node,Екатеринбург,1
+Architectural landmarks,4,1438259722,Музей истории религии,node,Санкт-Петербург,1
+Architectural landmarks,5,9119785751,Магнит,node,Екатеринбург,0
+Architectural landmarks,6,5193758278,Фламинго,node,Москва,0
+Architectural landmarks,7,1194384759,Кофейня №7,node,Екатеринбург,0
+Architectural landmarks,8,3980718653,Сытный Гостинец,node,Санкт-Петербург,0
+Architectural landmarks,9,8828231197,С. И. Подковырову,node,Санкт-Петербург,1
+Architectural landmarks,10,1622682528,Верстовой столб 5/19 км,node,Санкт-Петербург,1
+Family-friendly attractions,1,7981252167,Фарфор,node,Москваm,0
+Family-friendly attractions,2,8839185325,Би-Би,node,Москва,0
+Family-friendly attractions,3,5370797926,Лесная развилка,node,Екатеринбург,1
+Family-friendly attractions,4,3658993472,На Малой Грузинской,node,Москва,1
+Family-friendly attractions,5,4481004989,Сытые Пироги,node,Москва,1
+Family-friendly attractions,6,8959820239,Участникам ликвидации ЧС,node,Екатеринбург,1
+Family-friendly attractions,7,8898082926,Н. И. и С. И. Вавиловым,node,Москва,1
+Family-friendly attractions,8,5138122846,Дружба народов,node,Москва,1
+Family-friendly attractions,9,4041386588,Jager,node,Санкт-Петербург,0
+Family-friendly attractions,10,5505950853,Букинист,node,Екатеринбург,0
+Outdoor sports facilities,1,12691136304,LeetCaje,node,Санкт-Петербург,0
+Outdoor sports facilities,2,6172035555,Ponte,node,Санкт-Петербург,0
+Outdoor sports facilities,3,2518322113,Павшим в боях за Родину,node,Казань,0
+Outdoor sports facilities,4,920582572,bombo.ru,node,Москва,0
+Outdoor sports facilities,5,5761549453,Red Tower Crossfit,node,Санкт-Петербург,0
+Outdoor sports facilities,6,1210163395,Семёрка,node,Екатеринбург,0
+Outdoor sports facilities,7,11038150287,Спортклуб,node,Москва,1
+Outdoor sports facilities,8,5422969292,Столовая,node,Санкт-Петербург,0
+Outdoor sports facilities,9,925666794,Я. М. Свердлову,node,Нижний Новгород,0
+Outdoor sports facilities,10,3204398236,Шестой этаж,node,Санкт-Петербург,0
+Live music venues,1,4635492306,На ход ноги,node,Санкт-Петербург,1
+Live music venues,2,1277942596,Кулинария Космос,node,Екатеринбург,1
+Live music venues,3,9575893173,Nice,node,Казань,0
+Live music venues,4,9193071584,PLSTK WRLD,node,Москва,0
+Live music venues,5,3912815244,Keep Fit,node,Москва,0
+Live music venues,6,11634254385,Bside,node,Москва,0
+Live music venues,7,2441420089,Спорт экспресс,node,Москва,0
+Live music venues,8,12769699130,Tatarin,node,Казань,1
+Live music venues,9,4621865889,ШашлыкoFF,node,Москва,1
+Live music venues,10,5923131789,Ленинград - подвиг твой бессмертен,node,Санкт-Петербург,0
+Nightlife bars,1,479731681,Синема Парк на Калужской,node,Москва,0
+Nightlife bars,2,1612278218,Общежитие Бегуницкого техникума,node,Санкт-Петербург,0
+Nightlife bars,3,11809491832,Продукты24,node,Нижний Новгород,0
+Nightlife bars,4,2071010042,Невьянская икона,node,Екатеринбург,0
+Nightlife bars,5,12250858479,Невротик,node,Москва,1
+Nightlife bars,6,9344479608,Урбан,node,Москва,1
+Nightlife bars,7,6387509510,Школа закаливания и зимнего плавания «Наука»,node,Москва,0
+Nightlife bars,8,3569357548,У Палыча,node,Москва,1
+Nightlife bars,9,11384165386,Баунс,node,Москва,1
+Nightlife bars,10,5640367795,А. Ф. Писемскому,node,Санкт-Петербург,0
+Street food markets,1,12514067075,Домашний Уют,node,Екатеринбург,1
+Street food markets,2,6856424885,Молочное Место,node,Екатеринбург,1
+Street food markets,3,3974204281,Солянка,node,Екатеринбург,1
+Street food markets,4,1353438711,Бистро,node,Екатеринбург,1
+Street food markets,5,1325265965,Спортлайн,node,Екатеринбург,0
+Street food markets,6,2357539310,"Землякам, погибшим при исполнении воинского долга в Афганистане и Чечне",node,Нижний Новгород,0
+Street food markets,7,11341313680,Перекрёсток,node,Уфа,0
+Street food markets,8,4069356159,Естный,node,Санкт-Петербург,1
+Street food markets,9,6724698364,The Faces Historical Center,node,Санкт-Петербург,0
+Street food markets,10,330932918,Лестр,node,Санкт-Петербург,1
+Modern art installations,1,3727984252,Клеопатра,node,Москва,1
+Modern art installations,2,4350034894,Amo cucinare,node,Санкт-Петербург,1
+Modern art installations,3,11592763908,Oldich Art & Sculpture,node,Москва,1
+Modern art installations,4,12848353797,Творческая студия Академия,node,Москва,1
+Modern art installations,5,12430646960,Sokolov,node,Санкт-Петербург,1
+Modern art installations,6,1304597930,BISTRO A-STYLE,node,Санкт-Петербург,1
+Modern art installations,7,8109220387,Наши детки,node,Санкт-Петербург,0
+Modern art installations,8,5865719685,Ямь-Яшел,node,Казань,1
+Modern art installations,9,5070491718,Подарки для души и красоты,node,Санкт-Петербург,0
+Modern art installations,10,10795073855,Братцы Кебабцы,node,Санкт-Петербург,0
+Botanical gardens,1,10814102449,Фруктовый сад,node,Уфа,1
+Botanical gardens,2,10167087569,Фруктовый сад,node,Уфа,1
+Botanical gardens,3,9843615319,Белорусские продукты,node,Екатеринбург,0
+Botanical gardens,4,3877872271,Интеллектика,node,Екатеринбург,0
+Botanical gardens,5,6417045790,Калейдоскоп,node,Нижний Новгород,0
+Botanical gardens,6,11926712190,Дом Мишиных,node,Екатеринбург,0
+Botanical gardens,7,1832535169,Читайна,node,Нижний Новгород,0
+Botanical gardens,8,4684597053,Хлебница,node,Екатеринбург,0
+Botanical gardens,9,3754414020,Овощи-фрукты,node,Екатеринбург,1
+Botanical gardens,10,3754414019,Овощи-фрукты,node,Екатеринбург,1
+Museums with interactive exhibits,1,12765977798,Братская могила жертв революции 1905 года,node,Казань,0
+Museums with interactive exhibits,2,10592166414,Выставочный зал Объединения московских скульпторов,node,Москва,1
+Museums with interactive exhibits,3,5191853978,В. А. Шелгунову,node,Санкт-Петербург,1
+Museums with interactive exhibits,4,982819502,Чаман,node,Санкт-Петербург,0
+Museums with interactive exhibits,5,5205110874,Все свободны,node,Санкт-Петербург,0
+Museums with interactive exhibits,6,9914465819,Hotel Centre,node,Екатеринбург,0
+Museums with interactive exhibits,7,474949812,Музей радио им. Попова,node,Екатеринбург,1
+Museums with interactive exhibits,8,6512126517,Раздаточный пункт,node,Нижний Новгород,1
+Museums with interactive exhibits,9,6743160886,Lao Lee,node,Москва,1
+Museums with interactive exhibits,10,12803628465,Московский музей Рахманинова,node,Москва,1
+Historic cathedrals,1,7053000097,Петровский дворик,node,Москва,1
+Historic cathedrals,2,8849051852,Дореволюционная школа (сер. XIX века),node,Екатеринбург,1
+Historic cathedrals,3,8861507217,Нужно зайти,node,Москва,0
+Historic cathedrals,4,6152408386,Галетта,node,Москва,1
+Historic cathedrals,5,7887532120,Музей советских игровых автоматов,node,Москва,1
+Historic cathedrals,6,8506445319,Brasserie Lambic,node,Москва,0
+Historic cathedrals,7,7986052715,Читай-город,node,Москва,0
+Historic cathedrals,8,8772456505,Продукты Азии,node,Москва,0
+Historic cathedrals,9,6801999738,ВкусВилл,node,Москва,0
+Historic cathedrals,10,815405665,Yoko,node,Москва,0
+Science museums,1,11789716100,Карета,node,Санкт-Петербург,0
+Science museums,2,1808680328,Музей науки «Нижегородская радиолаборатория»,node,Нижний Новгород,1
+Science museums,3,1295102291,Музейно-выставочный центр Петербургский Художник,node,Санкт-Петербург,1
+Science museums,4,682347591,Толстый фраер,node,Санкт-Петербург,0
+Science museums,5,1198596682,Цех85,node,Санкт-Петербург,0
+Science museums,6,12765977798,Братская могила жертв революции 1905 года,node,Казань,0
+Science museums,7,8804283117,Dali,node,Казань,0
+Science museums,8,4991870185,Арт Виктория,node,Нижний Новгород,0
+Science museums,9,2324541427,выставочный зал Наука и Искусство,node,Уфа,1
+Science museums,10,12451669493,Музей кино,node,Москва,1
+Children's playgrounds,1,5060366694,Coffeeshop Company,node,Санкт-Петербург,0
+Children's playgrounds,2,1115481695,Мечта,node,Санкт-Петербург,0
+Children's playgrounds,3,4142854541,Ф. Э. Дзержинскому,node,Москва,0
+Children's playgrounds,4,9779244219,Rich Family,node,Екатеринбург,1
+Children's playgrounds,5,10164957201,Детский мир,node,Москва,1
+Children's playgrounds,6,8900705472,Братское воинское захоронение защитников Ленинграда,node,Санкт-Петербург,0
+Children's playgrounds,7,7953967174,Ваза,node,Санкт-Петербург,0
+Children's playgrounds,8,5649483430,Gotcha brew bar,node,Санкт-Петербург,0
+Children's playgrounds,9,2923180049,Восток,node,Санкт-Петербург,0
+Children's playgrounds,10,1881824256,Весна,node,Санкт-Петербург,0
+Rooftop bars,1,9782031026,Продсклад Победа,node,Казань,1
+Rooftop bars,2,9529174206,Окинава,node,Казань,1
+Rooftop bars,3,11025667005,Финские пограничные окопы,node,Санкт-Петербург,0
+Rooftop bars,4,10789710817,Гараж,node,Уфа,1
+Rooftop bars,5,1012203858,Н. И. Лобачевскому,node,Казань,0
+Rooftop bars,6,5335126645,Рыба моя,node,Москва,1
+Rooftop bars,7,8930445219,Coffee industry,node,Казань,1
+Rooftop bars,8,2641137584,Пивной дворик,node,Уфа,1
+Rooftop bars,9,8276434150,MES,node,Москва,1
+Rooftop bars,10,11509689592,Братская могила военных моряков,node,Санкт-Петербург,0
+Vegan restaurants,1,11379216664,Арыш Мае,node,Казань,1
+Vegan restaurants,2,12112382448,SK-Auto,node,Казань,1
+Vegan restaurants,3,11265530352,Гамбринус,node,Москва,1
+Vegan restaurants,4,3835393013,Börger,node,Уфа,1
+Vegan restaurants,5,12571124001,Грузинские каникулы,node,Москва,1
+Vegan restaurants,6,12758431005,Кепи,node,Москва,1
+Vegan restaurants,7,12173718115,Кепи,node,Москва,1
+Vegan restaurants,8,11677773835,Алиса в стране чудес,node,Санкт-Петербург,1
+Vegan restaurants,9,1390169280,Сахара,node,Нижний Новгород,1
+Vegan restaurants,10,2451389203,Магнит,node,Нижний Новгород,0
+Photography spots,1,4350036490,Летний сад,node,Санкт-Петербург,1
+Photography spots,2,4350030796,"Петрония Прима, жена императора Вителлия",node,Санкт-Петербург,1
+Photography spots,3,8776503184,Бункер,node,Москва,1
+Photography spots,4,7040937586,Аллея Славы,node,Москва,1
+Photography spots,5,4350036495,Цех85,node,Санкт-Петербург,1
+Photography spots,6,7786027672,Хостелы Рус,node,Москва,0
+Photography spots,7,11923835067,Гора Ореховая,node,Санкт-Петербург,1
+Photography spots,8,6404354037,ВкусВилл,node,Москва,0
+Photography spots,9,7777997686,Управление Офицерской артиллерийской школой,node,Санкт-Петербург,1
+Photography spots,10,8752557716,Клешни и Хвосты,node,Москва,0
+Local craft markets,1,330932918,Лестр,node,Санкт-Петербург,1
+Local craft markets,2,11187283790,Пролёт железнодорожного моста через р. Ижора,node,Санкт-Петербург,0
+Local craft markets,3,1652587961,Ниобида,node,Санкт-Петербург,1
+Local craft markets,4,4914636921,Жертвам теракта 13 сентября 1999 г.,node,Москва,0
+Local craft markets,5,6724698364,The Faces Historical Center,node,Санкт-Петербург,0
+Local craft markets,6,4638786942,Камея,node,Санкт-Петербург,0
+Local craft markets,7,4069356159,Естный,node,Санкт-Петербург,1
+Local craft markets,8,3996422788,Domino,node,Санкт-Петербург,1
+Local craft markets,9,1900674327,Гладышевский заказник,node,Санкт-Петербург,0
+Local craft markets,10,4620107992,МВО,node,Москва,0
+Quiet cafes with wifi,1,2926971975,Позавчера,node,Нижний Новгород,0
+Quiet cafes with wifi,2,5018521573,Ювелирная,node,Москва,0
+Quiet cafes with wifi,3,12259515509,Практика кофе,node,Москва,1
+Quiet cafes with wifi,4,11121872543,Кофе Хауз,node,Москва,1
+Quiet cafes with wifi,5,4597004753,София,node,Санкт-Петербург,1
+Quiet cafes with wifi,6,3714795725,Подвигу пожарных Ленинграда,node,Санкт-Петербург,0
+Quiet cafes with wifi,7,3204398220,Hub,node,Санкт-Петербург,1
+Quiet cafes with wifi,8,2376424545,ЦентрОбувь,node,Санкт-Петербург,0
+Quiet cafes with wifi,9,1881809174,Собака,node,Санкт-Петербург,0
+Quiet cafes with wifi,10,6385833685,у СоСо,node,Казань,1
+Hiking trails,1,8380521909,Экологическая тропа,node,Екатеринбург,1
+Hiking trails,2,3096656981,Музыкальные инструменты,node,Москва,0
+Hiking trails,3,7945506593,"Тропа Здоровья, 3 км.",node,Екатеринбург,1
+Hiking trails,4,11737471513,Лыжная трасса,node,Москва,1
+Hiking trails,5,11737471494,Лыжная трасса,node,Москва,1
+Hiking trails,6,11737471489,Лыжная трасса,node,Москва,1
+Hiking trails,7,11737471485,Лыжная трасса,node,Москва,1
+Hiking trails,8,12357639819,ВМФ,node,Санкт-Петербург,0
+Hiking trails,9,3092179280,Авлабар,node,Москва,0
+Hiking trails,10,3088975980,Red Kremlin,node,Москва,0
+Cycling routes,1,12840874081,Рязанский проспект / Улица Академика Скрябина,node,Москва,1
+Cycling routes,2,12233203110,Шоссе Энтузиастов/3-я Владимирская ул.,node,Москва,1
+Cycling routes,3,8380521909,Экологическая тропа,node,Екатеринбург,1
+Cycling routes,4,3096656981,Музыкальные инструменты,node,Москва,0
+Cycling routes,5,7945506593,"Тропа Здоровья, 3 км.",node,Екатеринбург,1
+Cycling routes,6,12357639819,ВМФ,node,Санкт-Петербург,0
+Cycling routes,7,5180083721,exist.ru,node,Москва,0
+Cycling routes,8,5178183577,Варшавка,node,Москва,0
+Cycling routes,9,3092179280,Авлабар,node,Москва,0
+Cycling routes,10,3088975980,Red Kremlin,node,Москва,0
+Artisanal bakeries,1,12851646437,ООО АБРИС-СТРОЙ,node,Екатеринбург,0
+Artisanal bakeries,2,5026621812,Экоспорт,node,Екатеринбург,0
+Artisanal bakeries,3,926755055,Продукты,node,Екатеринбург,1
+Artisanal bakeries,4,6270833884,Хлебторг,node,Уфа,1
+Artisanal bakeries,5,6952006313,Талисман,node,Екатеринбург,1
+Artisanal bakeries,6,6739264185,Дом,node,Екатеринбург,1
+Artisanal bakeries,7,5620184677,Бристоль,node,Екатеринбург,1
+Artisanal bakeries,8,4684597052,Пятёрочка,node,Екатеринбург,0
+Artisanal bakeries,9,4670480651,Спортивное питание,node,Екатеринбург,0
+Artisanal bakeries,10,4426814299,Храм в честь иконы Божией Матери «Нечаянная радость» в СИЗО,node,Екатеринбург,0
+Wine tasting rooms,1,9776902409,Винотека,node,Уфа,1
+Wine tasting rooms,2,12142052679,Atlant Boxing club,node,Уфа,0
+Wine tasting rooms,3,12023041349,Coffee cups,node,Нижний Новгород,0
+Wine tasting rooms,4,11966302769,"Центр современного искусства ""Арсенал""",node,Нижний Новгород,0
+Wine tasting rooms,5,3585689332,Продукты,node,Екатеринбург,1
+Wine tasting rooms,6,1130931441,Даско Винотека,node,Уфа,1
+Wine tasting rooms,7,4103834291,Smoke лаунч,node,Нижний Новгород,1
+Wine tasting rooms,8,10011710366,Главпивторг,node,Уфа,1
+Wine tasting rooms,9,12000523494,У Палыча,node,Нижний Новгород,1
+Wine tasting rooms,10,11725354708,Министерство завтраков,node,Нижний Новгород,1
+Outdoor cinemas,1,4523715728,Столичный продукт,node,Москва,0
+Outdoor cinemas,2,7633462976,"Мемориал ""Аллея Героев""",node,Санкт-Петербург,0
+Outdoor cinemas,3,11559716570,Bazar Coffee,node,Санкт-Петербург,0
+Outdoor cinemas,4,612910176,Спортмастер,node,Екатеринбург,0
+Outdoor cinemas,5,1535121194,Синема-парк,node,Уфа,1
+Outdoor cinemas,6,1535121193,Синема-парк,node,Уфа,1
+Outdoor cinemas,7,2092495229,Дуб С.О.Макарова,node,Санкт-Петербург,0
+Outdoor cinemas,8,11649430521,Вагон «Аврора»,node,Санкт-Петербург,0
+Outdoor cinemas,9,2316668125,Синема 5,node,Уфа,1
+Outdoor cinemas,10,4353822789,С. М. Киров,node,Санкт-Петербург,0
+Street art tours,1,12163109292,Пышка,node,Уфа,0
+Street art tours,2,10878083807,Страстной бульваръ,node,Москва,1
+Street art tours,3,9031899809,Яшма,node,Екатеринбург,1
+Street art tours,4,2216438328,Продукты,node,Санкт-Петербург,0
+Street art tours,5,2261867724,Дед Хо,node,Санкт-Петербург,0
+Street art tours,6,11687716406,Орёл,node,Москва,1
+Street art tours,7,10801837550,Орёл,node,Москва,1
+Street art tours,8,10731352609,ProRock,node,Екатеринбург,0
+Street art tours,9,6867953553,ВкусВилл,node,Санкт-Петербург,0
+Street art tours,10,11760471160,Стена поэтов,node,Москва,1
+Antique shops,1,1836925360,Вчера и навсегда,node,Санкт-Петербург,0
+Antique shops,2,11646007688,Ретро,node,Москва,1
+Antique shops,3,5829596385,Какаду,node,Санкт-Петербург,1
+Antique shops,4,2923698416,Lugana,node,Санкт-Петербург0
+Antique shops,5,2337055726,Гаечка,node,Санкт-Петербург,1
+Antique shops,6,1839583847,Гости,node,Санкт-Петербург,0
+Antique shops,7,9831601995,Levita,node,Казань,0
+Antique shops,8,5026362353,Луг,node,Москва,0
+Antique shops,9,4278819090,Продукты,node,Москва,0
+Antique shops,10,4092650994,МясновЪ,node,Москва,0
+Jazz clubs,1,5103889260,Пятёрочка,node,Нижний Новгород,0
+Jazz clubs,2,11191199559,Клуб Почемучек,node,Москва,1
+Jazz clubs,3,4100715725,Кофемания,node,Москва,0
+Jazz clubs,4,736049242,Quokka Bar,node,Санкт-Петербург,1
+Jazz clubs,5,3174432348,А. О. Шабалину,node,Санкт-Петербург,0
+Jazz clubs,6,6606637049,У Палыча,node,Нижний Новгород,0
+Jazz clubs,7,3786011153,Сверчок,node,Москва,1
+Jazz clubs,8,1359319161,В. И. Ленину,node,Москва,0
+Jazz clubs,9,6387509510,Школа закаливания и зимнего плавания «Наука»,node,Москва,0
+Jazz clubs,10,3613394025,Шахматная доска,node,Москва,0
+Yoga studios,1,7914319813,Kislovsky,node,Москва,1
+Yoga studios,2,11367187271,Могила Героя Советского Союза В. А. Мациевича,node,Санкт-Петербург,0
+Yoga studios,3,10897280929,Сахаджа Йога,node,Москва,1
+Yoga studios,4,5854766836,А. Я. Вагановой,node,Санкт-Петербург,0
+Yoga studios,5,5308141768,Ермолино,node,Санкт-Петербург,0
+Yoga studios,6,4972916113,Невский берег,node,Санкт-Петербург,0
+Yoga studios,7,4530956102,На Римского-Корсакова,node,Санкт-Петербург,0
+Yoga studios,8,258371903,Коринтия,node,Санкт-Петербург,0
+Yoga studios,9,9924673178,teago,node,Санкт-Петербург,0
+Yoga studios,10,12169792648,Joy yoga,node,Москва,1
+Historic forts,1,700917989,TashKent,node,Екатеринбург,0
+Historic forts,2,5517397321,Н. Ф. Гастелло,node,Нижний Новгород,1
+Historic forts,3,8861507217,Нужно зайти,node,Москва,0
+Historic forts,4,3485653423,Indian Eaters,node,Санкт-Петербург,0
+Historic forts,5,10274685443,Воинам-геофизикам,node,Москва,1
+Historic forts,6,9842702695,Ханееву В. П.,node,Казань,1
+Historic forts,7,9809135268,585 Gold,node,Санкт-Петербург,0
+Historic forts,8,6152408386,Галетта,node,Москва,1
+Historic forts,9,1467987273,Пять Залов,node,Москва,1
+Historic forts,10,11299249710,Города воинской славы,node,Москва,1
+Urban street markets,1,330932918,Лестр,node,Санкт-Петербург,1
+Urban street markets,2,6724698364,The Faces Historical Center,node,Санкт-Петербург,1
+Urban street markets,3,4638786942,Камея,node,Санкт-Петербург,1
+Urban street markets,4,12514067075,Домашний Уют,node,Екатеринбург,1
+Urban street markets,5,6856424885,Молочное Место,node,Екатеринбург,1
+Urban street markets,6,3974204281,Солянка,node,Екатеринбург,1
+Urban street markets,7,1353438711,Бистро,node,Екатеринбург,1
+Urban street markets,8,1325265965,Спортлайн,node,Екатеринбург,0
+Urban street markets,9,2357539310,"Землякам, погибшим при исполнении воинского долга в Афганистане и Чечне",node,Нижний Новгород,0
+Urban street markets,10,11341313680,Перекрёсток,node,Уфа,0
+Food trucks hotspots,1,1300421340,Монетка,node,Екатеринбург,0
+Food trucks hotspots,2,10983734538,Молдагулова Алия Нурмухамбетовна,node,Санкт-Петербург,0
+Food trucks hotspots,3,2103959263,Талисман,node,Екатеринбург,0
+Food trucks hotspots,4,11013853387,Фермерский гастроном,node,Москва,1
+Food trucks hotspots,5,12751625725,Печка,node,Уфа,1
+Food trucks hotspots,6,12466570349,ОфисКласс,node,Уфа,0
+Food trucks hotspots,7,12216308459,Ели-пели,node,Уфа,1
+Food trucks hotspots,8,10975921939,Булки Хауз,node,Уфа,1
+Food trucks hotspots,9,9775406571,Булки Хауз,node,Уфа,1
+Food trucks hotspots,10,2194133815,Овощи фрукты,node,Екатеринбург,1
+Classical music concerts,1,4350034894,Amo cucinare,node,Санкт-Петербург,0
+Classical music concerts,2,4621865889,ШашлыкoFF,node,Москва,0
+Classical music concerts,3,10242170031,Гитары,node,Москва,2
+Classical music concerts,4,7988412241,Salut V,node,Санкт-Петербург,2
+Classical music concerts,5,4635492306,На ход ноги,node,Санкт-Петербург,0
+Classical music concerts,6,2200264010,Золото 585,node,Нижний Новгород,0
+Classical music concerts,7,12769699130,Tatarin,node,Казань,0
+Classical music concerts,8,2010171128,ПианиноУфа,node,Уфа,2
+Classical music concerts,9,2441420089,Спорт экспресс,node,Москва,0
+Classical music concerts,10,477357417,Робек,node,Екатеринбург,0
+Public libraries,1,2486006867,Лиственная II,node,Екатеринбург,1
+Public libraries,2,11838335940,Детская библиотека,node,Уфа,1
+Public libraries,3,5632741924,Петербургские пышки,node,Санкт-Петербург,0
+Public libraries,4,4248243189,Gastroli,node,Санкт-Петербург,0
+Public libraries,5,8288813418,Разливное,node,Казань,0
+Public libraries,6,4535608234,Кот казанский,node,Казань,0
+Public libraries,7,1249940930,Черчилль,node,Москва,0
+Public libraries,8,1107716196,В. И. Ленину,node,Москва,0
+Public libraries,9,1206993172,Библиотека ННГАСУ,node,Нижний Новгород,1
+Public libraries,10,12613298898,Мишка,node,Санкт-Петербург,0
+Indoor climbing gyms,1,8632680613,Подольск,node,Москва,0
+Indoor climbing gyms,2,7805667184,Липа амурская Tilia amurensis,node,Москва,0
+Indoor climbing gyms,3,9043594417,Kick start gym,node,Москва,1
+Indoor climbing gyms,4,3946173957,Beertep Craft Pub,node,Москва,0
+Indoor climbing gyms,5,10203450117,Тренажёрка в лесу,node,Москва,1
+Indoor climbing gyms,6,9700310112,Детский пневматический тир,node,Москва,1
+Indoor climbing gyms,7,2511951122,Музей книги,node,Москва,0
+Indoor climbing gyms,8,598196378,Хан-Кебаб,node,Москва,0
+Indoor climbing gyms,9,697304858,Бассейн плавательный детский,node,Уфа,1
+Indoor climbing gyms,10,5172179132,Mapuche,node,Санкт-Петербург,0
+Beachfront promenades,1,11218255864,Textura,node,Санкт-Петербург,0
+Beachfront promenades,2,7480069036,Изоплитовский пляж,node,Екатеринбург,1
+Beachfront promenades,3,12039524273,"Нижегородцам, участникам Первой Мировой Войны",node,Нижний Новгород,0
+Beachfront promenades,4,11322668477,Сяоданцзя,node,Санкт-Петербург,0
+Beachfront promenades,5,3158100220,Магнолия,node,Москва,0
+Beachfront promenades,6,9385267874,Дикий Пляж,node,Уфа,1
+Beachfront promenades,7,9385170331,Пляж,node,Уфа,1
+Beachfront promenades,8,5467686080,"""Аура"" гостевой дом",node,Екатеринбург,0
+Beachfront promenades,9,4438337884,Д. Дидро,node,Санкт-Петербург,0
+Beachfront promenades,10,7454846396,Мир ткани,node,Екатеринбург,0
+Science fairs,1,5438689586,Baryshkoff,node,Санкт-Петербург,0
+Science fairs,2,11789716100,Карета,node,Санкт-Петербург,0
+Science fairs,3,2736315713,Продукты,node,Санкт-Петербург,0
+Science fairs,4,2324541427,выставочный зал Наука и Искусство,node,Уфа,1
+Science fairs,5,8804283117,Dali,node,Казань,1
+Science fairs,6,1198596682,Цех85,node,Санкт-Петербург,1
+Science fairs,7,1808680328,Музей науки «Нижегородская радиолаборатория»,node,Нижний Новгород,1
+Science fairs,8,1295102291,Музейно-выставочный центр Петербургский Художник,node,Санкт-Петербург,1
+Science fairs,9,12160555435,Ярмарочная площадь,node,Москва,1
+Science fairs,10,12027834154,Way,node,Казань,0
+Craft beer pubs,1,12430646961,Sokolov,node,Санкт-Петербург,0
+Craft beer pubs,2,991623184,Нячанг Сити,node,Екатеринбург,0
+Craft beer pubs,3,10011710366,Главпивторг,node,Уфа,1
+Craft beer pubs,4,2483391737,Luma,node,Москва,1
+Craft beer pubs,5,4103834291,Smoke лаунч,node,Нижний Новгород,1
+Craft beer pubs,6,11948336236,Bulvar Beer,node,Уфа,1
+Craft beer pubs,7,9983342333,Craft Beer,node,Москва,1
+Craft beer pubs,8,915436898,Кореец,node,Екатеринбург,1
+Craft beer pubs,9,992800073,Пивко,node,Екатеринбург,1
+Craft beer pubs,10,12761656502,Пятёрочка,node,Нижний Новгород,1
+Artisan chocolate shops,1,9775511433,Тортомастер,node,Уфа,1
+Artisan chocolate shops,2,10974334492,Сладкоежка,node,Уфа,1
+Artisan chocolate shops,3,10839799249,Сладкоежка,node,Уфа,1
+Artisan chocolate shops,4,2902212368,Учебно-спортивная база «Юность России»,node,Екатеринбург,0
+Artisan chocolate shops,5,12851646437,ООО АБРИС-СТРОЙ,node,Екатеринбург,0
+Artisan chocolate shops,6,5026621812,Экоспорт,node,Екатеринбург,1
+Artisan chocolate shops,7,926755055,Продукты,node,Екатеринбург,1
+Artisan chocolate shops,8,12243218608,Памяти жерт репрессий,node,Нижний Новгород,0
+Artisan chocolate shops,9,10082188237,Pecorino,node,Уфа,0
+Artisan chocolate shops,10,6952006313,Талисман,node,Екатеринбург,1
+Local dessert specialties,1,11952333725,Овощи Фрукты,node,Екатеринбург,0
+Local dessert specialties,2,8669785417,Ягодка,node,Екатеринбург,1
+Local dessert specialties,3,6174428705,Бристоль,node,Екатеринбург,1
+Local dessert specialties,4,5861680923,Пятёрочка,node,Екатеринбург,1
+Local dessert specialties,5,5630468321,Сделано в СССР,node,Екатеринбург,0
+Local dessert specialties,6,4829014977,Пятёрочка,node,Екатеринбург,1
+Local dessert specialties,7,4550104491,Алёнка,node,Екатеринбург,1
+Local dessert specialties,8,940721448,Андреевский ГастрономЪ,node,Екатеринбург,1
+Local dessert specialties,9,12091732283,Белорусские продукты,node,Москва,1
+Local dessert specialties,10,12091731627,Белорусские продукты,node,Москва,1
+Architecture walking tours,1,12166486790,Нос майора Ковалёва,node,Санкт-Петербург,1
+Architecture walking tours,2,3465417279,Руины главного дома,node,Москва,1
+Architecture walking tours,3,2216438328,Продукты,node,Санкт-Петербург,0
+Architecture walking tours,4,9415476917,Архитека,node,Москва,1
+Architecture walking tours,5,12163109292,Пышка,node,Уфа,0
+Architecture walking tours,6,2381083749,Магнолия,node,Москва,0
+Architecture walking tours,7,11687716406,Орёл,node,Москва,1
+Architecture walking tours,8,10801837550,Орёл,node,Москва,1
+Architecture walking tours,9,6853033701,Взятие под стражу,node,Санкт-Петербург,0
+Architecture walking tours,10,2215137348,Евразия,node,Санкт-Петербург,0
+Sushi restaurants,1,11099176405,Суши & Саке,node,Москва,1
+Sushi restaurants,2,12650235761,Мама варит кофе,node,Уфа,0
+Sushi restaurants,3,10732576493,Сушиопт,node,Уфа,1
+Sushi restaurants,4,7484858507,Неизвестный мужчина,node,Санкт-Петербург,0
+Sushi restaurants,5,4727661084,Чайхона,node,Нижний Новгород,1
+Sushi restaurants,6,11168887942,Суши,node,Москва,1
+Sushi restaurants,7,1348983447,Без вывески,node,Москва,1
+Sushi restaurants,8,10607744383,Sushi Man,node,Москва,1
+Sushi restaurants,9,5602770721,Mario Kids,node,Екатеринбург,0
+Sushi restaurants,10,4384736390,Детская библиотека им. И. А. Крылова,node,Санкт-Петербург,0
+Open-air markets,1,4069356159,Естный,node,Санкт-Петербург,1
+Open-air markets,2,4241489795,Vse Putem,node,Санкт-Петербург,0
+Open-air markets,3,3996422788,Domino,node,Санкт-Петербург,0
+Open-air markets,4,6724698364,The Faces Historical Center,node,Санкт-Петербург,0
+Open-air markets,5,12152280083,Ярмарка выходного дня,node,Москва,1
+Open-air markets,6,8032517168,Минимаркет,node,Санкт-Петербург,1
+Open-air markets,7,5969020240,Золотая рыбка,node,Санкт-Петербург,1
+Open-air markets,8,5152015332,"Диоген, древнегреческий философ",node,Санкт-Петербург,0
+Open-air markets,9,4952330121,Токио-City,node,Санкт-Петербург,0
+Open-air markets,10,4417542189,Александр Невский и Ижорская земля,node,Санкт-Петербург,1
+Secluded viewpoints,1,4911875121,Автостекло,node,Екатеринбург
+Secluded viewpoints,2,8300624543,Кони,node,Москва
+Secluded viewpoints,3,2911644905,Хостел на Мясницкой,node,Москва
+Secluded viewpoints,4,12138428999,Матроскин и Печкин,node,Санкт-Петербург
+Secluded viewpoints,5,10784410006,ТанЖен,node,Санкт-Петербург
+Secluded viewpoints,6,11925690398,Baggins Coffee,node,Санкт-Петербург
+Secluded viewpoints,7,7213882860,Arch 1908,node,Москва
+Secluded viewpoints,8,4845898090,БМП-1,node,Екатеринбург
+Secluded viewpoints,9,923876235,Магнит,node,Москва
+Secluded viewpoints,10,6279252786,Памяти ветеранам подразделений особого риска,node,Москва
+Historic city walls,1,8861507217,Нужно зайти,node,Москва
+Historic city walls,2,11299249710,Города воинской славы,node,Москва
+Historic city walls,3,3485653423,Indian Eaters,node,Санкт-Петербург
+Historic city walls,4,6815613686,Мачты,node,Санкт-Петербург
+Historic city walls,5,9837357535,Большой Каменный мост,node,Москва
+Historic city walls,6,10804761996,Богатырь,node,Екатеринбург
+Historic city walls,7,8514862251,203-мм гаубица образца 1931 года (Б-4),node,Санкт-Петербург
+Historic city walls,8,5654765578,Детский мир,node,Санкт-Петербург
+Historic city walls,9,7266869385,Фермерские продукты,node,Санкт-Петербург
+Historic city walls,10,1596075161,Баш Маг,node,Москва
+Museum gift shops,1,2295063240,Кладовая башня,node,Нижний Новгород
+Museum gift shops,2,966256223,Panda Banda,node,Санкт-Петербург
+Museum gift shops,3,3940503936,1000 и 1 ночь,node,Москва
+Museum gift shops,4,4911704650,25/8,node,Санкт-Петербург
+Museum gift shops,5,3011906136,Русский бильярд,node,Москва
+Museum gift shops,6,4361152195,большая кружка,node,Нижний Новгород
+Museum gift shops,7,2232181700,Мастерская танго,node,Нижний Новгород
+Museum gift shops,8,1359192530,2 шага,node,Санкт-Петербург
+Museum gift shops,9,1113593209,IL Патио,node,Москва
+Museum gift shops,10,12155371778,Unichel,node,Нижний Новгород
+Minimalist cafes,1,8154442198,Бурлящий котёл,node,Санкт-Петербург
+Minimalist cafes,2,5042053642,Спэшл,node,Санкт-Петербург
+Minimalist cafes,3,4350026194,Каха бар,node,Санкт-Петербург
+Minimalist cafes,4,4864393013,Мазилово,node,Москва
+Minimalist cafes,5,10314676709,Союз,node,Санкт-Петербург
+Minimalist cafes,6,11773488862,Маленький француз,node,Уфа
+Minimalist cafes,7,11510705896,"Руины памятника ""Героям-красногвардейцам""",node,Санкт-Петербург
+Minimalist cafes,8,4583690427,Бальзак,node,Санкт-Петербург
+Minimalist cafes,9,7842256334,Слёзы матери,node,Москва
+Minimalist cafes,10,3678991871,Пивотека 465,node,Москва
+Urban green spaces,1,4813291699,Стена с барельефами,node,Москва
+Urban green spaces,2,10814102449,Фруктовый сад,node,Уфа
+Urban green spaces,3,10167087569,Фруктовый сад,node,Уфа
+Urban green spaces,4,7959587103,Мастер и Маргарита,node,Санкт-Петербург
+Urban green spaces,5,9385443339,Фестивальная площадь,node,Москва
+Urban green spaces,6,11921606710,Desport,node,Екатеринбург
+Urban green spaces,7,7276095593,Colizeum Premium,node,Санкт-Петербург
+Urban green spaces,8,9843615319,Белорусские продукты,node,Екатеринбург
+Urban green spaces,9,5231948325,Пётр и Феврония,node,Санкт-Петербург
+Urban green spaces,10,4438337885,К. Малевичу,node,Санкт-Петербург

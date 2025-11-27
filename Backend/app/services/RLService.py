@@ -1,0 +1,68 @@
+import math
+from typing import List, Tuple
+from uuid import UUID
+
+from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.infrastructure.repositories.RLInteractionRepository import RLInteractionRepository
+from app.models.dtoModels.POIOutDTO import POIOutDTO
+from app.models.dtoModels.RLFeedbackDTO import RLFeedbackDTO
+from app.services.POIService import POIService
+
+
+class RLService:
+    """
+    Lightweight RL layer:
+    - collects feedback
+    - ranks candidate POIs with UCB-style exploration
+    """
+
+    def __init__(self, poi_service: POIService, session: AsyncSession, exploration: float = 1.2):
+        self.poi_service = poi_service
+        self.session = session
+        self.repo = RLInteractionRepository(session)
+        self.exploration = exploration
+
+    async def record_feedback(self, user_id: UUID, dto: RLFeedbackDTO) -> dict:
+        return await self.repo.add(user_id=user_id, poi_id=dto.poi_id, reward=dto.reward)
+
+    async def recommend(
+        self,
+        user_id: UUID,
+        interests: list,
+        additional_interests: str | None,
+        city: str | None,
+        limit: int = 10,
+    ) -> List[POIOutDTO]:
+        # 1) candidate pool based on existing semantic recs (explore more than limit)
+        candidate_pool_size = max(limit * 5, 20)
+        candidates = self.poi_service.recommend_by_interests(
+            interests=interests,
+            additional_interests=additional_interests,
+            city=city,
+            top_n=candidate_pool_size,
+        )
+
+        if not candidates:
+            return []
+
+        # 2) stats from user feedback
+        stats, total = await self.repo.get_user_stats(user_id)
+        if total == 0:
+            # no history, return top candidates as-is
+            return candidates[:limit]
+
+        scored: List[Tuple[float, POIOutDTO]] = []
+        for poi in candidates:
+            cnt, reward_sum = stats.get(poi.id, (0, 0.0))
+            if cnt == 0:
+                # unseen items: prioritize exploration
+                ucb = float("inf")
+            else:
+                avg_reward = reward_sum / cnt
+                ucb = avg_reward + self.exploration * math.sqrt(math.log(total) / cnt)
+            scored.append((ucb, poi))
+
+        # Sort by score (inf values bubble to top)
+        scored.sort(key=lambda x: (x[0] if math.isfinite(x[0]) else float("inf")), reverse=True)
+        return [poi for _, poi in scored[:limit]]

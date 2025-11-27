@@ -1,0 +1,12 @@
+# не включаем node_modules и store pnpm
+node_modules
+.pnpm-store
+
+# не включаем артефакты сборки Next.js
+.next
+dist
+build
+
+# служебные файлы
+*.log
+.env*

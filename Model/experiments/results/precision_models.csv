@@ -1,0 +1,7 @@
+model,k,precision,queries,hits
+LaBSE,5,0.837,54,226
+LaBSE,10,0.7593,54,410
+MiniLM-12-L6,5,0.4982,55,137
+MiniLM-12-L6,10,0.4255,55,234
+MiniLM-6-L12,5,0.6453,53,171
+MiniLM-6-L12,10,0.6377,53,338

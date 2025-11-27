@@ -1,0 +1,531 @@
+model,query,rank,poi_id,name,type,city,relevant
+MiniLM-6-L12,Want to visit a museum,1,7794915044,Movie Art,node,Санкт-Петербург,0
+MiniLM-6-L12,Want to visit a museum,2,3350346072,"Политехнический музей, открытые фонды",node,Москва,1
+MiniLM-6-L12,Want to visit a museum,3,6044197631,Трансферум,node,Санкт-Петербург,0
+MiniLM-6-L12,Want to visit a museum,4,1438259722,Музей истории религии,node,Санкт-Петербург,1
+MiniLM-6-L12,Want to visit a museum,5,12889776701,СВОи,node,Казань,0
+MiniLM-6-L12,Want to visit a museum,6,12086701012,Серебряный век,node,Москва,0
+MiniLM-6-L12,Want to visit a museum,7,4579193209,Городская панорама,node,Казань,1
+MiniLM-6-L12,Want to visit a museum,8,3634704049,Развитие 1703-2013,node,Санкт-Петербург,1
+MiniLM-6-L12,Want to visit a museum,9,2758278217,Музей книги,node,Москва,1
+MiniLM-6-L12,Want to visit a museum,10,2181181342,Музей художественного стекла,node,Санкт-Петербург,1
+MiniLM-6-L12,Looking for historical monuments,1,1280512167,Городам-героям,node,Москва,1
+MiniLM-6-L12,Looking for historical monuments,2,8425694570,Алексей Николаевич,node,Санкт-Петербург,1
+MiniLM-6-L12,Looking for historical monuments,3,1104343613,Орджоникидзе,node,Нижний Новгород,0
+MiniLM-6-L12,Looking for historical monuments,4,10123616731,Артему Айдинову,node,Казань,1
+MiniLM-6-L12,Looking for historical monuments,5,12453398323,76 лет Победы,node,Уфа,1
+MiniLM-6-L12,Looking for historical monuments,6,6900993014,Работникам ЭК НКПС,node,Москва,1
+MiniLM-6-L12,Looking for historical monuments,7,4958876865,Л. И. Гайдаю,node,Москва,1
+MiniLM-6-L12,Looking for historical monuments,8,2820047720,"А. Володину, А. Вампилову, В. Розову",node,Москва,1
+MiniLM-6-L12,Looking for historical monuments,9,4149631735,Пионерам,node,Москва,1
+MiniLM-6-L12,Looking for historical monuments,10,1777073235,Памяти поколений,node,Санкт-Петербург,1
+MiniLM-6-L12,Best art galleries nearby,1,9689335900,Печатники,node,Москва,0
+MiniLM-6-L12,Best art galleries nearby,2,3154464170,Ural Vision Gallery,node,Екатеринбург,1
+MiniLM-6-L12,Best art galleries nearby,3,5856250877,25 кадр,node,Москва,0
+MiniLM-6-L12,Best art galleries nearby,4,11279466829,R,node,Екатеринбург,0
+MiniLM-6-L12,Best art galleries nearby,5,11279466832,R,node,Екатеринбург,0
+MiniLM-6-L12,Best art galleries nearby,6,4925298349,NameGallery,node,Санкт-Петербург,1
+MiniLM-6-L12,Best art galleries nearby,7,11279466831,A,node,Екатеринбург,0
+MiniLM-6-L12,Best art galleries nearby,8,5677291322,Семья,node,Санкт-Петербург,0
+MiniLM-6-L12,Best art galleries nearby,9,12058949509,Семья,node,Уфа,0
+MiniLM-6-L12,Best art galleries nearby,10,8839210849,ArtGallery,node,Санкт-Петербург,1
+MiniLM-6-L12,Places with panoramic views,1,5026362371,Видовой холм,node,Москва,1
+MiniLM-6-L12,Places with panoramic views,2,1586975009,Вид на дом Капустина,node,Санкт-Петербург,1
+MiniLM-6-L12,Places with panoramic views,3,2197612079,Семимостье,node,Санкт-Петербург,1
+MiniLM-6-L12,Places with panoramic views,4,4790156039,Обзор на город,node,Санкт-Петербург,1
+MiniLM-6-L12,Places with panoramic views,5,12271139201,Выше только любовь,node,Москва,1
+MiniLM-6-L12,Places with panoramic views,6,4142875327,Небо,node,Москва,1
+MiniLM-6-L12,Places with panoramic views,7,11149377805,Обзор Ореховских склонов,node,Москва,1
+MiniLM-6-L12,Places with panoramic views,8,9768190671,Лошадинка,node,Казань,0
+MiniLM-6-L12,Places with panoramic views,9,3721345998,Арарат,node,Москва,1
+MiniLM-6-L12,Places with panoramic views,10,12643778468,Северное сияние,node,Москва,1
+MiniLM-6-L12,Quiet parks for reading,1,6357052648,Библиотека семейного чтения им. И. В. Зуева,node,Нижний Новгород,0
+MiniLM-6-L12,Quiet parks for reading,2,6555758593,Центр Британской книги,node,Санкт-Петербург,0
+MiniLM-6-L12,Quiet parks for reading,3,10238025895,Библиотека №224,node,Москва,0
+MiniLM-6-L12,Quiet parks for reading,4,3066710581,Библиотека,node,Санкт-Петербург,0
+MiniLM-6-L12,Quiet parks for reading,5,5311949403,Библиотека Семейного Чтения,node,Санкт-Петербург,0
+MiniLM-6-L12,Quiet parks for reading,6,1216512015,Библиотека №240,node,Москва,0
+MiniLM-6-L12,Quiet parks for reading,7,10025595793,На Тверской,node,Санкт-Петербург,1
+MiniLM-6-L12,Quiet parks for reading,8,782216732,Библиотека,node,Москва,0
+MiniLM-6-L12,Quiet parks for reading,9,811034428,Библиотека,node,Москва,0
+MiniLM-6-L12,Quiet parks for reading,10,826326301,Библиотека,node,Москва,0
+MiniLM-6-L12,Local cuisine restaurants,1,4991154735,48/26,node,Санкт-Петербург,0
+MiniLM-6-L12,Local cuisine restaurants,2,11637908181,Гаражане,node,Москва,0
+MiniLM-6-L12,Local cuisine restaurants,3,2262897257,Пельмения,node,Санкт-Петербург,1
+MiniLM-6-L12,Local cuisine restaurants,4,2523343458,Сценарио,node,Москва,0
+MiniLM-6-L12,Local cuisine restaurants,5,7806292235,Eat Market,node,Москва,1
+MiniLM-6-L12,Local cuisine restaurants,6,6477700651,Кухня на углях,node,Санкт-Петербург,1
+MiniLM-6-L12,Local cuisine restaurants,7,1968211431,Жаровня,node,Казань,1
+MiniLM-6-L12,Local cuisine restaurants,8,5366771104,Горячая Сковородка,node,Москва,1
+MiniLM-6-L12,Local cuisine restaurants,9,5335838828,Замечательные люди,node,Москва,0
+MiniLM-6-L12,Local cuisine restaurants,10,5183649121,Мясо&Паста,node,Москва,1
+MiniLM-6-L12,Cozy cafes for work,1,7130832895,Свежий номер,node,Москва,0
+MiniLM-6-L12,Cozy cafes for work,2,9952531539,А помнишь?,node,Екатеринбург,0
+MiniLM-6-L12,Cozy cafes for work,3,4710009319,Точка,node,Санкт-Петербург,1
+MiniLM-6-L12,Cozy cafes for work,4,2851923861,Сыто-место,node,Екатеринбург,1
+MiniLM-6-L12,Cozy cafes for work,5,3655147810,Самовар,node,Екатеринбург,1
+MiniLM-6-L12,Cozy cafes for work,6,5216025022,Сити,node,Санкт-Петербург,1
+MiniLM-6-L12,Cozy cafes for work,7,7503476011,Фарфор,node,Москва,0
+MiniLM-6-L12,Cozy cafes for work,8,10788451874,Ворлд,node,Санкт-Петербург,0
+MiniLM-6-L12,Cozy cafes for work,9,7981252167,Фарфор,node,Москва,0
+MiniLM-6-L12,Cozy cafes for work,10,9993649701,Местные,node,Москва,0
+MiniLM-6-L12,Scenic walking routes,1,3174801445,Большой каскад,node,Санкт-Петербург,0
+MiniLM-6-L12,Scenic walking routes,2,5026362355,Северные ландшафты,node,Москва,1
+MiniLM-6-L12,Scenic walking routes,3,7945522685,Тропа Здоровья,node,Екатеринбург,1
+MiniLM-6-L12,Scenic walking routes,4,9449058216,Ореховские склоны,node,Москва,1
+MiniLM-6-L12,Scenic walking routes,5,10951280810,Природные,node,Санкт-Петербург,1
+MiniLM-6-L12,Scenic walking routes,6,9738588172,Грибной холм,node,Казань,1
+MiniLM-6-L12,Scenic walking routes,7,4359230240,Рождественская дорожка,node,Санкт-Петербург,1
+MiniLM-6-L12,Scenic walking routes,8,7685479400,Двойной холм,node,Казань,1
+MiniLM-6-L12,Scenic walking routes,9,9738588208,Двойной холм,node,Казань,1
+MiniLM-6-L12,Scenic walking routes,10,1097831097,Подвесной мост,node,Уфа,1
+MiniLM-6-L12,Architectural landmarks,1,1966938680,Испанский ДОТ DP-1,node,Санкт-Петербург,1
+MiniLM-6-L12,Architectural landmarks,2,5762525942,Памятник поребрику и бордюру,node,Санкт-Петербург,1
+MiniLM-6-L12,Architectural landmarks,3,5866482337,Немецкая слобода 16 век,node,Москва,1
+MiniLM-6-L12,Architectural landmarks,4,5546742968,Winckelmann,node,Санкт-Петербург,0
+MiniLM-6-L12,Architectural landmarks,5,4685031864,телеграф Сахарова,node,Уфа,0
+MiniLM-6-L12,Architectural landmarks,6,4558783254,Грот Растрелли,node,Москва,0
+MiniLM-6-L12,Architectural landmarks,7,11529307739,Здание электростанции Варшавского вокзала (1898-1899),node,Санкт-Петербург,1
+MiniLM-6-L12,Architectural landmarks,8,11635717760,Ф.А. Гетье,node,Москва,1
+MiniLM-6-L12,Architectural landmarks,9,2469357472,Концертный зал «У Финляндского»,node,Санкт-Петербург,1
+MiniLM-6-L12,Architectural landmarks,10,2574411372,№31 Памятник группе «The Beatles»,node,Екатеринбург,1
+MiniLM-6-L12,Family-friendly attractions,1,11447057136,Happy City,node,Санкт-Петербург,1
+MiniLM-6-L12,Family-friendly attractions,2,12058949502,Дети на качелях,node,Уфа,1
+MiniLM-6-L12,Family-friendly attractions,3,5441921796,Idol,node,Санкт-Петербург,0
+MiniLM-6-L12,Family-friendly attractions,4,9611079576,Rich family,node,Казань,1
+MiniLM-6-L12,Family-friendly attractions,5,4943521387,Бэби-сад,node,Екатеринбург,1
+MiniLM-6-L12,Family-friendly attractions,6,5057521225,Космик,node,Москва,0
+MiniLM-6-L12,Family-friendly attractions,7,8752581953,Fiji Kids,node,Москва,1
+MiniLM-6-L12,Family-friendly attractions,8,3440838251,Карусель,node,Екатеринбург,1
+MiniLM-6-L12,Family-friendly attractions,9,11196172823,BabyHall27,node,Уфа,1
+MiniLM-6-L12,Family-friendly attractions,10,3668045419,Baby Boom,node,Екатеринбург,1
+MiniLM-6-L12,Outdoor sports facilities,1,1660865900,Премьер Спорт,node,Москва,1
+MiniLM-6-L12,Outdoor sports facilities,2,9831603116,Спортивная площадка,node,Москва,1
+MiniLM-6-L12,Outdoor sports facilities,3,12713883740,Спортивная площадка,node,Нижний Новгород,1
+MiniLM-6-L12,Outdoor sports facilities,4,2941193745,Южный,node,Москва,0
+MiniLM-6-L12,Outdoor sports facilities,5,4085902639,Fly Park,node,Уфа,1
+MiniLM-6-L12,Outdoor sports facilities,6,7942484169,Поляна,node,Екатеринбург,0
+MiniLM-6-L12,Outdoor sports facilities,7,4674438792,ССК Дендра,node,Москва,0
+MiniLM-6-L12,Outdoor sports facilities,8,11105685057,Спортмастер,node,Нижний Новгород,0
+MiniLM-6-L12,Outdoor sports facilities,9,11648462761,Tennis markt,node,Уфа,0
+MiniLM-6-L12,Outdoor sports facilities,10,7760323775,to Sport,node,Екатеринбург,1
+MiniLM-6-L12,Live music venues,1,8872812191,Live Sound,node,Санкт-Петербург,1
+MiniLM-6-L12,Live music venues,2,4415983679,Music Hall 27,node,Уфа,1
+MiniLM-6-L12,Live music venues,3,1322303836,Дом музыки,node,Екатеринбург,1
+MiniLM-6-L12,Live music venues,4,6387808396,Народный музей музыкальных инструментов,node,Москва,0
+MiniLM-6-L12,Live music venues,5,9717870634,Musicmag,node,Санкт-Петербург,1
+MiniLM-6-L12,Live music venues,6,3011885497,Рекорд 2 В,node,Москва,0
+MiniLM-6-L12,Live music venues,7,12914359072,Эта музыка будет вечной,node,Екатеринбург,1
+MiniLM-6-L12,Live music venues,8,5481445914,Музыка рядом,node,Москва,1
+MiniLM-6-L12,Live music venues,9,5611463521,Ритм,node,Санкт-Петербург,1
+MiniLM-6-L12,Live music venues,10,5438840079,Imagine Club,node,Санкт-Петербург,0
+MiniLM-6-L12,Nightlife bars,1,12525412501,Чёрт побери!,node,Санкт-Петербург,1
+MiniLM-6-L12,Nightlife bars,2,4217909889,Настоятель,node,Санкт-Петербург,1
+MiniLM-6-L12,Nightlife bars,3,2273350101,Три толстяка,node,Екатеринбург,0
+MiniLM-6-L12,Nightlife bars,4,6918453209,True Cost,node,Москва,0
+MiniLM-6-L12,Nightlife bars,5,811008186,Ворон и ворон,node,Санкт-Петербург,0
+MiniLM-6-L12,Nightlife bars,6,11845024284,Огонёк,node,Санкт-Петербург,1
+MiniLM-6-L12,Nightlife bars,7,8370776387,Бесы,node,Екатеринбург,1
+MiniLM-6-L12,Nightlife bars,8,3573306105,Жига Дрыга,node,Москва,1
+MiniLM-6-L12,Nightlife bars,9,11301408976,Обормоты,node,Санкт-Петербург,1
+MiniLM-6-L12,Nightlife bars,10,6168057559,Дело не в вине,node,Москва,0
+MiniLM-6-L12,Street food markets,1,9394367238,Eat Market,node,Москва,1
+MiniLM-6-L12,Street food markets,2,7926404085,Extra Spices,node,Санкт-Петербург,0
+MiniLM-6-L12,Street food markets,3,991669665,Аквамарин,node,Екатеринбург,0
+MiniLM-6-L12,Street food markets,4,9760887003,Фермер,node,Санкт-Петербург,1
+MiniLM-6-L12,Street food markets,5,4854227248,Рынок выходного дня,node,Москва,1
+MiniLM-6-L12,Street food markets,6,7124813600,Продуктовые лавки,node,Санкт-Петербург,1
+MiniLM-6-L12,Street food markets,7,1781489052,Павильоны овощи-фрукты №№7-14,node,Уфа,1
+MiniLM-6-L12,Street food markets,8,9280871717,Фермерский,node,Москва,1
+MiniLM-6-L12,Street food markets,9,4825139621,Фермерский магазин,node,Москва,1
+MiniLM-6-L12,Street food markets,10,3487380419,Ваш фермер,node,Москва,1
+MiniLM-6-L12,Boat tours,1,4691413293,Подводная лодка,node,Уфа,1
+MiniLM-6-L12,Boat tours,2,1261403409,Моряк-Балтиец,node,Санкт-Петербург,1
+MiniLM-6-L12,Boat tours,3,4143394804,Корабль-призрак,node,Москва,1
+MiniLM-6-L12,Boat tours,4,7650288586,Якорь,node,Санкт-Петербург,1
+MiniLM-6-L12,Boat tours,5,7677808945,Якорь,node,Санкт-Петербург,1
+MiniLM-6-L12,Boat tours,6,7677808946,Якорь,node,Санкт-Петербург,1
+MiniLM-6-L12,Boat tours,7,7677808952,Якорь,node,Санкт-Петербург,1
+MiniLM-6-L12,Boat tours,8,7677808953,Якорь,node,Санкт-Петербург,1
+MiniLM-6-L12,Boat tours,9,11145998397,Яхт-клуб Фрегат,node,Нижний Новгород,1
+MiniLM-6-L12,Boat tours,10,8071342317,Якорь,node,Санкт-Петербург,1
+MiniLM-6-L12,Modern art installations,1,9781589032,Игорь Нетто,node,Казань,0
+MiniLM-6-L12,Modern art installations,2,11013410901,ArtTerria,node,Уфа,1
+MiniLM-6-L12,Modern art installations,3,9937608518,«Крыло»,node,Санкт-Петербург,1
+MiniLM-6-L12,Modern art installations,4,5259677323,Art of Foto,node,Санкт-Петербург,1
+MiniLM-6-L12,Modern art installations,5,800277882,Era,node,Санкт-Петербург,0
+MiniLM-6-L12,Modern art installations,6,12698325515,Печатные машины,node,Санкт-Петербург,0
+MiniLM-6-L12,Modern art installations,7,2896320991,Человек сидящий в Интернете,node,Санкт-Петербург,0
+MiniLM-6-L12,Modern art installations,8,3628161894,Brusov Art Space,node,Москва,1
+MiniLM-6-L12,Modern art installations,9,6557934688,Тайны Вселенной,node,Нижний Новгород,0
+MiniLM-6-L12,Modern art installations,10,12233205876,In Artibus,node,Москва,1
+MiniLM-6-L12,Botanical gardens,1,1763155740,Ботанический сад,node,Санкт-Петербург,1
+MiniLM-6-L12,Botanical gardens,2,4912277772,Флора,node,Санкт-Петербург,1
+MiniLM-6-L12,Botanical gardens,3,11923913770,Первоцветы и орхидеи,node,Санкт-Петербург,1
+MiniLM-6-L12,Botanical gardens,4,1748594166,Гарден,node,Москва,1
+MiniLM-6-L12,Botanical gardens,5,7072064084,Краснокнижные виды растений,node,Москва,1
+MiniLM-6-L12,Botanical gardens,6,7165947150,Краснокнижные виды растений,node,Москва,1
+MiniLM-6-L12,Botanical gardens,7,7165947157,Краснокнижные виды растений,node,Москва,1
+MiniLM-6-L12,Botanical gardens,8,11064803105,Спирея иволистная,node,Санкт-Петербург,1
+MiniLM-6-L12,Botanical gardens,9,11064803805,Спирея иволистная,node,Санкт-Петербург,1
+MiniLM-6-L12,Botanical gardens,10,930349289,Garden,node,Нижний Новгород,1
+MiniLM-6-L12,Museums with interactive exhibits,1,7794915044,Movie Art,node,Санкт-Петербург,1
+MiniLM-6-L12,Museums with interactive exhibits,2,12889776701,СВОи,node,Казань,0
+MiniLM-6-L12,Museums with interactive exhibits,3,12104690801,Музей живой бумаги,node,Нижний Новгород,1
+MiniLM-6-L12,Museums with interactive exhibits,4,1808680312,Зоологический музей,node,Нижний Новгород,1
+MiniLM-6-L12,Museums with interactive exhibits,5,612042411,Электромузей,node,Москва,1
+MiniLM-6-L12,Museums with interactive exhibits,6,3345679795,Музей музыки,node,Санкт-Петербург,1
+MiniLM-6-L12,Museums with interactive exhibits,7,11691784146,Военный с ребёнком,node,Москва,1
+MiniLM-6-L12,Museums with interactive exhibits,8,11146567206,Выставочный пакгауз,node,Нижний Новгород,1
+MiniLM-6-L12,Museums with interactive exhibits,9,9128493459,Живой музей ремёсел,node,Нижний Новгород,1
+MiniLM-6-L12,Museums with interactive exhibits,10,4170316442,Музей истории Кронштадта,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic cathedrals,1,12065455201,Всех скорбящих Радость,node,Екатеринбург,1
+MiniLM-6-L12,Historic cathedrals,2,2333064981,Первая Объединенная Методистская церковь,node,Екатеринбург,1
+MiniLM-6-L12,Historic cathedrals,3,11366280871,Место старообрядческого храма успения,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic cathedrals,4,2328204167,Храм во имя святых Божиих строителей,node,Екатеринбург,1
+MiniLM-6-L12,Historic cathedrals,5,10810718709,Разрушенный ЖБОТ Пг-5 КрУР,node,Санкт-Петербург,0
+MiniLM-6-L12,Historic cathedrals,6,12626382862,Здание Свято-Троицкой гарнизонной церкви,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic cathedrals,7,10658238005,Евангелическо-лютеранская церковь Марии Магдалины,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic cathedrals,8,1574242293,Обыденный храм в честь блаженной Матроны Московской,node,Уфа,1
+MiniLM-6-L12,Historic cathedrals,9,6815048785,Изначальное место нахождения церкви,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic cathedrals,10,8648992140,"Часовня иконы Божией Матери ""Благодатное Небо""",node,Санкт-Петербург,1
+MiniLM-6-L12,Science museums,1,3454298446,Экспериментаниум,node,Москва,0
+MiniLM-6-L12,Science museums,2,612042411,Электромузей,node,Москва,1
+MiniLM-6-L12,Science museums,3,9128493459,Живой музей ремёсел,node,Нижний Новгород,1
+MiniLM-6-L12,Science museums,4,1438259722,Музей истории религии,node,Санкт-Петербург,1
+MiniLM-6-L12,Science museums,5,10040891508,Метрологический музей,node,Санкт-Петербург,1
+MiniLM-6-L12,Science museums,6,10837414697,Музей истории города Уфы,node,Уфа,1
+MiniLM-6-L12,Science museums,7,6503581600,Электробезопасность,node,Нижний Новгород,0
+MiniLM-6-L12,Science museums,8,7794915044,Movie Art,node,Санкт-Петербург,0
+MiniLM-6-L12,Science museums,9,2758278217,Музей книги,node,Москва,1
+MiniLM-6-L12,Science museums,10,1808680312,Зоологический музей,node,Нижний Новгород,1
+MiniLM-6-L12,Children's playgrounds,1,5956646988,качельки,node,Екатеринбург,1
+MiniLM-6-L12,Children's playgrounds,2,12677212705,Правила пользования детской игровой площадкой,node,Москва,0
+MiniLM-6-L12,Children's playgrounds,3,3762189735,паутина-батут,node,Москва,1
+MiniLM-6-L12,Children's playgrounds,4,1094635178,Детский городок,node,Москва,1
+MiniLM-6-L12,Children's playgrounds,5,5141900754,Детский городок,node,Москва,1
+MiniLM-6-L12,Children's playgrounds,6,1588247178,Галерея детства,node,Москва,1
+MiniLM-6-L12,Children's playgrounds,7,11196172823,BabyHall27,node,Уфа,1
+MiniLM-6-L12,Children's playgrounds,8,9630948438,"Детская лазалка ""Паутинка""",node,Екатеринбург,1
+MiniLM-6-L12,Children's playgrounds,9,3440838251,Карусель,node,Екатеринбург,1
+MiniLM-6-L12,Children's playgrounds,10,11016563663,КидБург,node,Санкт-Петербург,1
+MiniLM-6-L12,Rooftop bars,1,5263894121,Крыша,node,Санкт-Петербург,1
+MiniLM-6-L12,Rooftop bars,2,9969318733,Балкон,node,Санкт-Петербург,1
+MiniLM-6-L12,Rooftop bars,3,5757244721,Hi Hat Rooftop,node,Санкт-Петербург,1
+MiniLM-6-L12,Rooftop bars,4,6710263885,Roof place,node,Санкт-Петербург,1
+MiniLM-6-L12,Rooftop bars,5,6680039790,High,node,Москва,1
+MiniLM-6-L12,Rooftop bars,6,12779129850,Levitan,node,Санкт-Петербург,1
+MiniLM-6-L12,Rooftop bars,7,6055695092,SkyLounge Vnukovo,node,Москва,1
+MiniLM-6-L12,Rooftop bars,8,4376349001,Барбарис,node,Москва,0
+MiniLM-6-L12,Rooftop bars,9,12484062929,The garden grille & bar,node,Уфа,0
+MiniLM-6-L12,Rooftop bars,10,4856126526,Торнадо,node,Москва,0
+MiniLM-6-L12,Photography spots,1,4142927947,Вечером,node,Москва,0
+MiniLM-6-L12,Photography spots,2,965442926,Сидящий мальчик,node,Санкт-Петербург,0
+MiniLM-6-L12,Photography spots,3,5182200954,73 улица,node,Москва,0
+MiniLM-6-L12,Photography spots,4,3595282956,Полдень,node,Санкт-Петербург,0
+MiniLM-6-L12,Photography spots,5,2320185872,Скамейка ремёсел,node,Москва,0
+MiniLM-6-L12,Photography spots,6,10747680827,Скамейка ремёсел,node,Москва,0
+MiniLM-6-L12,Photography spots,7,10747680828,Скамейка ремёсел,node,Москва,0
+MiniLM-6-L12,Photography spots,8,10747680829,Скамейка ремёсел,node,Москва,0
+MiniLM-6-L12,Photography spots,9,11725712430,Солнце,node,Санкт-Петербург,1
+MiniLM-6-L12,Photography spots,10,8140103038,Солнце,node,Санкт-Петербург,1
+MiniLM-6-L12,Local craft markets,1,4547727135,Арт-Клуб,node,Санкт-Петербург,1
+MiniLM-6-L12,Local craft markets,2,8806556218,Восточный базар,node,Казань,1
+MiniLM-6-L12,Local craft markets,3,4566906100,Carre d'artistes,node,Москва,0
+MiniLM-6-L12,Local craft markets,4,11972292226,Стройдвор,node,Казань,0
+MiniLM-6-L12,Local craft markets,5,986600702,Палитра,node,Санкт-Петербург,0
+MiniLM-6-L12,Local craft markets,6,5865735004,Единый центр антиквариата,node,Санкт-Петербург,0
+MiniLM-6-L12,Local craft markets,7,10844194425,Художник,node,Уфа,0
+MiniLM-6-L12,Local craft markets,8,8224219785,Рукоделие,node,Москва,0
+MiniLM-6-L12,Local craft markets,9,10181865544,Всё связано,node,Санкт-Петербург,0
+MiniLM-6-L12,Local craft markets,10,9642670698,Торговка,node,Нижний Новгород,0
+MiniLM-6-L12,Quiet cafes with wifi,1,7200259185,WTF?!,node,Москва,0
+MiniLM-6-L12,Quiet cafes with wifi,2,10971690144,Совиный Дом,node,Москва,0
+MiniLM-6-L12,Quiet cafes with wifi,3,1526908084,Тихая гавань,node,Казань,0
+MiniLM-6-L12,Quiet cafes with wifi,4,8839206210,Пахвала,node,Санкт-Петербург,0
+MiniLM-6-L12,Quiet cafes with wifi,5,6580613996,Михайловское,node,Санкт-Петербург,0
+MiniLM-6-L12,Quiet cafes with wifi,6,12084582211,Bylyar,node,Казань,1
+MiniLM-6-L12,Quiet cafes with wifi,7,9917429925,GreenLight,node,Санкт-Петербург,0
+MiniLM-6-L12,Quiet cafes with wifi,8,1422754876,Vпите,node,Санкт-Петербург,0
+MiniLM-6-L12,Quiet cafes with wifi,9,11766349260,Trongeameszone,node,Санкт-Петербург,0
+MiniLM-6-L12,Quiet cafes with wifi,10,5412825028,Теккен Арена,node,Екатеринбург,0
+MiniLM-6-L12,Hiking trails,1,7945522685,Тропа Здоровья,node,Екатеринбург,1
+MiniLM-6-L12,Hiking trails,2,11737471485,Лыжная трасса,node,Москва,1
+MiniLM-6-L12,Hiking trails,3,11737471489,Лыжная трасса,node,Москва,1
+MiniLM-6-L12,Hiking trails,4,11737471494,Лыжная трасса,node,Москва,1
+MiniLM-6-L12,Hiking trails,5,11737471513,Лыжная трасса,node,Москва,1
+MiniLM-6-L12,Hiking trails,6,8380584636,Маунтинбайк - Карьер,node,Екатеринбург,1
+MiniLM-6-L12,Hiking trails,7,4359230250,Гельсингфорсская дорожка,node,Санкт-Петербург,1
+MiniLM-6-L12,Hiking trails,8,9449058216,Ореховские склоны,node,Москва,1
+MiniLM-6-L12,Hiking trails,9,7685479400,Двойной холм,node,Казань,1
+MiniLM-6-L12,Hiking trails,10,9738588208,Двойной холм,node,Казань,1
+MiniLM-6-L12,Cycling routes,1,7945522685,Тропа Здоровья,node,Екатеринбург,1
+MiniLM-6-L12,Cycling routes,2,8380584636,Маунтинбайк - Карьер,node,Екатеринбург,1
+MiniLM-6-L12,Cycling routes,3,9008189292,Нулевой километр,node,Санкт-Петербург,1
+MiniLM-6-L12,Cycling routes,4,6237825415,Компас Здоровья,node,Санкт-Петербург,1
+MiniLM-6-L12,Cycling routes,5,1097831097,Подвесной мост,node,Уфа,1
+MiniLM-6-L12,Cycling routes,6,6774445037,КСК Награда,node,Москва,0
+MiniLM-6-L12,Cycling routes,7,11835034882,Лыжные гонки,node,Москва,1
+MiniLM-6-L12,Cycling routes,8,10951298607,Календарь жизни птиц западной части о. Котлин,node,Санкт-Петербург,0
+MiniLM-6-L12,Cycling routes,9,954681580,Лыжная база Локомотив,node,Екатеринбург,0
+MiniLM-6-L12,Cycling routes,10,3174801445,Большой каскад,node,Санкт-Петербург,1
+MiniLM-6-L12,Wine tasting rooms,1,5694957121,WineState,node,Москва,1
+MiniLM-6-L12,Wine tasting rooms,2,12144357987,Winestyle,node,Уфа,1
+MiniLM-6-L12,Wine tasting rooms,3,12196597738,Smart Wine,node,Екатеринбург,1
+MiniLM-6-L12,Wine tasting rooms,4,4027973865,13°,node,Москва,1
+MiniLM-6-L12,Wine tasting rooms,5,10771845826,Only wine,node,Москва,1
+MiniLM-6-L12,Wine tasting rooms,6,10634683400,Wine place,node,Москва,1
+MiniLM-6-L12,Wine tasting rooms,7,4153008896,Красное & Белое,node,Уфа,0
+MiniLM-6-L12,Wine tasting rooms,8,6985840744,I Like Wine,node,Москва,1
+MiniLM-6-L12,Wine tasting rooms,9,11401774629,Wine Circle,node,Москва,1
+MiniLM-6-L12,Wine tasting rooms,10,10181865546,Nine Wines,node,Санкт-Петербург,1
+MiniLM-6-L12,Outdoor cinemas,1,1467987273,Пять Залов,node,Москва,0
+MiniLM-6-L12,Outdoor cinemas,2,3218033069,Москва,node,Москва,0
+MiniLM-6-L12,Outdoor cinemas,3,4222561394,Sky Film,node,Санкт-Петербург,1
+MiniLM-6-L12,Outdoor cinemas,4,1814750890,Синема парк,node,Нижний Новгород,1
+MiniLM-6-L12,Outdoor cinemas,5,8044456360,Формула Кино Нео,node,Санкт-Петербург,1
+MiniLM-6-L12,Outdoor cinemas,6,440956477,Кронверк-Синема Облака,node,Москва,1
+MiniLM-6-L12,Outdoor cinemas,7,5074256993,Love cinema,node,Казань,1
+MiniLM-6-L12,Outdoor cinemas,8,897401740,Формула кино,node,Санкт-Петербург,1
+MiniLM-6-L12,Outdoor cinemas,9,6070567085,Out Cinema,node,Санкт-Петербург,1
+MiniLM-6-L12,Outdoor cinemas,10,220548340,Юго-Западный,node,Екатеринбург,0
+MiniLM-6-L12,Street art tours,1,12698325515,Печатные машины,node,Санкт-Петербург,0
+MiniLM-6-L12,Street art tours,2,10845859070,Sare art,node,Москва,1
+MiniLM-6-L12,Street art tours,3,8640564316,Краски жизни,node,Санкт-Петербург,1
+MiniLM-6-L12,Street art tours,4,10969841018,Полёт,node,Санкт-Петербург,0
+MiniLM-6-L12,Street art tours,5,5031345696,Arts square gallery,node,Санкт-Петербург,1
+MiniLM-6-L12,Street art tours,6,8839210849,ArtGallery,node,Санкт-Петербург,1
+MiniLM-6-L12,Street art tours,7,4563717291,AVart,node,Санкт-Петербург,1
+MiniLM-6-L12,Street art tours,8,10018299378,Лето,node,Санкт-Петербург,1
+MiniLM-6-L12,Street art tours,9,2033709816,Спорт,node,Москва,0
+MiniLM-6-L12,Street art tours,10,5073205786,Выставочные залы на Арбате,node,Москва,1
+MiniLM-6-L12,Antique shops,1,9793484954,Антиквариус,node,Санкт-Петербург,1
+MiniLM-6-L12,Antique shops,2,1437398678,Антиквар,node,Москва,1
+MiniLM-6-L12,Antique shops,3,9113816154,Антиквар,node,Москва,1
+MiniLM-6-L12,Antique shops,4,9982088223,Антикварный домъ,node,Казань,1
+MiniLM-6-L12,Antique shops,5,2606862089,Антикварная лавка в Калашном переулке,node,Москва,1
+MiniLM-6-L12,Antique shops,6,1728278429,Антиквариат,node,Нижний Новгород,1
+MiniLM-6-L12,Antique shops,7,2955779132,Антик,node,Санкт-Петербург,1
+MiniLM-6-L12,Antique shops,8,12348913477,Товары из прошлого и СССР,node,Санкт-Петербург,1
+MiniLM-6-L12,Antique shops,9,4697537083,Винтажные вещи,node,Санкт-Петербург,1
+MiniLM-6-L12,Antique shops,10,6231339682,Русский стиль,node,Санкт-Петербург,1
+MiniLM-6-L12,Jazz clubs,1,12600040238,Академ Джаз,node,Москва,1
+MiniLM-6-L12,Jazz clubs,2,3325926894,Джаз-клуб Игоря Бутмана,node,Москва,1
+MiniLM-6-L12,Jazz clubs,3,1021351638,Филармония джазовой музыки,node,Санкт-Петербург,1
+MiniLM-6-L12,Jazz clubs,4,1865267462,J.F.C. Jazz Club,node,Санкт-Петербург,1
+MiniLM-6-L12,Jazz clubs,5,10069720744,Джаз,node,Санкт-Петербург,1
+MiniLM-6-L12,Jazz clubs,6,8463256785,Jazz-shop.ru,node,Москва,1
+MiniLM-6-L12,Jazz clubs,7,4503538134,W,node,Санкт-Петербург,0
+MiniLM-6-L12,Jazz clubs,8,10893432308,Honky Tonk,node,Москва,0
+MiniLM-6-L12,Jazz clubs,9,5611463521,Ритм,node,Санкт-Петербург,1
+MiniLM-6-L12,Jazz clubs,10,8593460798,Pedal Club,node,Москва,0
+MiniLM-6-L12,Yoga studios,1,12077381577,Yoga projeсt,node,Екатеринбург,1
+MiniLM-6-L12,Yoga studios,2,11828948840,Yoga Place,node,Санкт-Петербург,1
+MiniLM-6-L12,Yoga studios,3,5371994278,Yoga Art,node,Нижний Новгород,1
+MiniLM-6-L12,Yoga studios,4,4574490996,Йога студия,node,Казань,1
+MiniLM-6-L12,Yoga studios,5,2616127203,Yoga Practika,node,Москва,1
+MiniLM-6-L12,Yoga studios,6,5354432769,Yoga Practika,node,Москва,1
+MiniLM-6-L12,Yoga studios,7,5851719741,Yoga Practika,node,Москва,1
+MiniLM-6-L12,Yoga studios,8,6225902491,Yoga Practika,node,Москва,1
+MiniLM-6-L12,Yoga studios,9,4801920622,Федерация йоги,node,Москва,1
+MiniLM-6-L12,Yoga studios,10,9713707917,Yoga Feel,node,Уфа,1
+MiniLM-6-L12,Running clubs and marathons,1,9365380540,Беговой клуб,node,Москва,1
+MiniLM-6-L12,Running clubs and marathons,2,5758454935,Megasport,node,Екатеринбург,1
+MiniLM-6-L12,Running clubs and marathons,3,4834061622,FlexMass,node,Екатеринбург,1
+MiniLM-6-L12,Running clubs and marathons,4,1119043280,"Спортивно-оздоровительный клуб ""Вымпел""",node,Москва,0
+MiniLM-6-L12,Running clubs and marathons,5,10285983160,"Городской межотраслевой физкультурно-спортивный клуб ""Здоровье""",node,Москва,0
+MiniLM-6-L12,Running clubs and marathons,6,2200264034,Спортмастер,node,Нижний Новгород,0
+MiniLM-6-L12,Running clubs and marathons,7,8677638973,In Fighting,node,Москва,0
+MiniLM-6-L12,Running clubs and marathons,8,10804761993,Pro Гибкость,node,Екатеринбург,0
+MiniLM-6-L12,Running clubs and marathons,9,4575746389,LeMans,node,Москва,0
+MiniLM-6-L12,Running clubs and marathons,10,4197071880,Восточный КЛУБ,node,Уфа,0
+MiniLM-6-L12,Historic forts,1,9942358717,Карта форта,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic forts,2,8930434718,Героический путь артиллерийского училища,node,Казань,1
+MiniLM-6-L12,Historic forts,3,5232693630,"памятник православным воинам, погибшим на Кавказе",node,Санкт-Петербург,1
+MiniLM-6-L12,Historic forts,4,5026362372,Китайгородская стена,node,Москва,1
+MiniLM-6-L12,Historic forts,5,10716615905,Остатки немецкого ДОТа DT-1,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic forts,6,11506826735,КП/НП батареи 6-дюймовок Канэ,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic forts,7,11510705902,Бомбоубежище,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic forts,8,7944870885,"Форт ""Александр Шанец""",node,Санкт-Петербург,1
+MiniLM-6-L12,Historic forts,9,5347387652,МИ-2,node,Москва,1
+MiniLM-6-L12,Historic forts,10,12088758269,Основание орудия батареи,node,Санкт-Петербург,1
+MiniLM-6-L12,Urban street markets,1,1086919475,Конкурент,node,Санкт-Петербург,0
+MiniLM-6-L12,Urban street markets,2,1231357283,"ТК ""Ольга2""",node,Санкт-Петербург,0
+MiniLM-6-L12,Urban street markets,3,4086435889,Сельскохозяйственный рынок,node,Санкт-Петербург,1
+MiniLM-6-L12,Urban street markets,4,11341313680,Перекрёсток,node,Уфа,0
+MiniLM-6-L12,Urban street markets,5,3974212484,Перекрёсток,node,Екатеринбург,0
+MiniLM-6-L12,Urban street markets,6,5525450562,Йомарт,node,Уфа,0
+MiniLM-6-L12,Urban street markets,7,1140767494,Приалит,node,Москва,0
+MiniLM-6-L12,Urban street markets,8,1325314431,Перекрёсток,node,Екатеринбург,0
+MiniLM-6-L12,Urban street markets,9,1360076674,Перекрёсток,node,Екатеринбург,0
+MiniLM-6-L12,Urban street markets,10,12517888664,Перекрёсток,node,Екатеринбург,0
+MiniLM-6-L12,Classical music concerts,1,4142952951,Репетиция оркестра,node,Москва,1
+MiniLM-6-L12,Classical music concerts,2,6387808396,Народный музей музыкальных инструментов,node,Москва,0
+MiniLM-6-L12,Classical music concerts,3,2289219095,Филармония имени Мстислава Ростроповича,node,Нижний Новгород,1
+MiniLM-6-L12,Classical music concerts,4,12914359072,Эта музыка будет вечной,node,Екатеринбург,1
+MiniLM-6-L12,Classical music concerts,5,1748893810,Mozart,node,Санкт-Петербург,1
+MiniLM-6-L12,Classical music concerts,6,10832844750,Sale sound,node,Казань,1
+MiniLM-6-L12,Classical music concerts,7,4274126189,Jam Club Андрея Макаревича,node,Москва,1
+MiniLM-6-L12,Classical music concerts,8,1865267462,J.F.C. Jazz Club,node,Санкт-Петербург,1
+MiniLM-6-L12,Classical music concerts,9,4415983679,Music Hall 27,node,Уфа,1
+MiniLM-6-L12,Classical music concerts,10,3325926894,Джаз-клуб Игоря Бутмана,node,Москва,1
+MiniLM-6-L12,Contemporary dance shows,1,7023544386,Студия исторического танца Трианон,node,Москва,1
+MiniLM-6-L12,Contemporary dance shows,2,8039149654,Контраст,node,Санкт-Петербург,0
+MiniLM-6-L12,Contemporary dance shows,3,6489288184,Амира,node,Нижний Новгород,0
+MiniLM-6-L12,Contemporary dance shows,4,5138766238,Dance Insight,node,Санкт-Петербург,1
+MiniLM-6-L12,Contemporary dance shows,5,8256986062,Dance therapy,node,Москва,1
+MiniLM-6-L12,Contemporary dance shows,6,10798706065,Dance Division,node,Нижний Новгород,1
+MiniLM-6-L12,Contemporary dance shows,7,3766353738,Dancing Company,node,Нижний Новгород,1
+MiniLM-6-L12,Contemporary dance shows,8,3792738230,"Fresh, студия танца",node,Санкт-Петербург,1
+MiniLM-6-L12,Contemporary dance shows,9,9757570014,Next Dance Studio,node,Санкт-Петербург,1
+MiniLM-6-L12,Contemporary dance shows,10,6225900464,Mainstream,node,Москва,0
+MiniLM-6-L12,Public libraries,1,968478668,Научная библиотека СЗИУ РАНХиГС,node,Санкт-Петербург,1
+MiniLM-6-L12,Public libraries,2,5045037236,Библиотека №101,node,Москва,1
+MiniLM-6-L12,Public libraries,3,931487478,Библиотека УрО РАН,node,Екатеринбург,1
+MiniLM-6-L12,Public libraries,4,9966401700,Библиотека № 175,node,Москва,1
+MiniLM-6-L12,Public libraries,5,10025595793,На Тверской,node,Санкт-Петербург,0
+MiniLM-6-L12,Public libraries,6,1345719324,Научная библиотека РГППУ,node,Екатеринбург,1
+MiniLM-6-L12,Public libraries,7,1207097591,Научная библиотека УрГПУ,node,Екатеринбург,1
+MiniLM-6-L12,Public libraries,8,1140412403,Библиотека СПбГМТУ,node,Санкт-Петербург,1
+MiniLM-6-L12,Public libraries,9,1140449935,Библиотека СПбГУТД,node,Санкт-Петербург,1
+MiniLM-6-L12,Public libraries,10,3908968867,Библиотека имени Мельникова-Печёрского,node,Нижний Новгород,1
+MiniLM-6-L12,Indoor climbing gyms,1,3635889267,Скалодром МИТХТ,node,Москва,1
+MiniLM-6-L12,Indoor climbing gyms,2,7883089057,Climb Lab,node,Москва,1
+MiniLM-6-L12,Indoor climbing gyms,3,5072342821,Gym & Tonic,node,Москва,1
+MiniLM-6-L12,Indoor climbing gyms,4,8521166060,IRON GYM,node,Екатеринбург,1
+MiniLM-6-L12,Indoor climbing gyms,5,1425915449,Powerhouse Gym,node,Екатеринбург,1
+MiniLM-6-L12,Indoor climbing gyms,6,4206407989,Powerhouse Gym,node,Екатеринбург,1
+MiniLM-6-L12,Indoor climbing gyms,7,11862401452,Ri_gym,node,Казань,1
+MiniLM-6-L12,Indoor climbing gyms,8,9290788117,Integrity,node,Москва,1
+MiniLM-6-L12,Indoor climbing gyms,9,4381097890,Зарядка Gym,node,Москва,1
+MiniLM-6-L12,Indoor climbing gyms,10,12298885506,Mass Gym,node,Уфа,1
+MiniLM-6-L12,Beachfront promenades,1,9385170331,Пляж,node,Уфа,1
+MiniLM-6-L12,Beachfront promenades,2,4382390447,Дюны,node,Санкт-Петербург,1
+MiniLM-6-L12,Beachfront promenades,3,7528877835,Директорский пляж,node,Екатеринбург,1
+MiniLM-6-L12,Beachfront promenades,4,7682398788,Прибрежные мелководья,node,Санкт-Петербург,1
+MiniLM-6-L12,Beachfront promenades,5,669118280,Курортный,node,Санкт-Петербург,1
+MiniLM-6-L12,Beachfront promenades,6,10951280808,Береговые валы,node,Санкт-Петербург,1
+MiniLM-6-L12,Beachfront promenades,7,7480069036,Изоплитовский пляж,node,Екатеринбург,1
+MiniLM-6-L12,Beachfront promenades,8,6942696209,Дельфины,node,Москва,0
+MiniLM-6-L12,Beachfront promenades,9,8693403918,Дельфины,node,Москва,0
+MiniLM-6-L12,Beachfront promenades,10,9738508258,Дельфины,node,Москва,0
+MiniLM-6-L12,Craft beer pubs,1,6110985286,Beer empire,node,Москва,1
+MiniLM-6-L12,Craft beer pubs,2,1384013902,Craft Beer Shop,node,Санкт-Петербург,1
+MiniLM-6-L12,Craft beer pubs,3,4337761991,Beerman's Brewing Company,node,Москва,1
+MiniLM-6-L12,Craft beer pubs,4,915469937,Iternational Beer Store,node,Екатеринбург,1
+MiniLM-6-L12,Craft beer pubs,5,7734283835,Cult Beer Club,node,Санкт-Петербург,1
+MiniLM-6-L12,Craft beer pubs,6,3109151679,Beermarket,node,Москва,1
+MiniLM-6-L12,Craft beer pubs,7,6579689801,Beer mug,node,Нижний Новгород,1
+MiniLM-6-L12,Craft beer pubs,8,3946173957,Beertep Craft Pub,node,Москва,1
+MiniLM-6-L12,Craft beer pubs,9,1747030996,Beer Bag,node,Санкт-Петербург,1
+MiniLM-6-L12,Craft beer pubs,10,12537235128,Beer&Balls,node,Москва,1
+MiniLM-6-L12,Jazz festivals,1,1021351638,Филармония джазовой музыки,node,Санкт-Петербург,1
+MiniLM-6-L12,Jazz festivals,2,12600040238,Академ Джаз,node,Москва,1
+MiniLM-6-L12,Jazz festivals,3,3325926894,Джаз-клуб Игоря Бутмана,node,Москва,1
+MiniLM-6-L12,Jazz festivals,4,1865267462,J.F.C. Jazz Club,node,Санкт-Петербург,1
+MiniLM-6-L12,Jazz festivals,5,10069720744,Джаз,node,Санкт-Петербург,1
+MiniLM-6-L12,Jazz festivals,6,8463256785,Jazz-shop.ru,node,Москва,1
+MiniLM-6-L12,Jazz festivals,7,4503538134,W,node,Санкт-Петербург,0
+MiniLM-6-L12,Jazz festivals,8,10893432308,Honky Tonk,node,Москва,0
+MiniLM-6-L12,Jazz festivals,9,10017102157,Граммофон,node,Санкт-Петербург,0
+MiniLM-6-L12,Jazz festivals,10,5611463521,Ритм,node,Санкт-Петербург,1
+MiniLM-6-L12,Artisan chocolate shops,1,11773549425,Город в шоколаде,node,Нижний Новгород,1
+MiniLM-6-L12,Artisan chocolate shops,2,12881368401,Нижний в шоколаде,node,Нижний Новгород,1
+MiniLM-6-L12,Artisan chocolate shops,3,4322849512,Музей истории шоколада и какао,node,Москва,0
+MiniLM-6-L12,Artisan chocolate shops,4,4689477598,Пышка,node,Уфа,0
+MiniLM-6-L12,Artisan chocolate shops,5,12164297413,Музей истории русского шоколада,node,Москва,0
+MiniLM-6-L12,Artisan chocolate shops,6,7807030300,Chocolate Bar,node,Санкт-Петербург,1
+MiniLM-6-L12,Artisan chocolate shops,7,5180914982,Музей шоколада,node,Москва,0
+MiniLM-6-L12,Artisan chocolate shops,8,2397148874,Конфетки & Бараночки,node,Санкт-Петербург,1
+MiniLM-6-L12,Artisan chocolate shops,9,1411840098,Плюшка,node,Уфа,1
+MiniLM-6-L12,Artisan chocolate shops,10,9833331334,Сладкая лавка,node,Екатеринбург,1
+MiniLM-6-L12,Architecture walking tours,1,9905840317,По сусекам,node,Москва,0
+MiniLM-6-L12,Architecture walking tours,2,5649720576,Route 66,node,Санкт-Петербург,1
+MiniLM-6-L12,Architecture walking tours,3,6044197631,Трансферум,node,Санкт-Петербур,0г
+MiniLM-6-L12,Architecture walking tours,4,4579193209,Городская панорама,node,Казань,0
+MiniLM-6-L12,Architecture walking tours,5,10112046572,Горный музей,node,Санкт-Петербург,0
+MiniLM-6-L12,Architecture walking tours,6,3502825887,Забавушка,node,Москва,0
+MiniLM-6-L12,Architecture walking tours,7,2475691784,Литературная жизнь Урала XX века,node,Екатеринбург,0
+MiniLM-6-L12,Architecture walking tours,8,3634704049,Развитие 1703-2013,node,Санкт-Петербург,0
+MiniLM-6-L12,Architecture walking tours,9,4960431429,"Траян, римский император",node,Санкт-Петербург,0
+MiniLM-6-L12,Architecture walking tours,10,11013962947,Балкон музея Карла Буллы,node,Санкт-Петербург,0
+MiniLM-6-L12,Sushi restaurants,1,10977220401,Here Sushi,node,Москва,1
+MiniLM-6-L12,Sushi restaurants,2,1381787383,Восток-Запад,node,Санкт-Петербург,1
+MiniLM-6-L12,Sushi restaurants,3,6142569992,Sushi,node,Москва,1
+MiniLM-6-L12,Sushi restaurants,4,4386016334,Карате суши,node,Нижний Новгород,1
+MiniLM-6-L12,Sushi restaurants,5,7290747931,Суши Пятница,node,Москва,1
+MiniLM-6-L12,Sushi restaurants,6,4356519206,Суши маркет,node,Нижний Новгород,1
+MiniLM-6-L12,Sushi restaurants,7,2616127199,Tokyo,node,Москва,1
+MiniLM-6-L12,Sushi restaurants,8,9809310629,Сушисет,node,Москва,1
+MiniLM-6-L12,Sushi restaurants,9,5236315129,Сушистор,node,Москва,1
+MiniLM-6-L12,Sushi restaurants,10,8635374095,Суши Мастер,node,Санкт-Петербург,1
+MiniLM-6-L12,Street performance spots,1,973479676,Пуп,node,Екатеринбург,0
+MiniLM-6-L12,Street performance spots,2,7061533905,"Культурный центр ""Покровские ворота""",node,Москва,0
+MiniLM-6-L12,Street performance spots,3,6702633186,Привокзальная площадь,node,Уфа,0
+MiniLM-6-L12,Street performance spots,4,1216644811,Горэлектротранс,node,Санкт-Петербург,0
+MiniLM-6-L12,Street performance spots,5,11019981806,Красный маршрут,node,Санкт-Петербург,0
+MiniLM-6-L12,Street performance spots,6,8065436689,Красный маршрут,node,Санкт-Петербург,0
+MiniLM-6-L12,Street performance spots,7,9733565955,Центральный район,node,Санкт-Петербург,0
+MiniLM-6-L12,Street performance spots,8,9181274050,Quadrat-Trapez,node,Москва,0
+MiniLM-6-L12,Street performance spots,9,4688968321,Площадь Фиделя Кастро,node,Москва,0
+MiniLM-6-L12,Street performance spots,10,9385443339,Фестивальная площадь,node,Москва,0
+MiniLM-6-L12,Open-air markets,1,1911041510,Планета,node,Санкт-Петербург,0
+MiniLM-6-L12,Open-air markets,2,11816465473,Сакура маркет,node,Нижний Новгород,0
+MiniLM-6-L12,Open-air markets,3,10755458545,Таганрогский колбасный завод,node,Москва,0
+MiniLM-6-L12,Open-air markets,4,4406950417,Ярмарка,node,Санкт-Петербург,1
+MiniLM-6-L12,Open-air markets,5,4450335793,Онлайн 24x7,node,Москва,0
+MiniLM-6-L12,Open-air markets,6,6892573806,ТЦ «Крёкшино»,node,Москва,0
+MiniLM-6-L12,Open-air markets,7,4761481505,Мои документы,node,Казань,0
+MiniLM-6-L12,Open-air markets,8,10053410717,Технолог,node,Санкт-Петербург,0
+MiniLM-6-L12,Open-air markets,9,2388373037,Технолог,node,Санкт-Петербург,0
+MiniLM-6-L12,Open-air markets,10,2850959191,Технолог,node,Санкт-Петербург,0
+MiniLM-6-L12,Secluded viewpoints,1,10178332317,Против,node,Санкт-Петербург,0
+MiniLM-6-L12,Secluded viewpoints,2,12079972669,Вид на ЗСД,node,Санкт-Петербург,1
+MiniLM-6-L12,Secluded viewpoints,3,1146914352,парк Сосновка,node,Санкт-Петербург,0
+MiniLM-6-L12,Secluded viewpoints,4,1230130906,парк Сосновка,node,Санкт-Петербург,0
+MiniLM-6-L12,Secluded viewpoints,5,11104290875,Обзорная площадка,node,Уфа,1
+MiniLM-6-L12,Secluded viewpoints,6,11522908198,Посажен лес 6 га,node,Москва,0
+MiniLM-6-L12,Secluded viewpoints,7,300062717,Вид развилки каштановой и большой липовой аллей,node,Москва,1
+MiniLM-6-L12,Secluded viewpoints,8,10700462748,Knokey Парк Легенд,node,Москва,0
+MiniLM-6-L12,Secluded viewpoints,9,6052696098,"Зона отдыха ""Шибаевский пруд""",node,Москва,0
+MiniLM-6-L12,Secluded viewpoints,10,6909229038,План-схема Бирюлёвского дендропарка,node,Москва,0
+MiniLM-6-L12,Historic city walls,1,7080391215,Здание заводской конторы (1827),node,Екатеринбург,0
+MiniLM-6-L12,Historic city walls,2,5121835055,Фрагмент первоначальной линии подпорной стены конца XVIII — XIX вв.,node,Москва,0
+MiniLM-6-L12,Historic city walls,3,10030274739,Памятник архитектуры XIX века,node,Санкт-Петербург,0
+MiniLM-6-L12,Historic city walls,4,5921496461,Книга Знаний,node,Санкт-Петербург,0
+MiniLM-6-L12,Historic city walls,5,4927397309,Аполлон Мусагет,node,Санкт-Петербург,0
+MiniLM-6-L12,Historic city walls,6,3308191138,Памятная доска строительству высотного дома,node,Москва,1
+MiniLM-6-L12,Historic city walls,7,11865849472,Пограничный столб №2,node,Санкт-Петербург,1
+MiniLM-6-L12,Historic city walls,8,8093157043,24м,node,Санкт-Петербург,0
+MiniLM-6-L12,Historic city walls,9,11020650005,100 лет ВЛКСМ,node,Санкт-Петербург,0
+MiniLM-6-L12,Historic city walls,10,11510705883,Мемориальная плита в память о Троицком соборе,node,Санкт-Петербург,1
+MiniLM-6-L12,Museum gift shops,1,12104690801,Музей живой бумаги,node,Нижний Новгород,1
+MiniLM-6-L12,Museum gift shops,2,3350346072,"Политехнический музей, открытые фонды",node,Москва,1
+MiniLM-6-L12,Museum gift shops,3,5906743571,Собрание,node,Москва,0
+MiniLM-6-L12,Museum gift shops,4,4142983989,Рождение нового века,node,Москва,0
+MiniLM-6-L12,Museum gift shops,5,3206046372,Музей уникальных кукол,node,Москва,1
+MiniLM-6-L12,Museum gift shops,6,8655323872,Музей истории денег,node,Санкт-Петербург,1
+MiniLM-6-L12,Museum gift shops,7,2324423104,Музей кукол и детской книги «Страна чудес»,node,Екатеринбург,1
+MiniLM-6-L12,Museum gift shops,8,9871773742,Музей счастливого детства,node,Казань,1
+MiniLM-6-L12,Museum gift shops,9,6044197631,Трансферум,node,Санкт-Петербург,0
+MiniLM-6-L12,Museum gift shops,10,2511951122,Музей книги,node,Москва,1
+MiniLM-6-L12,Minimalist cafes,1,12205381792,Рёберная на Баумана,node,Казань,1
+MiniLM-6-L12,Minimalist cafes,2,3460229905,IL Tempo,node,Нижний Новгород,1
+MiniLM-6-L12,Minimalist cafes,3,710312269,Люкс,node,Екатеринбург,1
+MiniLM-6-L12,Minimalist cafes,4,10971690144,Совиный Дом,node,Москва,0
+MiniLM-6-L12,Minimalist cafes,5,5856250881,Bistrot & Boutique No. 7,node,Москва,1
+MiniLM-6-L12,Minimalist cafes,6,1229833245,Веранда,node,Санкт-Петербург,1
+MiniLM-6-L12,Minimalist cafes,7,11482378465,Capital,node,Нижний Новгород,0
+MiniLM-6-L12,Minimalist cafes,8,12327072553,Мир,node,Санкт-Петербург,0
+MiniLM-6-L12,Minimalist cafes,9,4271135594,Пинч!,node,Санкт-Петербург,0
+MiniLM-6-L12,Minimalist cafes,10,2262897258,Спецбуфет №1,node,Санкт-Петербург,1
+MiniLM-6-L12,Urban green spaces,1,4736659967,"Дворовый спортивный комплекс ""Сыромятники""",node,Москва,0
+MiniLM-6-L12,Urban green spaces,2,9806396641,Мои документы,node,Казань,0
+MiniLM-6-L12,Urban green spaces,3,9806396657,Мои документы,node,Казань,0
+MiniLM-6-L12,Urban green spaces,4,9806766874,Мои документы,node,Казань,0
+MiniLM-6-L12,Urban green spaces,5,2322941786,Белая ворона,node,Екатеринбург,0
+MiniLM-6-L12,Urban green spaces,6,9733565955,Центральный район,node,Санкт-Петербург,0
+MiniLM-6-L12,Urban green spaces,7,11083618597,White House,node,Нижний Новгород,0
+MiniLM-6-L12,Urban green spaces,8,4689366891,Дворик,node,Уфа,1
+MiniLM-6-L12,Urban green spaces,9,1126453997,ГУ ЦСПСД,node,Москва,0
+MiniLM-6-L12,Urban green spaces,10,1438250535,Дворовый капитан,node,Москва,1

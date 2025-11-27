@@ -1,0 +1,21 @@
+from enum import Enum
+
+class InterestsEnum(str, Enum):
+    MUSEUMS = 'museums'
+    ART = 'art'
+    HISTORY = 'history'
+    ARCHITECTURE = 'architecture'
+    NATURE = 'nature'
+    PARKS = 'parks'
+    CAFES = 'cafes'
+    RESTAURANTS = 'restaurants'
+    SHOPPING = 'shopping'
+    SPORTS = 'sports'
+    ACTIVE = 'active'
+    RECREATION = 'recreation'
+    NIGHTLIFE = 'nightlife'
+    LOCAL ='local'
+    CUISINE ='cuisine'
+    PHOTOGRAPHY = 'photography'
+    QUIET = 'quiet'
+    PLACES = 'places'

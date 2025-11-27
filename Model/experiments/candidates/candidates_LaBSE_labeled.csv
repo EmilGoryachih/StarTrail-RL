@@ -1,0 +1,541 @@
+model,query,rank,poi_id,name,type,city,relevant
+LaBSE,Want to visit a museum,1,6061084594,Музей археологии Москвы,node,Москва,1
+LaBSE,Want to visit a museum,2,288506766,Государственный Дарвиновский музей,node,Москва,1
+LaBSE,Want to visit a museum,3,11018736690,Похищение Европы,node,Санкт-Петербург,1
+LaBSE,Want to visit a museum,4,4774406424,Похищение Европы,node,Москва,1
+LaBSE,Want to visit a museum,5,4811949281,Похищение Европы,node,Москва,1
+LaBSE,Want to visit a museum,6,5223047818,Похищение Европы,node,Москва,1
+LaBSE,Want to visit a museum,7,11178669083,Похищение Европы,node,Уфа,1
+LaBSE,Want to visit a museum,8,2474529847,Памятник Майклу Джексону,node,Екатеринбург,0
+LaBSE,Want to visit a museum,9,3325191509,Музей русской гармоники А. Мирека,node,Москва,1
+LaBSE,Want to visit a museum,10,12154936086,Кабинет-музей Н. И. Вавилова,node,Санкт-Петербург,1
+LaBSE,Looking for historical monuments,1,1280066306,"ДОТ ""Миллионер""",node,Санкт-Петербург,1
+LaBSE,Looking for historical monuments,2,5752062653,Н. Д. Зелинскому,node,Санкт-Петербург,1
+LaBSE,Looking for historical monuments,3,1727044678,Место часовни во имя Серафима Саровского,node,Санкт-Петербург,1
+LaBSE,Looking for historical monuments,4,1655764478,Аллея Памяти воинов-уральцев,node,Екатеринбург,1
+LaBSE,Looking for historical monuments,5,891629579,могила архиепископа Никифора Феотокиса,node,Москва,1
+LaBSE,Looking for historical monuments,6,4350034892,Похищение сабинянки,node,Санкт-Петербург,1
+LaBSE,Looking for historical monuments,7,5467893088,А. Д. Салынскому,node,Москва,1
+LaBSE,Looking for historical monuments,8,11516044734,АЗП-39,node,Санкт-Петербург,1
+LaBSE,Looking for historical monuments,9,11345090239,Воинам-освободителям,node,Москва,1
+LaBSE,Looking for historical monuments,10,5152025423,"Эскулап, легендарный врачеватель",node,Санкт-Петербург,0
+LaBSE,Best art galleries nearby,1,7851370221,Стена радости,node,Москва,1
+LaBSE,Best art galleries nearby,2,5057733049,А3,node,Москва,1
+LaBSE,Best art galleries nearby,3,7676539087,МПД,node,Екатеринбург,1
+LaBSE,Best art galleries nearby,4,3558564373,"Творческий центр ""Око""",node,Москва,1
+LaBSE,Best art galleries nearby,5,7814389885,Выставка ParcArt,node,Санкт-Петербург,1
+LaBSE,Best art galleries nearby,6,6511783385,Друзья,node,Екатеринбург,0
+LaBSE,Best art galleries nearby,7,4123587890,Картинная галерея Гризайль,node,Москва,1
+LaBSE,Best art galleries nearby,8,1948113538,Янтарная комната,node,Санкт-Петербург,1
+LaBSE,Best art galleries nearby,9,11184203938,Добро пожаловать!,node,Санкт-Петербург,0
+LaBSE,Best art galleries nearby,10,5527925431,Art4,node,Москва,1
+LaBSE,Quiet parks for reading,1,5041512825,"Условные обозначения парка ""Дубки""",node,Санкт-Петербург,1
+LaBSE,Quiet parks for reading,2,5641718540,Боскет «Птичий (зверовой) двор»,node,Санкт-Петербург,1
+LaBSE,Quiet parks for reading,3,9630948438,"Детская лазалка ""Паутинка""",node,Екатеринбург,1
+LaBSE,Quiet parks for reading,4,7637340685,Мира,node,Санкт-Петербург,1
+LaBSE,Quiet parks for reading,5,7637340785,Мира,node,Санкт-Петербург,1
+LaBSE,Quiet parks for reading,6,9800958604,Пакгаузы,node,Нижний Новгород,0
+LaBSE,Quiet parks for reading,7,4357819089,Бенуарики у сада Бенуа,node,Санкт-Петербург,1
+LaBSE,Quiet parks for reading,8,6052331254,Парк «Фили»,node,Москва,1
+LaBSE,Quiet parks for reading,9,6050976998,Сквер им. Авдеева,node,Москва,1
+LaBSE,Quiet parks for reading,10,3135946970,Хитрая скамейка,node,Санкт-Петербург,1
+LaBSE,Local cuisine restaurants,1,10227932966,Как дома,node,Санкт-Петербург,1
+LaBSE,Local cuisine restaurants,2,8353759717,Хорошая девочка,node,Москва,0
+LaBSE,Local cuisine restaurants,3,1770434372,Перекрёсток джаза,node,Казань,1
+LaBSE,Local cuisine restaurants,4,11594915080,Ваби Саби,node,Москва,1
+LaBSE,Local cuisine restaurants,5,2285666504,Бакинский бульвар,node,Москва,1
+LaBSE,Local cuisine restaurants,6,1728278423,Хорошее дело,node,Нижний Новгород,0
+LaBSE,Local cuisine restaurants,7,1544306780,Огонёк,node,Уфа,1
+LaBSE,Local cuisine restaurants,8,10310798742,Восточный двор,node,Санкт-Петербург,1
+LaBSE,Local cuisine restaurants,9,4804794308,"Культурно-деловой центр молодёжи ""Марьино""",node,Москва,0
+LaBSE,Local cuisine restaurants,10,5789986571,Калашный ряд,node,Санкт-Петербург,0
+LaBSE,Cozy cafes for work,1,9915035218,Люблю кофе,node,Екатеринбург,1
+LaBSE,Cozy cafes for work,2,9415111567,Здрасте кофе,node,Москва,1
+LaBSE,Cozy cafes for work,3,6030605798,Какао для Алисы,node,Москва,1
+LaBSE,Cozy cafes for work,4,10121446069,Кофилин,node,Санкт-Петербург,1
+LaBSE,Cozy cafes for work,5,9995590646,Кофешефф,node,Москва,1
+LaBSE,Cozy cafes for work,6,11843754146,Cofix,node,Москва,1
+LaBSE,Cozy cafes for work,7,3214920426,Cofix,node,Москва,1
+LaBSE,Cozy cafes for work,8,7437473684,Jeffrey's Coffee,node,Москва,1
+LaBSE,Cozy cafes for work,9,4229617692,Кофе Хауз,node,Москва,1
+LaBSE,Cozy cafes for work,10,2451930641,Кофемания,node,Москва,1
+LaBSE,Scenic walking routes,1,12148711294,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Scenic walking routes,2,12736660549,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Scenic walking routes,3,12736673776,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Scenic walking routes,4,12736724474,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Scenic walking routes,5,12557504755,Улица Юности,node,Москва,1
+LaBSE,Scenic walking routes,6,8002372982,Калиновка Trail bike park,node,Екатеринбург,1
+LaBSE,Scenic walking routes,7,12288923397,Улица Вострухина,node,Москва,1
+LaBSE,Scenic walking routes,8,12191291676,Уральская улица,node,Москва,1
+LaBSE,Scenic walking routes,9,12209895112,Улица Новотетёрки,node,Москва,1
+LaBSE,Scenic walking routes,10,12069838895,Переход Суворова через Альпы в 1799 году,node,Санкт-Петербург,0
+LaBSE,Architectural landmarks,1,5798720527,Въездной обелиск,node,Москва,,1
+LaBSE,Architectural landmarks,2,1067164071,В честь украинско-российской дружбы,node,Москва,1
+LaBSE,Architectural landmarks,3,474950054,Музей истории Екатеринбурга,node,Екатеринбург,1
+LaBSE,Architectural landmarks,4,11449150163,Арбатская площадь,node,Москва,1
+LaBSE,Architectural landmarks,5,583204619,Нулевой километр,node,Москва,1
+LaBSE,Architectural landmarks,6,4754436187,А. А. Ахматовой,node,Москва,1
+LaBSE,Architectural landmarks,7,5104148025,Гид по Хельсинки,node,Санкт-Петербург,0
+LaBSE,Architectural landmarks,8,9807346712,История района Митино,node,Москва,1
+LaBSE,Architectural landmarks,9,4658944521,Героям фильма «Офицеры»,node,Москва,1
+LaBSE,Architectural landmarks,10,11510705263,Архитектор А. М. Горностаев,node,Санкт-Петербург,1
+LaBSE,Family-friendly attractions,1,7923627585,Пиковый перекрёсток,node,Санкт-Петербург,0
+LaBSE,Family-friendly attractions,2,973479676,Пуп,node,Екатеринбург,0
+LaBSE,Family-friendly attractions,3,10007992311,Мини-зоопарк при конном клубе в Орловском парке,node,Санкт-Петербург,1
+LaBSE,Family-friendly attractions,4,3688401263,«Шалаш» — Сестрорецк,node,Санкт-Петербург,1
+LaBSE,Family-friendly attractions,5,1396565741,Загородный образовательно-оздоровительный центр «Академия»,node,Санкт-Петербург,1
+LaBSE,Family-friendly attractions,6,10247274522,Информационно-туристский центр Ленинградской области,node,Санкт-Петербург,1
+LaBSE,Family-friendly attractions,7,4349017124,Карта острова Котлин,node,Санкт-Петербург,0
+LaBSE,Family-friendly attractions,8,12041650873,"Некоммерческий Зоопарк ""Элафион""",node,Санкт-Петербург,1
+LaBSE,Family-friendly attractions,9,5935898336,Весна красна,node,Санкт-Петербург,1
+LaBSE,Family-friendly attractions,10,8002372982,Калиновка Trail bike park,node,Екатеринбург,1
+LaBSE,Outdoor sports facilities,1,2058601899,Спортивный-клуб Action-force,node,Санкт-Петербург,1
+LaBSE,Outdoor sports facilities,2,10006280353,"Стрелковый клуб ""Выстрел""",node,Москва,1
+LaBSE,Outdoor sports facilities,3,10006280354,"Стрелковый клуб ""Выстрел""",node,Москва,1
+LaBSE,Outdoor sports facilities,4,12061002344,Время детям,node,Казань,1
+LaBSE,Outdoor sports facilities,5,6387509510,Школа закаливания и зимнего плавания «Наука»,node,Москва,1
+LaBSE,Outdoor sports facilities,6,1995722972,Уральский центр кинезиотерапии,node,Екатеринбург,0
+LaBSE,Outdoor sports facilities,7,2137076243,Уральский центр кинезиотерапии,node,Екатеринбург,0
+LaBSE,Outdoor sports facilities,8,8570499714,"Спортивная школа № 75 ""Савеловская""",node,Москв,1а
+LaBSE,Outdoor sports facilities,9,7197421413,ФизКульт Бурнаковский,node,Нижний Новгород,1
+LaBSE,Outdoor sports facilities,10,1615849519,«Павловчанин» молодежно-подростковый клуб,node,Санкт-Петербург,1
+LaBSE,Live music venues,1,11062159557,Пространство звука,node,Казань,1
+LaBSE,Live music venues,2,3116114788,"Концертный зал ""Под сводами""",node,Москва,1
+LaBSE,Live music venues,3,8638112141,Это винил,node,Москва,1
+LaBSE,Live music venues,4,2429119910,Звуковой барьер,node,Москва,1
+LaBSE,Live music venues,5,12449719178,На одной волне,node,Москва,1
+LaBSE,Live music venues,6,4977568534,Виниломания,node,Москва,1
+LaBSE,Live music venues,7,4804794308,"Культурно-деловой центр молодёжи ""Марьино""",node,Москва,1
+LaBSE,Live music venues,8,5159280726,Караоке бар Мелодия,node,Санкт-Петербург,1
+LaBSE,Live music venues,9,4272128589,Северная лира,node,Санкт-Петербург,1
+LaBSE,Live music venues,10,1770434372,Перекрёсток джаза,node,Казань,1
+LaBSE,Nightlife bars,1,11358288692,Мидийные личности,node,Санкт-Петербург,1
+LaBSE,Nightlife bars,2,8078781317,Нэо Вэйв Бар,node,Санкт-Петербург,1
+LaBSE,Nightlife bars,3,10804761982,На волне,node,Екатеринбург,1
+LaBSE,Nightlife bars,4,1836925360,Вчера и навсегда,node,Санкт-Петербург,1
+LaBSE,Nightlife bars,5,4347097589,Люблю,node,Санкт-Петербург,1
+LaBSE,Nightlife bars,6,9660884513,НСБ - Не совсем секретный бар,node,Екатеринбург,1
+LaBSE,Nightlife bars,7,3797172795,Анонимное общество усердных дегустаторов,node,Санкт-Петербург,1
+LaBSE,Nightlife bars,8,11301408980,Наденька,node,Санкт-Петербург,1
+LaBSE,Nightlife bars,9,11811990770,Алкмаркет,node,Санкт-Петербург,1
+LaBSE,Nightlife bars,10,11328403250,День сурка,node,Санкт-Петербург,1
+LaBSE,Street food markets,1,8950592420,Новая площадь,node,Москва,0
+LaBSE,Street food markets,2,3887492858,Рижский рынок,node,Москва,1
+LaBSE,Street food markets,3,1253948759,"Ярмарка ""Московские сезоны""",node,Москва,1
+LaBSE,Street food markets,4,11057578594,"Ярмарка ""Московские сезоны""",node,Москва,1
+LaBSE,Street food markets,5,8852154733,Первому субботнику,node,Москва,0
+LaBSE,Street food markets,6,9853204061,Малая Сухаревская площадь,node,Москва,0
+LaBSE,Street food markets,7,1722580982,Магазин купцов Елисеевых,node,Санкт-Петербург,1
+LaBSE,Street food markets,8,4948144641,Кудринская площадь,node,Москва,0
+LaBSE,Street food markets,9,2468882311,Новая Третьяковка,node,Москва,0
+LaBSE,Street food markets,10,2749608160,Подвалъ бродячей собаки,node,Санкт-Петербург,0
+LaBSE,Boat tours,1,2117942027,Вода - это жизнь,node,Санкт-Петербург,1
+LaBSE,Boat tours,2,9961754793,Волшебная миля,node,Санкт-Петербург,0
+LaBSE,Boat tours,3,3688401263,«Шалаш» — Сестрорецк,node,Санкт-Петербург,0
+LaBSE,Boat tours,4,11775031514,Стрельнинская бухта,node,Санкт-Петербург,1
+LaBSE,Boat tours,5,8703661611,Береза-оракул,node,Москва,0
+LaBSE,Boat tours,6,4349017124,Карта острова Котлин,node,Санкт-Петербург,0
+LaBSE,Boat tours,7,8911667412,Адольфова гора,node,Санкт-Петербург,0
+LaBSE,Boat tours,8,12382223234,ЖБОТ S-17,node,Санкт-Петербург,0
+LaBSE,Boat tours,9,6871992265,Я люблю Бибирево,node,Москва,0
+LaBSE,Boat tours,10,10247274522,Информационно-туристский центр Ленинградской области,node,Санкт-Петербург,1
+LaBSE,Modern art installations,1,3195426485,А. П. Чехову,node,Москва,1
+LaBSE,Modern art installations,2,4754436187,А. А. Ахматовой,node,Москва,1
+LaBSE,Modern art installations,3,3517514902,Музей-квартира А. И. Куинджи,node,Санкт-Петербург,1
+LaBSE,Modern art installations,4,2474529847,Памятник Майклу Джексону,node,Екатеринбург,1
+LaBSE,Modern art installations,5,12290708522,Леонид Николаевич Андреев,node,Санкт-Петербург,1
+LaBSE,Modern art installations,6,2585233691,А. И. Герцену,node,Москва,1
+LaBSE,Modern art installations,7,8898082926,Н. И. и С. И. Вавиловым,node,Москва,1
+LaBSE,Modern art installations,8,10980650400,Гостиница Эрмитаж,node,Екатеринбург,1
+LaBSE,Modern art installations,9,1711793873,И. А. Крылов,node,Санкт-Петербург,1
+LaBSE,Modern art installations,10,9937001872,План ГОЭЛРО,node,Нижний Новгород,1
+LaBSE,Botanical gardens,1,6871992265,Я люблю Бибирево,node,Москва,0
+LaBSE,Botanical gardens,2,6691173034,Растения участка «Болото»,node,Санкт-Петербург,1
+LaBSE,Botanical gardens,3,2343071131,Воронья гора,node,Санкт-Петербург,1
+LaBSE,Botanical gardens,4,10744338983,Каменный цветок,node,Санкт-Петербург,1
+LaBSE,Botanical gardens,5,681297120,Карта Юнтоловского заказника,node,Санкт-Петербург,0
+LaBSE,Botanical gardens,6,681297273,Карта Юнтоловского заказника,node,Санкт-Петербург,0
+LaBSE,Botanical gardens,7,9393061360,"Национальный парк ""Лосиный Остров""",node,Москва,1
+LaBSE,Botanical gardens,8,9496215906,"Национальный парк ""Лосиный Остров""",node,Москва,1
+LaBSE,Botanical gardens,9,9367014413,"Тропа Здоровья ""Уфимские липы""",node,Уфа,1
+LaBSE,Botanical gardens,10,6712690791,Оранжевый Рай,node,Москва,1
+LaBSE,Museums with interactive exhibits,1,3328712097,ЛабиринтУм,node,Санкт-Петербург,1
+LaBSE,Museums with interactive exhibits,2,12153910621,Зоологический музей,node,Санкт-Петербург,1
+LaBSE,Museums with interactive exhibits,3,3502676039,Научно-художественный музей коневодства,node,Москва,1
+LaBSE,Museums with interactive exhibits,4,3518920451,Музей истории школы Карла Мая,node,Санкт-Петербург,1
+LaBSE,Museums with interactive exhibits,5,3206046372,Музей уникальных кукол,node,Москва,1
+LaBSE,Museums with interactive exhibits,6,979037130,Новый музей,node,Санкт-Петербург,1
+LaBSE,Museums with interactive exhibits,7,2407188222,Росфото,node,Санкт-Петербург,1
+LaBSE,Museums with interactive exhibits,8,3517542114,Научно-исследовательский музей Российской академии художеств,node,Санкт-Петербург,1
+LaBSE,Museums with interactive exhibits,9,5332088685,"Музей-квартира актерской семьи М. В., А. А. Мироновых — А. С. Менакера",node,Москва,1
+LaBSE,Museums with interactive exhibits,10,3437732377,Музей воды,node,Москва,1
+LaBSE,Historic cathedrals,1,11164842405,Форты Кронштадта,node,Санкт-Петербург,1
+LaBSE,Historic cathedrals,2,12088756870,Кронштадтская крепостная железная дорога,node,Санкт-Петербург,1
+LaBSE,Historic cathedrals,3,10098341408,Я люблю форт Константин,node,Санкт-Петербург,1
+LaBSE,Historic cathedrals,4,10093530939,Грунтовый могильник и селище у церкви Петра и Павла,node,Москва,1
+LaBSE,Historic cathedrals,5,1632497619,Эрато,node,Санкт-Петербург,0
+LaBSE,Historic cathedrals,6,10929045506,План исторических захоронений Казанского кладбища,node,Санкт-Петербург,1
+LaBSE,Historic cathedrals,7,891629579,могила архиепископа Никифора Феотокиса,node,Москва,1
+LaBSE,Historic cathedrals,8,1943120512,Открытая позиция ПТО K-180,node,Санкт-Петербург,1
+LaBSE,Historic cathedrals,9,10091826459,Курган (Узкое-1),node,Москва,1
+LaBSE,Historic cathedrals,10,4948952115,Кронштадт - Город воинской славы,node,Санкт-Петербург,1
+LaBSE,Science museums,1,10572977039,Мемориальный музей-квартира Тимирязева Климента Аркадьевича,node,Москва,1
+LaBSE,Science museums,2,6061084594,Музей археологии Москвы,node,Москва,1
+LaBSE,Science museums,3,288506766,Государственный Дарвиновский музей,node,Москва,1
+LaBSE,Science museums,4,1808680328,Музей науки «Нижегородская радиолаборатория»,node,Нижний Новгород,1
+LaBSE,Science museums,5,4280524655,Научная педагогическая библиотека им. К.Д. Ушинского,node,Москва,0
+LaBSE,Science museums,6,12154936086,Кабинет-музей Н. И. Вавилова,node,Санкт-Петербург,1
+LaBSE,Science museums,7,3325191509,Музей русской гармоники А. Мирека,node,Москва,1
+LaBSE,Science museums,8,5247522109,"Учёным, создавшим первые советские ракеты ГИРД",node,Москва,0
+LaBSE,Science museums,9,9193049584,Я люблю Ясенево!,node,Москва,0
+LaBSE,Science museums,10,12669675677,Научная библиотека им. Н. И. Лобачевского,node,Казань,0
+LaBSE,Children's playgrounds,1,962979702,Двойняшки,node,Москва,1
+LaBSE,Children's playgrounds,2,1836837355,"Детский подростковый клуб ""Радуга""",node,Екатеринбург,1
+LaBSE,Children's playgrounds,3,4523709059,"Детский досуговый центр ""Аист""",node,Москва,1
+LaBSE,Children's playgrounds,4,5742856152,КидСпейс,node,Казань,1
+LaBSE,Children's playgrounds,5,611052812,Ваш малыш,node,Екатеринбург,1
+LaBSE,Children's playgrounds,6,7201747786,Взгляд ребёнка,node,Москва,1
+LaBSE,Children's playgrounds,7,5021717098,"Детский центр ""Фантазия""",node,Москва,1
+LaBSE,Children's playgrounds,8,10709241332,Мир игрушки,node,Нижний Новгород,1
+LaBSE,Children's playgrounds,9,2149954658,Сказочная страна,node,Екатеринбург,1
+LaBSE,Children's playgrounds,10,1446113085,Центр эстетического воспитания «В Коломне»,node,Санкт-Петербург,1
+LaBSE,Rooftop bars,1,6579689802,PortBAR craft beer,node,Нижний Новгород,1
+LaBSE,Rooftop bars,2,8748386418,"Гастропаб ""Горьковская пивоварня""",node,Нижний Новгород,1
+LaBSE,Rooftop bars,3,2285666504,Бакинский бульвар,node,Москва,0
+LaBSE,Rooftop bars,4,8818387699,Новое пространство,node,Москва,0
+LaBSE,Rooftop bars,5,4288630770,Посторонним В.,node,Москва,1
+LaBSE,Rooftop bars,6,11909516827,Высокий градус,node,Казань,1
+LaBSE,Rooftop bars,7,5159280726,Караоке бар Мелодия,node,Санкт-Петербург,1
+LaBSE,Rooftop bars,8,5642207624,Волковская пивоварня,node,Москва,1
+LaBSE,Rooftop bars,9,4379471180,Бродвей,node,Санкт-Петербург,1
+LaBSE,Rooftop bars,10,2360254906,Лео клуб,node,Санкт-Петербург,1
+LaBSE,Vegan restaurants,1,9786812750,Византия лаунж,node,Казань,1
+LaBSE,Vegan restaurants,2,8353759717,Хорошая девочка,node,Москва,1
+LaBSE,Vegan restaurants,3,11594915080,Ваби Саби,node,Москва,1
+LaBSE,Vegan restaurants,4,2285666504,Бакинский бульвар,node,Москва,1
+LaBSE,Vegan restaurants,5,5642207624,Волковская пивоварня,node,Москва,1
+LaBSE,Vegan restaurants,6,4288630770,Посторонним В.,node,Москва,1
+LaBSE,Vegan restaurants,7,4223734917,Винный базар,node,Москва,1
+LaBSE,Vegan restaurants,8,10310798742,Восточный двор,node,Санкт-Петербург,1
+LaBSE,Vegan restaurants,9,2496085397,Вкусные сезоны,node,Москва,1
+LaBSE,Vegan restaurants,10,10263479155,Музей рециклинга и экологичного образа жизни,node,Москва,0
+LaBSE,Cultural festivals,1,2494989015,Литературный музей Г. Тукая,node,Казань,1
+LaBSE,Cultural festivals,2,1253948759,"Ярмарка ""Московские сезоны""",node,Москва,1
+LaBSE,Cultural festivals,3,11057578594,"Ярмарка ""Московские сезоны""",node,Москва,1
+LaBSE,Cultural festivals,4,3993588657,Пиотровский,node,Екатеринбург,1
+LaBSE,Cultural festivals,5,2947296723,Загадки Шурале,node,Казань,1
+LaBSE,Cultural festivals,6,2749608160,Подвалъ бродячей собаки,node,Санкт-Петербург,1
+LaBSE,Cultural festivals,7,474949599,Свердловский областной краеведческий музей,node,Екатеринбург,1
+LaBSE,Cultural festivals,8,2468882311,Новая Третьяковка,node,Москва,1
+LaBSE,Cultural festivals,9,11460634407,Дом Теленкова Ф.А.,node,Санкт-Петербург,1
+LaBSE,Cultural festivals,10,9807346712,История района Митино,node,Москва,1
+LaBSE,Photography spots,1,10814464548,Северное сияние,node,Санкт-Петербург,1
+LaBSE,Photography spots,2,12163482998,Поиск равновесия,node,Москва,1
+LaBSE,Photography spots,3,9961754793,Волшебная миля,node,Санкт-Петербург,1
+LaBSE,Photography spots,4,10247274522,Информационно-туристский центр Ленинградской области,node,Санкт-Петербург,1
+LaBSE,Photography spots,5,6512738385,Поцелуй – это печать любви!,node,Екатеринбург,1
+LaBSE,Photography spots,6,1518859160,Вид с площадки у Руинного каскада,node,Санкт-Петербург,1
+LaBSE,Photography spots,7,10007160197,Как не допустить пожар в лесу,node,Санкт-Петербург,0
+LaBSE,Photography spots,8,11922563549,Красивейшее место,node,Екатеринбург,1
+LaBSE,Photography spots,9,4934341840,Загадай желание,node,Санкт-Петербург,1
+LaBSE,Photography spots,10,3622320006,Человек-птица,node,Москва,1
+LaBSE,Local craft markets,1,4804794308,"Культурно-деловой центр молодёжи ""Марьино""",node,Москва,0
+LaBSE,Local craft markets,2,1964076402,Областной Рынок на Громова,node,Екатеринбург,1
+LaBSE,Local craft markets,3,11834886304,Твоё хобби,node,Казань,1
+LaBSE,Local craft markets,4,6061758293,Матрёна,node,Санкт-Петербург,1
+LaBSE,Local craft markets,5,9945675934,Ярмарка выходного дня,node,Москва,1
+LaBSE,Local craft markets,6,6643679684,Ярмарка ремесленной слободы,node,Санкт-Петербург,1
+LaBSE,Local craft markets,7,12723197135,Молодость,node,Нижний Новгород,0
+LaBSE,Local craft markets,8,7814389885,Выставка ParcArt,node,Санкт-Петербург,1
+LaBSE,Local craft markets,9,6142239203,Ярмарка выходного дня,node,Москва,1
+LaBSE,Local craft markets,10,4223734917,Винный базар,node,Москва,1
+LaBSE,Quiet cafes with wifi,1,1811928392,Летнее кафе,node,Екатеринбург,1
+LaBSE,Quiet cafes with wifi,2,9809185564,Шаверма от Души,node,Санкт-Петербург,1
+LaBSE,Quiet cafes with wifi,3,4386808374,Вокруг Света,node,Нижний Новгород,1
+LaBSE,Quiet cafes with wifi,4,3392676568,Убежище,node,Москва,1
+LaBSE,Quiet cafes with wifi,5,2754524800,ГеймХаус,node,Екатеринбург,1
+LaBSE,Quiet cafes with wifi,6,11083605370,F5,node,Москва,0
+LaBSE,Quiet cafes with wifi,7,3630806893,Зеленая дверь,node,Москва,0
+LaBSE,Quiet cafes with wifi,8,10593537658,Йоттунхейм,node,Санкт-Петербург,0
+LaBSE,Quiet cafes with wifi,9,665493772,фонбет,node,Екатеринбург,0
+LaBSE,Quiet cafes with wifi,10,12356155628,F13,node,Санкт-Петербург,0
+LaBSE,Hiking trails,1,12148711294,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Hiking trails,2,12736660549,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Hiking trails,3,12736673776,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Hiking trails,4,12736724474,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Hiking trails,5,12557504755,Улица Юности,node,Москва,1
+LaBSE,Hiking trails,6,8002372982,Калиновка Trail bike park,node,Екатеринбург,1
+LaBSE,Hiking trails,7,12069838895,Переход Суворова через Альпы в 1799 году,node,Санкт-Петербург,0
+LaBSE,Hiking trails,8,9961754793,Волшебная миля,node,Санкт-Петербург,1
+LaBSE,Hiking trails,9,12288923397,Улица Вострухина,node,Москва,1
+LaBSE,Hiking trails,10,12191291676,Уральская улица,node,Москва,1
+LaBSE,Cycling routes,1,12148711294,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Cycling routes,2,12736660549,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Cycling routes,3,12736673776,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Cycling routes,4,12736724474,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Cycling routes,5,12557504755,Улица Юности,node,Москва,1
+LaBSE,Cycling routes,6,12288923397,Улица Вострухина,node,Москва,1
+LaBSE,Cycling routes,7,12716405171,Улица Миклухо-Маклая,node,Москва,1
+LaBSE,Cycling routes,8,12716433307,Улица Миклухо-Маклая,node,Москва,1
+LaBSE,Cycling routes,9,8002372982,Калиновка Trail bike park,node,Екатеринбург,1
+LaBSE,Cycling routes,10,12557531658,Улица Хлобыстова,node,Москва,1
+LaBSE,Artisanal bakeries,1,3573943000,Lucky Хлеб пекарня,node,Екатеринбург,1
+LaBSE,Artisanal bakeries,2,10964057197,"О, пекарня!",node,Уфа,1
+LaBSE,Artisanal bakeries,3,8979408791,"Пекарня ""Хлебница""",node,Екатеринбург,1
+LaBSE,Artisanal bakeries,4,3054317183,Бисквитный Двор,node,Екатеринбург,0
+LaBSE,Artisanal bakeries,5,4904629065,Выпечка,node,Санкт-Петербург,1
+LaBSE,Artisanal bakeries,6,5324730921,"бистро ""Пышки""",node,Санкт-Петербург,1
+LaBSE,Artisanal bakeries,7,7801432941,Брусника,node,Москва,1
+LaBSE,Artisanal bakeries,8,7801432942,Брусника,node,Москва,1
+LaBSE,Artisanal bakeries,9,4346901393,Брусника,node,Москва,1
+LaBSE,Artisanal bakeries,10,3661245425,Брусника,node,Москва,1
+LaBSE,Wine tasting rooms,1,4731801418,Винный базар,node,Москва,1
+LaBSE,Wine tasting rooms,2,4288630770,Посторонним В.,node,Москва,0
+LaBSE,Wine tasting rooms,3,4153679494,"Магнум-резерв, винотека",node,Екатеринбург,1
+LaBSE,Wine tasting rooms,4,4977568534,Виниломания,node,Москва,1
+LaBSE,Wine tasting rooms,5,8648992138,Вино и вкусности,node,Санкт-Петербург,1
+LaBSE,Wine tasting rooms,6,5642207624,Волковская пивоварня,node,Москва,0
+LaBSE,Wine tasting rooms,7,4223734917,Винный базар,node,Москва,1
+LaBSE,Wine tasting rooms,8,8748386418,"Гастропаб ""Горьковская пивоварня""",node,Нижний Новгород,0
+LaBSE,Wine tasting rooms,9,8065663369,Поехали,node,Екатеринбург,0
+LaBSE,Wine tasting rooms,10,9786812750,Византия лаунж,node,Казань,1
+LaBSE,Outdoor cinemas,1,446896004,Синема Парк,node,Санкт-Петербург,1
+LaBSE,Outdoor cinemas,2,4779812989,Киномакс-Мозаика,node,Москва,1
+LaBSE,Outdoor cinemas,3,11096369799,Кинопаркинг «Депо Три вокзала»,node,Москва,1
+LaBSE,Outdoor cinemas,4,479731681,Синема Парк на Калужской,node,Москва,1
+LaBSE,Outdoor cinemas,5,2475199888,Формула Кино,node,Санкт-Петербург,1
+LaBSE,Outdoor cinemas,6,12146017591,Мираж,node,Санкт-Петербург,1
+LaBSE,Outdoor cinemas,7,4324662691,Синема Стар Марьина Роща,node,Москва,1
+LaBSE,Outdoor cinemas,8,2316668125,Синема 5,node,Уфа,1
+LaBSE,Outdoor cinemas,9,12551459955,Кино Окко,node,Москва,1
+LaBSE,Outdoor cinemas,10,1430908417,Синема Парк Starlight,node,Москва,1
+LaBSE,Street art tours,1,5083895962,Рабочий Сезонник,node,Москва,1
+LaBSE,Street art tours,2,12157273304,Дом-музей П. П. Чистякова,node,Санкт-Петербург,1
+LaBSE,Street art tours,3,2468882311,Новая Третьяковка,node,Москва,1
+LaBSE,Street art tours,4,9193049584,Я люблю Ясенево!,node,Москва,1
+LaBSE,Street art tours,5,3517514902,Музей-квартира А. И. Куинджи,node,Санкт-Петербург,1
+LaBSE,Street art tours,6,1253948759,"Ярмарка ""Московские сезоны""",node,Москва,1
+LaBSE,Street art tours,7,11057578594,"Ярмарка ""Московские сезоны""",node,Москва,1
+LaBSE,Street art tours,8,11018736690,Похищение Европы,node,Санкт-Петербург,0
+LaBSE,Street art tours,9,4774406424,Похищение Европы,node,Москва,0
+LaBSE,Street art tours,10,4811949281,Похищение Европы,node,Москва,0
+LaBSE,Antique shops,1,4029963744,Сказка,node,Москва,1
+LaBSE,Antique shops,2,1727503472,Поиск Монет,node,Москва,1
+LaBSE,Antique shops,3,9874871718,Улица Ленина,node,Москва,0
+LaBSE,Antique shops,4,4344464893,Магазин эксклюзивных сувениров,node,Санкт-Петербург,1
+LaBSE,Antique shops,5,1286762133,Сокровища Петербурга,node,Санкт-Петербург,1
+LaBSE,Antique shops,6,4569491727,Где бабуля?,node,Санкт-Петербург,1
+LaBSE,Antique shops,7,1857063931,Конрос,node,Санкт-Петербург,0
+LaBSE,Antique shops,8,3514716689,Церковно-археологический музей,node,Санкт-Петербург,0
+LaBSE,Antique shops,9,9048021117,Секира,node,Санкт-Петербург,0
+LaBSE,Antique shops,10,5070492325,Алхимия,node,Санкт-Петербург,0
+LaBSE,Jazz clubs,1,1770434372,Перекрёсток джаза,node,Казань,1
+LaBSE,Jazz clubs,2,6411351655,Национальная художественная галерея «Хазинэ»,node,Казань,0
+LaBSE,Jazz clubs,3,11062159557,Пространство звука,node,Казань,1
+LaBSE,Jazz clubs,4,2360254906,Лео клуб,node,Санкт-Петербург,1
+LaBSE,Jazz clubs,5,4379471180,Бродвей,node,Санкт-Петербург,1
+LaBSE,Jazz clubs,6,12769699133,Из Казани с любовью,node,Казань,1
+LaBSE,Jazz clubs,7,9786812750,Византия лаунж,node,Казань,1
+LaBSE,Jazz clubs,8,2429119910,Звуковой барьер,node,Москва,1
+LaBSE,Jazz clubs,9,5159280726,Караоке бар Мелодия,node,Санкт-Петербург,1
+LaBSE,Jazz clubs,10,4272128589,Северная лира,node,Санкт-Петербург,1
+LaBSE,Yoga studios,1,8825455517,Йога-студия Гармония,node,Москва,1
+LaBSE,Yoga studios,2,2291287027,Йога 108,node,Москва,1
+LaBSE,Yoga studios,3,4914139250,"Центр йоги ""Анахата""",node,Екатеринбург,1
+LaBSE,Yoga studios,4,12714521751,Йога студия Резеды Сафиной,node,Казань,1
+LaBSE,Yoga studios,5,9735580789,Давай мечтать,node,Москва,0
+LaBSE,Yoga studios,6,4391626989,ЙогаМания,node,Москва,1
+LaBSE,Yoga studios,7,4801737323,Студия йоги Айенгара Ольги Ильинской,node,Москва,1
+LaBSE,Yoga studios,8,4907652023,Йога центр Yoga Shala,node,Санкт-Петербург,1
+LaBSE,Yoga studios,9,6497854485,"Студия йоги ""ЙогаРазума""",node,Казань,1
+LaBSE,Yoga studios,10,4574490996,Йога студия,node,Казань,1
+LaBSE,Historic forts,1,11164842405,Форты Кронштадта,node,Санкт-Петербург,1
+LaBSE,Historic forts,2,2403276123,Колпино — город воинской славы,node,Санкт-Петербург,1
+LaBSE,Historic forts,3,669936547,Стрелка Васильевского острова,node,Санкт-Петербург,1
+LaBSE,Historic forts,4,1240523684,В Память Усердия села Усть-Ижоры,node,Санкт-Петербург,1
+LaBSE,Historic forts,5,12088756870,Кронштадтская крепостная железная дорога,node,Санкт-Петербург,1
+LaBSE,Historic forts,6,1632497619,Эрато,node,Санкт-Петербург,0
+LaBSE,Historic forts,7,10098341408,Я люблю форт Константин,node,Санкт-Петербург,1
+LaBSE,Historic forts,8,12264377848,Янтарный мост России,node,Санкт-Петербург,1
+LaBSE,Historic forts,9,1632497618,Меркурий,node,Санкт-Петербург,1
+LaBSE,Historic forts,10,11491562306,Ниеншанц,node,Санкт-Петербург,1
+LaBSE,Urban street markets,1,8950592420,Новая площадь,node,Москва,1
+LaBSE,Urban street markets,2,3887492858,Рижский рынок,node,Москва,1
+LaBSE,Urban street markets,3,9853204061,Малая Сухаревская площадь,node,Москва,0
+LaBSE,Urban street markets,4,1253948759,"Ярмарка ""Московские сезоны""",node,Москва,1
+LaBSE,Urban street markets,5,11057578594,"Ярмарка ""Московские сезоны""",node,Москва,1
+LaBSE,Urban street markets,6,5445159819,Биржевая площадь,node,Москва,1
+LaBSE,Urban street markets,7,4948144641,Кудринская площадь,node,Москва,0
+LaBSE,Urban street markets,8,1722580982,Магазин купцов Елисеевых,node,Санкт-Петербург,1
+LaBSE,Urban street markets,9,11449150163,Арбатская площадь,node,Москва,1
+LaBSE,Urban street markets,10,4948150388,Лубянская площадь,node,Москва,1
+LaBSE,Classical music concerts,1,2609191808,Московский дом композиторов,node,Москва,1
+LaBSE,Classical music concerts,2,5181847697,Крокин галерея,node,Москва,0
+LaBSE,Classical music concerts,3,3325191509,Музей русской гармоники А. Мирека,node,Москва,1
+LaBSE,Classical music concerts,4,3517514902,Музей-квартира А. И. Куинджи,node,Санкт-Петербург,0
+LaBSE,Classical music concerts,5,2494989015,Литературный музей Г. Тукая,node,Казань,0
+LaBSE,Classical music concerts,6,784052411,Карлу Марксу,node,Москва,0
+LaBSE,Classical music concerts,7,2506826092,Детский музыкальный театр юного актера,node,Москва,1
+LaBSE,Classical music concerts,8,12157273304,Дом-музей П. П. Чистякова,node,Санкт-Петербург,0
+LaBSE,Classical music concerts,9,1253948759,"Ярмарка ""Московские сезоны""",node,Москва,0
+LaBSE,Classical music concerts,10,11057578594,"Ярмарка ""Московские сезоны""",node,Москва,0
+LaBSE,Public libraries,1,987375426,Библиотека N4,node,Санкт-Петербург,1
+LaBSE,Public libraries,2,9434059486,Центральная детская библиотека имени Н. А. Внукова,node,Санкт-Петербург,1
+LaBSE,Public libraries,3,6793335328,Научно-медицинская библиотека,node,Москва,1
+LaBSE,Public libraries,4,8047003285,Центральная районная детская библиотека,node,Санкт-Петербург,1
+LaBSE,Public libraries,5,6718221450,Библиотека имени Герцена,node,Екатеринбург,1
+LaBSE,Public libraries,6,5056154810,Библиотека №267 имени Крупской,node,Москва,1
+LaBSE,Public libraries,7,12196232785,Библиотека №4 «Горелово»,node,Санкт-Петербург,1
+LaBSE,Public libraries,8,1370762390,Центральная детская библиотека № 226,node,Москва,1
+LaBSE,Public libraries,9,3849191098,Научно-техническая библиотека РГУ нефти и газа им. И.М.Губкина,node,Москва,1
+LaBSE,Public libraries,10,2083028779,Библиотека им. М.А.Светлова.,node,Нижний Новгород,1
+LaBSE,Indoor climbing gyms,1,10006280353,"Стрелковый клуб ""Выстрел""",node,Москва,0
+LaBSE,Indoor climbing gyms,2,10006280354,"Стрелковый клуб ""Выстрел""",node,Москва,0
+LaBSE,Indoor climbing gyms,3,2058601899,Спортивный-клуб Action-force,node,Санкт-Петербург,1
+LaBSE,Indoor climbing gyms,4,9975900234,Гнедой конный клуб,node,Санкт-Петербург,1
+LaBSE,Indoor climbing gyms,5,1995722972,Уральский центр кинезиотерапии,node,Екатеринбург,0
+LaBSE,Indoor climbing gyms,6,2137076243,Уральский центр кинезиотерапии,node,Екатеринбург,0
+LaBSE,Indoor climbing gyms,7,977470346,Анима,node,Санкт-Петербург,0
+LaBSE,Indoor climbing gyms,8,11766356192,Студия гимнастики и танца Анны Серовой,node,Санкт-Петербург,1
+LaBSE,Indoor climbing gyms,9,5021405257,Icestyle-Екб,node,Екатеринбург,0
+LaBSE,Indoor climbing gyms,10,11068938724,Академия танца,node,Москва,0
+LaBSE,Science fairs,1,10263479155,Музей рециклинга и экологичного образа жизни,node,Москва,1
+LaBSE,Science fairs,2,1948113538,Янтарная комната,node,Санкт-Петербург,0
+LaBSE,Science fairs,3,3069066677,"Выставочный зал ""АхДи""",node,Москва,1
+LaBSE,Science fairs,4,1304505140,Дом книги,node,Санкт-Петербург,1
+LaBSE,Science fairs,5,4116418323,Музей техники Apple,node,Москва,1
+LaBSE,Science fairs,6,3782296720,"Арт-площадка ""Массолит""",node,Москва,1
+LaBSE,Science fairs,7,7017434438,B4CKSP4CE,node,Санкт-Петербург,0
+LaBSE,Science fairs,8,7814389885,Выставка ParcArt,node,Санкт-Петербург,1
+LaBSE,Science fairs,9,1205905734,Научно-техническая библиотека МИСИС,node,Москва,1
+LaBSE,Science fairs,10,5057733049,А3,node,Москва,0
+LaBSE,Craft beer pubs,1,11784730164,Давай Два,node,Санкт-Петербург,1
+LaBSE,Craft beer pubs,2,8758650961,Хмельной Кег,node,Москва,1
+LaBSE,Craft beer pubs,3,3892159245,Craft mini bar -бар крафтового пива,node,Екатеринбург,1
+LaBSE,Craft beer pubs,4,2412093665,Вильям Басс,node,Москва,1
+LaBSE,Craft beer pubs,5,8132280091,BB craft,node,Москва,1
+LaBSE,Craft beer pubs,6,11937874417,Пиво у Попая,node,Санкт-Петербург,1
+LaBSE,Craft beer pubs,7,745271763,Молли Гвинн'з,node,Москва,0
+LaBSE,Craft beer pubs,8,3946173957,Beertep Craft Pub,node,Москва,1
+LaBSE,Craft beer pubs,9,7141020139,На вина!,node,Москва,0
+LaBSE,Craft beer pubs,10,7141020140,На вина!,node,Москва,0
+LaBSE,Jazz festivals,1,1770434372,Перекрёсток джаза,node,Казань,1
+LaBSE,Jazz festivals,2,6411351655,Национальная художественная галерея «Хазинэ»,node,Казань,0
+LaBSE,Jazz festivals,3,12769699133,Из Казани с любовью,node,Казань,0
+LaBSE,Jazz festivals,4,11062159557,Пространство звука,node,Казань,1
+LaBSE,Jazz festivals,5,3116114788,"Концертный зал ""Под сводами""",node,Москва,1
+LaBSE,Jazz festivals,6,11622323473,Весёлая Затея,node,Москва,0
+LaBSE,Jazz festivals,7,2589366779,"Банкетный комплекс ""Звезда""",node,Санкт-Петербург,0
+LaBSE,Jazz festivals,8,4272128589,Северная лира,node,Санкт-Петербург,0
+LaBSE,Jazz festivals,9,8552805818,Золотая нива,node,Казань,0
+LaBSE,Jazz festivals,10,4804794308,"Культурно-деловой центр молодёжи ""Марьино""",node,Москва,0
+LaBSE,Artisan chocolate shops,1,5993681985,Шоколадка,node,Нижний Новгород,1
+LaBSE,Artisan chocolate shops,2,2383737790,Шоколадный Хит,node,Москва,1
+LaBSE,Artisan chocolate shops,3,4142686290,chocoMe,node,Санкт-Петербург,1
+LaBSE,Artisan chocolate shops,4,9989248250,Шоколадное ателье,node,Москва,1
+LaBSE,Artisan chocolate shops,5,8409528319,Шоколадница,node,Москва,1
+LaBSE,Artisan chocolate shops,6,3247029594,Шоколадница,node,Москва,1
+LaBSE,Artisan chocolate shops,7,3021943933,Шоколадница,node,Москва,1
+LaBSE,Artisan chocolate shops,8,890694168,Шоколадница,node,Москва,1
+LaBSE,Artisan chocolate shops,9,4644194140,Шоколадница,node,Москва,1
+LaBSE,Artisan chocolate shops,10,5720245358,Шоколадница,node,Москва,1
+LaBSE,Local dessert specialties,1,8219691821,Белорусский базар,node,Москва,1
+LaBSE,Local dessert specialties,2,2334218289,Магазин Продукты(ИП Смернов),node,Екатеринбург,1
+LaBSE,Local dessert specialties,3,5592548483,Финские продукты,node,Санкт-Петербург,1
+LaBSE,Local dessert specialties,4,11252464283,Дом Хлеба,node,Уфа,1
+LaBSE,Local dessert specialties,5,7195212848,Армянские продукты,node,Москва,1
+LaBSE,Local dessert specialties,6,1870432991,Белорусские продукты,node,Москва,1
+LaBSE,Local dessert specialties,7,11573662507,Товары из Финляндии,node,Санкт-Петербург,1
+LaBSE,Local dessert specialties,8,4653143977,Товары из Армении,node,Санкт-Петербург,1
+LaBSE,Local dessert specialties,9,4123545090,Сибирский гастроном #1,node,Москва,1
+LaBSE,Local dessert specialties,10,10794907288,Финские товары,node,Санкт-Петербург,1
+LaBSE,Architecture walking tours,1,4934341840,Загадай желание,node,Санкт-Петербург,0
+LaBSE,Architecture walking tours,2,8703661611,Береза-оракул,node,Москва,0
+LaBSE,Architecture walking tours,3,9961754793,Волшебная миля,node,Санкт-Петербург,1
+LaBSE,Architecture walking tours,4,4754322972,Схема тропы Н. И. Кузнецова,node,Екатеринбург,1
+LaBSE,Architecture walking tours,5,4754322978,Схема тропы Н. И. Кузнецова,node,Екатеринбург,1
+LaBSE,Architecture walking tours,6,3622320006,Человек-птица,node,Москва,0
+LaBSE,Architecture walking tours,7,12716405171,Улица Миклухо-Маклая,node,Москва,1
+LaBSE,Architecture walking tours,8,12716433307,Улица Миклухо-Маклая,node,Москва,1
+LaBSE,Architecture walking tours,9,6871992265,Я люблю Бибирево,node,Москва,0
+LaBSE,Architecture walking tours,10,9142541647,У Лукоморья. Сказочная экотропа.,node,Санкт-Петербург,1
+LaBSE,Sushi restaurants,1,9182592406,Вкусносуши,node,Санкт-Петербург,1
+LaBSE,Sushi restaurants,2,1440166100,Якитория,node,Москва,1
+LaBSE,Sushi restaurants,3,1445383864,Якитория,node,Москва,1
+LaBSE,Sushi restaurants,4,2440630305,Якитория,node,Москва,1
+LaBSE,Sushi restaurants,5,12778135102,Суши-Пицца,node,Санкт-Петербург,1
+LaBSE,Sushi restaurants,6,1476461542,Якитория,node,Москва,1
+LaBSE,Sushi restaurants,7,4843754802,Якитория,node,Москва,1
+LaBSE,Sushi restaurants,8,1581507748,Ямамото,node,Санкт-Петербург,1
+LaBSE,Sushi restaurants,9,8752557924,Империя Суши,node,Уфа,1
+LaBSE,Sushi restaurants,10,2140392388,Якитория,node,Москва,1
+LaBSE,Microbrewery tours,1,9961754793,Волшебная миля,node,Санкт-Петербург,1
+LaBSE,Microbrewery tours,2,6871992265,Я люблю Бибирево,node,Москва,0
+LaBSE,Microbrewery tours,3,12716405171,Улица Миклухо-Маклая,node,Москва,1
+LaBSE,Microbrewery tours,4,12716433307,Улица Миклухо-Маклая,node,Москва,1
+LaBSE,Microbrewery tours,5,7923627585,Пиковый перекрёсток,node,Санкт-Петербург,1
+LaBSE,Microbrewery tours,6,8703661611,Береза-оракул,node,Москва,0
+LaBSE,Microbrewery tours,7,7741437447,Посетители кормушек,node,Москва,0
+LaBSE,Microbrewery tours,8,973479676,Пуп,node,Екатеринбург,0
+LaBSE,Microbrewery tours,9,12076555269,Город Зеленогорск,node,Санкт-Петербург,0
+LaBSE,Microbrewery tours,10,12161423637,Город Зеленогорск,node,Санкт-Петербург,0
+LaBSE,Street performance spots,1,4948144641,Кудринская площадь,node,Москва,1
+LaBSE,Street performance spots,2,8950592420,Новая площадь,node,Москва,1
+LaBSE,Street performance spots,3,3887492858,Рижский рынок,node,Москва,0
+LaBSE,Street performance spots,4,583204619,Нулевой километр,node,Москва,0
+LaBSE,Street performance spots,5,8852154733,Первому субботнику,node,Москва,1
+LaBSE,Street performance spots,6,101118823,Уголок дедушки Дурова,node,Москва1
+LaBSE,Street performance spots,7,8185423001,площадь Краснопресненская Застава,node,Москва,1
+LaBSE,Street performance spots,8,192224751,Ленин,node,Екатеринбург,0
+LaBSE,Street performance spots,9,9513789274,Хитровская площадь,node,Москва,1
+LaBSE,Street performance spots,10,9853204061,Малая Сухаревская площадь,node,Москва,1
+LaBSE,Open-air markets,1,9945675934,Ярмарка выходного дня,node,Москва,1
+LaBSE,Open-air markets,2,6779516176,Ярмарка выходного дня,node,Москва,1
+LaBSE,Open-air markets,3,4883893475,Úность,node,Москва,0
+LaBSE,Open-air markets,4,5057733049,А3,node,Москва,0
+LaBSE,Open-air markets,5,5250498424,Ярмарка выходного дня,node,Москва,1
+LaBSE,Open-air markets,6,10310798742,Восточный двор,node,Санкт-Петербург,1
+LaBSE,Open-air markets,7,4804794308,"Культурно-деловой центр молодёжи ""Марьино""",node,Москва,0
+LaBSE,Open-air markets,8,1628803349,Есть хочу,node,Москва,1
+LaBSE,Open-air markets,9,5527925431,Art4,node,Москва,0
+LaBSE,Open-air markets,10,4223734917,Винный базар,node,Москва,1
+LaBSE,Historic city walls,1,11516044734,АЗП-39,node,Санкт-Петербург,0
+LaBSE,Historic city walls,2,11164842405,Форты Кронштадта,node,Санкт-Петербург,1
+LaBSE,Historic city walls,3,4960448823,"Аристотель, древнегреческий философ",node,Санкт-Петербург,1
+LaBSE,Historic city walls,4,12088756870,Кронштадтская крепостная железная дорога,node,Санкт-Петербург,1
+LaBSE,Historic city walls,5,12002624492,Вагон конки,node,Казань,1
+LaBSE,Historic city walls,6,12771169707,Золоторожская набережная,node,Москва,1
+LaBSE,Historic city walls,7,12909786682,Золоторожская набережная,node,Москва,1
+LaBSE,Historic city walls,8,12909808336,Золоторожская набережная,node,Москва,1
+LaBSE,Historic city walls,9,12909814072,Золоторожская набережная,node,Москва,1
+LaBSE,Historic city walls,10,2403276123,Колпино — город воинской славы,node,Санкт-Петербург,1
+LaBSE,Museum gift shops,1,1727503472,Поиск Монет,node,Москва,1
+LaBSE,Museum gift shops,2,4569491727,Где бабуля?,node,Санкт-Петербург,1
+LaBSE,Museum gift shops,3,4029963744,Сказка,node,Москва,1
+LaBSE,Museum gift shops,4,1437551197,Сказка,node,Москва,1
+LaBSE,Museum gift shops,5,1857063931,Конрос,node,Санкт-Петербург,0
+LaBSE,Museum gift shops,6,5070492325,Алхимия,node,Санкт-Петербург,0
+LaBSE,Museum gift shops,7,4804794308,"Культурно-деловой центр молодёжи ""Марьино""",node,Москва,0
+LaBSE,Museum gift shops,8,6477882972,Идеальное решение,node,Нижний Новгород,0
+LaBSE,Museum gift shops,9,9773243603,Очевидное Невероятное,node,Москва,0
+LaBSE,Museum gift shops,10,11696800242,МИФ,node,Нижний Новгород,0
+LaBSE,Minimalist cafes,1,10609166977,На углях,node,Москва,1
+LaBSE,Minimalist cafes,2,8951857417,Дом творчества,node,Москва,0
+LaBSE,Minimalist cafes,3,3442452659,Котиссимо,node,Москва,0
+LaBSE,Minimalist cafes,4,7246161826,Мечта тут,node,Санкт-Петербург,0
+LaBSE,Minimalist cafes,5,4392817856,Компас здоровья,node,Санкт-Петербург,0
+LaBSE,Minimalist cafes,6,9786812750,Византия лаунж,node,Казань,1
+LaBSE,Minimalist cafes,7,4761154540,"мейд-кафе ""Holy""",node,Екатеринбург,1
+LaBSE,Minimalist cafes,8,4840098637,"Киоск ""ПУЛЬТЫ""",node,Екатеринбург,0
+LaBSE,Minimalist cafes,9,5745948997,А ты где?,node,Екатеринбург,0
+LaBSE,Minimalist cafes,10,1770434372,Перекрёсток джаза,node,Казань,0
+LaBSE,Urban green spaces,1,1396565741,Загородный образовательно-оздоровительный центр «Академия»,node,Санкт-Петербург,1
+LaBSE,Urban green spaces,2,12076555269,Город Зеленогорск,node,Санкт-Петербург,1
+LaBSE,Urban green spaces,3,12161423637,Город Зеленогорск,node,Санкт-Петербург,1
+LaBSE,Urban green spaces,4,12148711294,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Urban green spaces,5,12736660549,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Urban green spaces,6,12736673776,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Urban green spaces,7,12736724474,"Веломаршрут ""Зелёное кольцо""",node,Москва,1
+LaBSE,Urban green spaces,8,9367014413,"Тропа Здоровья ""Уфимские липы""",node,Уфа,1
+LaBSE,Urban green spaces,9,10007160197,Как не допустить пожар в лесу,node,Санкт-Петербург,0
+LaBSE,Urban green spaces,10,6871992265,Я люблю Бибирево,node,Москва,0
