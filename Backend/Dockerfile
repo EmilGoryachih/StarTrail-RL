@@ -1,16 +1,17 @@
 FROM python:3.11-slim AS deps
 
 ENV PIP_NO_CACHE_DIR=1 \
-    PIP_INDEX_URL=https://pypi.org/simple
+    PIP_INDEX_URL=https://pypi.org/simple \
+    PIP_TRUSTED_HOST="pypi.org pypi.python.org files.pythonhosted.org"
 
 WORKDIR /usr/src/app
 
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential ca-certificates && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
-RUN python -m pip install --upgrade pip --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org \
+RUN python -m pip install --upgrade pip \
     && pip install torch==2.3.1+cpu --index-url https://download.pytorch.org/whl/cpu --trusted-host download.pytorch.org --no-cache-dir \
-    && pip install -r requirements.txt --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --no-cache-dir
+    && pip install -r requirements.txt --no-cache-dir
 
 FROM python:3.11-slim
 
