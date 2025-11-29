@@ -16,4 +16,4 @@ sentence-transformers
 faiss-cpu
 pandas
 email-validator==2.2.0
-typing-extensions==4.11.0
+typing-extensions>=4.12.2

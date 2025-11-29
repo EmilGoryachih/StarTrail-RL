@@ -5,12 +5,12 @@ ENV PIP_NO_CACHE_DIR=1 \
 
 WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get install -y --no-install-recommends build-essential && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends build-essential ca-certificates && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
-RUN python -m pip install --upgrade pip \
-    && pip install torch==2.3.1+cpu --index-url https://download.pytorch.org/whl/cpu --no-cache-dir \
-    && pip install -r requirements.txt --no-cache-dir
+RUN python -m pip install --upgrade pip --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org \
+    && pip install torch==2.3.1+cpu --index-url https://download.pytorch.org/whl/cpu --trusted-host download.pytorch.org --no-cache-dir \
+    && pip install -r requirements.txt --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --no-cache-dir
 
 FROM python:3.11-slim
 
