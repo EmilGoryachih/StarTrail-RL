@@ -142,8 +142,15 @@ export default function SearchPage() {
     if (!token) return;
     
     try {
-      const { UserService } = await import('@/lib/api-config');
+      const { UserService, PoiService } = await import('@/lib/api-config');
       await UserService.addPoiToFavoritesEndpointApiUserFavoritesPoiIdPost(id);
+      // Send positive reward to RL service
+      try {
+        await PoiService.rlFeedback(id, 1.0);
+      } catch (rlError) {
+        console.warn('RL feedback failed:', rlError);
+        // Don't fail the whole operation if RL feedback fails
+      }
       toast.success('Добавлено в избранное!', {
         description: 'Место сохранено в вашем списке',
       });

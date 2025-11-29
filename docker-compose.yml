@@ -54,6 +54,7 @@ services:
     volumes:
       - ./Backend:/usr/src/app
       - ./Model:/usr/src/Model
+      - huggingface_cache:/root/.cache/huggingface
     command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
     restart: always
 
@@ -72,3 +73,4 @@ services:
 
 volumes:
   pgdata:
+  huggingface_cache:

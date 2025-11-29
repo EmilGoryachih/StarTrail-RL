@@ -49,20 +49,44 @@ class RLService:
         # 2) stats from user feedback
         stats, total = await self.repo.get_user_stats(user_id)
         if total == 0:
-            # no history, return top candidates as-is
-            return candidates[:limit]
+            # Cold-start: no history, return top candidates as semantic recommendations
+            result = []
+            for poi in candidates[:limit]:
+                # Create new DTO with metadata
+                result.append(POIOutDTO(
+                    **poi.model_dump(),
+                    source="semantic",
+                    ucb_score=None,
+                    avg_reward=None,
+                    shown_count=0
+                ))
+            return result
 
-        scored: List[Tuple[float, POIOutDTO]] = []
+        scored: List[Tuple[float, POIOutDTO, int, float]] = []
         for poi in candidates:
             cnt, reward_sum = stats.get(poi.id, (0, 0.0))
             if cnt == 0:
                 # unseen items: prioritize exploration
                 ucb = float("inf")
+                avg_reward = None
+                source = "explore"
             else:
                 avg_reward = reward_sum / cnt
                 ucb = avg_reward + self.exploration * math.sqrt(math.log(total) / cnt)
-            scored.append((ucb, poi))
+                source = "rl"
+            scored.append((ucb, poi, cnt, avg_reward or 0.0))
 
         # Sort by score (inf values bubble to top)
         scored.sort(key=lambda x: (x[0] if math.isfinite(x[0]) else float("inf")), reverse=True)
-        return [poi for _, poi in scored[:limit]]
+        
+        result = []
+        for ucb_score, poi, cnt, avg_reward in scored[:limit]:
+            # Create new DTO with metadata
+            result.append(POIOutDTO(
+                **poi.model_dump(),
+                source="explore" if not math.isfinite(ucb_score) else "rl",
+                ucb_score=ucb_score if math.isfinite(ucb_score) else None,
+                avg_reward=avg_reward if cnt > 0 else None,
+                shown_count=cnt
+            ))
+        return result

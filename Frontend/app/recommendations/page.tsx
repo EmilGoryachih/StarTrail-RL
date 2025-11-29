@@ -10,7 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-import { ArrowRight, Sparkles, MapPin, Heart, Star } from "lucide-react";
+import { ArrowRight, Sparkles, MapPin, Heart, Star, ThumbsUp, ThumbsDown, X } from "lucide-react";
 import UserMenu from "@/components/user-menu";
 import POIDetailModal from "@/components/POIDetailModal";
 import { toast } from "sonner";
@@ -24,6 +24,11 @@ interface Poi {
   lon: number;
   score: number;
   description: string;
+  // RL metadata (optional)
+  source?: "rl" | "semantic" | "explore";
+  ucb_score?: number;
+  avg_reward?: number;
+  shown_count?: number;
 }
 
 export default function RecommendationsPage() {
@@ -44,8 +49,15 @@ export default function RecommendationsPage() {
     if (!token) return;
     
     try {
-      const { UserService } = await import('@/lib/api-config');
+      const { UserService, PoiService } = await import('@/lib/api-config');
       await UserService.addPoiToFavoritesEndpointApiUserFavoritesPoiIdPost(id);
+      // Send positive reward to RL service
+      try {
+        await PoiService.rlFeedback(id, 1.0);
+      } catch (rlError) {
+        console.warn('RL feedback failed:', rlError);
+        // Don't fail the whole operation if RL feedback fails
+      }
       toast.success('Добавлено в избранное!', {
         description: 'Место сохранено в вашем списке избранного',
       });
@@ -54,6 +66,27 @@ export default function RecommendationsPage() {
     } catch (e) {
       console.error(e);
       toast.error('Не удалось добавить в избранное');
+    }
+  };
+
+  const handleFeedback = async (id: string, reward: number) => {
+    const token = Cookies.get('access_token');
+    if (!token) return;
+    
+    try {
+      const { PoiService } = await import('@/lib/api-config');
+      await PoiService.rlFeedback(id, reward);
+      toast.success(
+        reward > 0 ? 'Спасибо за лайк!' : 'Отметка сохранена',
+        { description: reward > 0 ? 'Ваше мнение поможет улучшить рекомендации' : 'Мы учтём ваше мнение' }
+      );
+      // Refresh recommendations to see updated scores
+      const { PoiService: PS } = await import('@/lib/api-config');
+      const data = await PS.recommendPoiApiPoiRecommendationsGet(limit);
+      setRecs(data);
+    } catch (e) {
+      console.error(e);
+      toast.error('Не удалось отправить отзыв');
     }
   };
 
@@ -165,20 +198,77 @@ export default function RecommendationsPage() {
               <Star className="h-3 w-3 mr-1 fill-yellow-400 text-yellow-400" />
               {(place.score * 100).toFixed(0)}%
             </Badge>
+            {place.source && (
+              <Badge 
+                variant="outline" 
+                className={`text-xs ${
+                  place.source === 'rl' ? 'border-green-500 text-green-700 bg-green-50' :
+                  place.source === 'explore' ? 'border-blue-500 text-blue-700 bg-blue-50' :
+                  'border-gray-500 text-gray-700 bg-gray-50'
+                }`}
+              >
+                {place.source === 'rl' ? '🤖 RL' : place.source === 'explore' ? '🔍 Explore' : '📊 Semantic'}
+              </Badge>
+            )}
+            {place.avg_reward !== undefined && place.avg_reward !== null && (
+              <Badge variant="outline" className="text-xs border-purple-200">
+                ⭐ {place.avg_reward.toFixed(2)}
+              </Badge>
+            )}
           </div>
           {!isFavorite && (
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              onClick={(e) => {
-                e.stopPropagation();
-                handleSave(place.id);
-              }}
-              className="w-full text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 border border-indigo-200"
-            >
-              <Heart className="h-4 w-4 mr-2" />
-              Добавить в избранное
-            </Button>
+            <div className="space-y-2">
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleSave(place.id);
+                }}
+                className="w-full text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 border border-indigo-200"
+              >
+                <Heart className="h-4 w-4 mr-2" />
+                Добавить в избранное
+              </Button>
+              <div className="flex gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleFeedback(place.id, 1.0);
+                  }}
+                  className="flex-1 text-green-600 hover:text-green-700 hover:bg-green-50 border-green-200"
+                >
+                  <ThumbsUp className="h-4 w-4 mr-1" />
+                  Лайк
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleFeedback(place.id, -0.5);
+                  }}
+                  className="flex-1 text-red-600 hover:text-red-700 hover:bg-red-50 border-red-200"
+                >
+                  <ThumbsDown className="h-4 w-4 mr-1" />
+                  Дизлайк
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleFeedback(place.id, -1.0);
+                  }}
+                  className="text-gray-600 hover:text-gray-700 hover:bg-gray-50 border-gray-200"
+                  title="Не показывать"
+                >
+                  <X className="h-4 w-4" />
+                </Button>
+              </div>
+            </div>
           )}
         </CardContent>
       </Card>

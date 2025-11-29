@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends build-essential
 
 COPY requirements.txt .
 RUN python -m pip install --upgrade pip \
-    && pip install torch==2.3.1+cpu --index-url https://download.pytorch.org/whl/cpu --no-cache-dir \
+    && pip install torch==2.3.1 --index-url https://download.pytorch.org/whl/cpu --no-cache-dir \
     && pip install -r requirements.txt --no-cache-dir
 
 FROM python:3.11-slim
