@@ -1,5 +1,3 @@
-"""Global exception handlers for the API."""
-
 from fastapi import Request, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
@@ -7,8 +5,6 @@ from fastapi.responses import JSONResponse
 from app.infrastructure.logger import logger
 
 async def global_exception_handler(request: Request, exc: Exception):
-    """Return JSON API errors and log them."""
-
     if isinstance(exc, HTTPException):
         logger.error(
             "HTTPException: %s - %s while processing %s %s",

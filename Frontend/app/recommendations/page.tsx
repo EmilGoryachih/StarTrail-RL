@@ -10,7 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-import { ArrowRight, Sparkles, MapPin, Heart, Star, ThumbsUp, ThumbsDown, X } from "lucide-react";
+import { ArrowRight, Sparkles, MapPin, Heart, Star, ThumbsUp, ThumbsDown, Ban } from "lucide-react";
 import UserMenu from "@/components/user-menu";
 import POIDetailModal from "@/components/POIDetailModal";
 import { toast } from "sonner";
@@ -24,11 +24,10 @@ interface Poi {
   lon: number;
   score: number;
   description: string;
-  // RL metadata (optional)
-  source?: "rl" | "semantic" | "explore";
-  ucb_score?: number;
-  avg_reward?: number;
-  shown_count?: number;
+  source?: string;
+  ucb_score?: number | null;
+  avg_reward?: number | null;
+  shown_count?: number | null;
 }
 
 export default function RecommendationsPage() {
@@ -38,55 +37,37 @@ export default function RecommendationsPage() {
   const [favorites, setFavorites] = useState<Poi[]>([]);
   const [loading, setLoading] = useState(true);
   const [loadingFavorites, setLoadingFavorites] = useState(true);
-  const [error, setError] = useState<string|null>(null);
+  const [error, setError] = useState<string | null>(null);
   const [selectedPoi, setSelectedPoi] = useState<Poi | null>(null);
   const [detailOpen, setDetailOpen] = useState(false);
   const limit = 10;
   const homeLink = Cookies.get("access_token") ? "/recommendations" : "/";
 
-  const handleSave = async (id: string) => {
+  const sendFeedback = async (id: string, reward: number) => {
     const token = Cookies.get('access_token');
     if (!token) return;
-    
-    try {
-      const { UserService, PoiService } = await import('@/lib/api-config');
-      await UserService.addPoiToFavoritesEndpointApiUserFavoritesPoiIdPost(id);
-      // Send positive reward to RL service
-      try {
-        await PoiService.rlFeedback(id, 1.0);
-      } catch (rlError) {
-        console.warn('RL feedback failed:', rlError);
-        // Don't fail the whole operation if RL feedback fails
-      }
-      toast.success('Добавлено в избранное!', {
-        description: 'Место сохранено в вашем списке избранного',
-      });
-      // Refresh favorites
-      fetchFavorites();
-    } catch (e) {
-      console.error(e);
-      toast.error('Не удалось добавить в избранное');
-    }
-  };
-
-  const handleFeedback = async (id: string, reward: number) => {
-    const token = Cookies.get('access_token');
-    if (!token) return;
-    
     try {
       const { PoiService } = await import('@/lib/api-config');
       await PoiService.rlFeedback(id, reward);
-      toast.success(
-        reward > 0 ? 'Спасибо за лайк!' : 'Отметка сохранена',
-        { description: reward > 0 ? 'Ваше мнение поможет улучшить рекомендации' : 'Мы учтём ваше мнение' }
-      );
-      // Refresh recommendations to see updated scores
-      const { PoiService: PS } = await import('@/lib/api-config');
-      const data = await PS.recommendPoiApiPoiRecommendationsGet(limit);
-      setRecs(data);
     } catch (e) {
       console.error(e);
-      toast.error('Не удалось отправить отзыв');
+    }
+  };
+
+  const handleSave = async (id: string) => {
+    const token = Cookies.get('access_token');
+    if (!token) return;
+    try {
+      const { UserService } = await import('@/lib/api-config');
+      await UserService.addPoiToFavoritesEndpointApiUserFavoritesPoiIdPost(id);
+      toast.success('Сохранено в избранное!', {
+        description: 'Место добавлено в ваш список.',
+      });
+      fetchFavorites();
+      sendFeedback(id, 1);
+    } catch (e) {
+      console.error(e);
+      toast.error('Не удалось добавить в избранное');
     }
   };
 
@@ -98,7 +79,6 @@ export default function RecommendationsPage() {
   const fetchFavorites = async () => {
     const token = Cookies.get('access_token');
     if (!token) return;
-    
     try {
       const { UserService } = await import('@/lib/api-config');
       const data = await UserService.getUserFavoritesEndpointApiUserFavoritesGet();
@@ -114,13 +94,11 @@ export default function RecommendationsPage() {
     const fetchRecs = async () => {
       setLoading(true);
       setError(null);
-      
       try {
         const token = Cookies.get("access_token");
-        if (!token) throw new Error("Войдите в систему, чтобы увидеть рекомендации");
-        
+        if (!token) throw new Error("Нужно войти, чтобы видеть рекомендации");
         const { PoiService } = await import('@/lib/api-config');
-        const data = await PoiService.recommendPoiApiPoiRecommendationsGet(limit);
+        const data = await PoiService.rlRecommendations(limit);
         setRecs(data);
       } catch (e: any) {
         setError(e.message || "Не удалось загрузить рекомендации");
@@ -128,11 +106,10 @@ export default function RecommendationsPage() {
         setLoading(false);
       }
     };
-    
+
     const fetchInterests = async () => {
       const token = Cookies.get('access_token');
       if (!token) return;
-      
       try {
         const { UserService } = await import('@/lib/api-config');
         const data = await UserService.getUserInterestsEndpointApiUserInterestsGet(3);
@@ -141,14 +118,13 @@ export default function RecommendationsPage() {
         console.error(e);
       }
     };
-    
+
     fetchRecs();
     fetchInterests();
     fetchFavorites();
   }, []);
 
   const renderCard = (place: Poi, isFavorite = false) => {
-    // Генерируем разные градиенты для разнообразия
     const gradients = [
       'from-indigo-200 via-purple-200 to-pink-200',
       'from-blue-200 via-indigo-200 to-purple-200',
@@ -157,13 +133,13 @@ export default function RecommendationsPage() {
       'from-violet-200 via-purple-200 to-fuchsia-200',
     ];
     const gradientIndex = Math.abs(place.id.charCodeAt(0)) % gradients.length;
-    const gradient = isFavorite 
+    const gradient = isFavorite
       ? 'from-rose-200 via-pink-200 to-fuchsia-200'
       : gradients[gradientIndex];
 
     return (
-      <Card 
-        key={place.id} 
+      <Card
+        key={place.id}
         className="overflow-hidden bg-white/50 backdrop-blur-2xl backdrop-saturate-150 border border-white/20 hover:shadow-2xl hover:scale-[1.03] hover:bg-white/60 transition-all duration-300 cursor-pointer group"
         onClick={() => handleCardClick(place)}
       >
@@ -199,75 +175,76 @@ export default function RecommendationsPage() {
               {(place.score * 100).toFixed(0)}%
             </Badge>
             {place.source && (
-              <Badge 
-                variant="outline" 
-                className={`text-xs ${
-                  place.source === 'rl' ? 'border-green-500 text-green-700 bg-green-50' :
-                  place.source === 'explore' ? 'border-blue-500 text-blue-700 bg-blue-50' :
-                  'border-gray-500 text-gray-700 bg-gray-50'
-                }`}
-              >
-                {place.source === 'rl' ? '🤖 RL' : place.source === 'explore' ? '🔍 Explore' : '📊 Semantic'}
+              <Badge variant="outline" className="text-xs border-gray-200">
+                src: {place.source}
               </Badge>
             )}
             {place.avg_reward !== undefined && place.avg_reward !== null && (
-              <Badge variant="outline" className="text-xs border-purple-200">
-                ⭐ {place.avg_reward.toFixed(2)}
+              <Badge variant="outline" className="text-xs border-green-200 text-green-700">
+                avg {place.avg_reward.toFixed(2)}
+              </Badge>
+            )}
+            {place.shown_count !== undefined && place.shown_count !== null && (
+              <Badge variant="outline" className="text-xs border-amber-200 text-amber-700">
+                seen {place.shown_count}
+              </Badge>
+            )}
+            {place.ucb_score !== undefined && place.ucb_score !== null && (
+              <Badge variant="outline" className="text-xs border-purple-200 text-purple-700">
+                ucb {place.ucb_score.toFixed(2)}
               </Badge>
             )}
           </div>
           {!isFavorite && (
-            <div className="space-y-2">
-              <Button 
-                variant="ghost" 
-                size="sm" 
+            <div className="flex flex-wrap gap-2">
+              <Button
+                variant="ghost"
+                size="sm"
                 onClick={(e) => {
                   e.stopPropagation();
                   handleSave(place.id);
                 }}
-                className="w-full text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 border border-indigo-200"
+                className="text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 border border-indigo-200"
               >
                 <Heart className="h-4 w-4 mr-2" />
-                Добавить в избранное
+                В избранное
               </Button>
-              <div className="flex gap-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleFeedback(place.id, 1.0);
-                  }}
-                  className="flex-1 text-green-600 hover:text-green-700 hover:bg-green-50 border-green-200"
-                >
-                  <ThumbsUp className="h-4 w-4 mr-1" />
-                  Лайк
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleFeedback(place.id, -0.5);
-                  }}
-                  className="flex-1 text-red-600 hover:text-red-700 hover:bg-red-50 border-red-200"
-                >
-                  <ThumbsDown className="h-4 w-4 mr-1" />
-                  Дизлайк
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleFeedback(place.id, -1.0);
-                  }}
-                  className="text-gray-600 hover:text-gray-700 hover:bg-gray-50 border-gray-200"
-                  title="Не показывать"
-                >
-                  <X className="h-4 w-4" />
-                </Button>
-              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  sendFeedback(place.id, 1);
+                  toast.success("Оценка +1 отправлена");
+                }}
+                className="text-green-700 border-green-200 hover:bg-green-50"
+              >
+                <ThumbsUp className="h-4 w-4 mr-1" /> Нравится
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  sendFeedback(place.id, -1);
+                  toast.message("Оценка -1 отправлена");
+                }}
+                className="text-red-700 border-red-200 hover:bg-red-50"
+              >
+                <ThumbsDown className="h-4 w-4 mr-1" /> Не нравится
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  sendFeedback(place.id, -0.5);
+                  toast.message("Скрыто (reward -0.5)");
+                }}
+                className="text-amber-700 border-amber-200 hover:bg-amber-50"
+              >
+                <Ban className="h-4 w-4 mr-1" /> Не показывать
+              </Button>
             </div>
           )}
         </CardContent>
@@ -279,7 +256,7 @@ export default function RecommendationsPage() {
     if (loading) return (
       <div className="text-center py-12">
         <Sparkles className="h-12 w-12 text-indigo-600 animate-pulse mx-auto mb-4" />
-        <p className="text-neutral-600">Подбираем лучшие места для вас...</p>
+        <p className="text-neutral-600">Загружаем рекомендации...</p>
       </div>
     );
     if (error) return (
@@ -289,7 +266,7 @@ export default function RecommendationsPage() {
     );
     if (list.length === 0) return (
       <div className="text-center py-12 bg-white/60 backdrop-blur-xl rounded-2xl border border-indigo-100">
-        <p className="text-neutral-600">Нет рекомендаций. Попробуйте обновить свои интересы в профиле.</p>
+        <p className="text-neutral-600">Рекомендаций пока нет. Дайте пару оценок, чтобы агент обучился.</p>
       </div>
     );
     return (
@@ -301,13 +278,11 @@ export default function RecommendationsPage() {
 
   return (
       <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 relative overflow-hidden">
-        {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-indigo-400/30 to-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-br from-pink-400/20 to-rose-500/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400/30 to-cyan-500/30 rounded-full blur-3xl animate-pulse"></div>
         </div>
-        {/* Header */}
         <header className="relative border-b border-white/20 py-4 bg-white/60 backdrop-blur-2xl backdrop-saturate-150 sticky top-0 z-50 shadow-sm">
           <div className="container flex justify-between items-center">
             <Link href={homeLink} className="flex items-center gap-2 group">
@@ -325,27 +300,25 @@ export default function RecommendationsPage() {
           </div>
         </header>
 
-        {/* Main */}
         <main className="relative flex-1 container py-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
             <div>
               <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-                Главная
+                Персональные рекомендации
               </h1>
               <p className="text-neutral-700 text-lg">
-                Ваши избранные места и персональные рекомендации
+                Агент учится на ваших откликах и балансирует explore/exploit.
               </p>
             </div>
             <Link href="/search">
               <Button className="gap-2 bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 shadow-lg">
                 <Sparkles className="h-4 w-4" />
-                Новый поиск
+                Перейти к поиску
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
           </div>
 
-          {/* Favorites Section */}
           {favorites.length > 0 && (
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-6">
@@ -354,14 +327,14 @@ export default function RecommendationsPage() {
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900">Избранное</h2>
-                  <p className="text-neutral-600 text-sm">Места, которые вы сохранили</p>
+                  <p className="text-neutral-600 text-sm">Ваши сохранённые места</p>
                 </div>
               </div>
               
               {loadingFavorites ? (
                 <div className="text-center py-8">
                   <Heart className="h-10 w-10 text-rose-400 animate-pulse mx-auto mb-3" />
-                  <p className="text-neutral-600">Загрузка избранного...</p>
+                  <p className="text-neutral-600">Загружаем избранное...</p>
                 </div>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -373,7 +346,7 @@ export default function RecommendationsPage() {
                 <div className="text-center">
                   <Link href="/favorites">
                     <Button variant="outline" className="border-indigo-200 hover:bg-indigo-50">
-                      Показать все ({favorites.length})
+                      Смотреть все ({favorites.length})
                       <ArrowRight className="h-4 w-4 ml-2" />
                     </Button>
                   </Link>
@@ -382,15 +355,14 @@ export default function RecommendationsPage() {
             </div>
           )}
 
-          {/* Recommendations Section */}
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="bg-gradient-to-r from-indigo-500 to-blue-600 p-2 rounded-xl">
                 <Sparkles className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-gray-900">Рекомендации для вас</h2>
-                <p className="text-neutral-600 text-sm">AI подобрал места на основе ваших интересов</p>
+                <h2 className="text-2xl font-bold text-gray-900">Рекомендации от агента</h2>
+                <p className="text-neutral-600 text-sm">В основе — семантика + RL рерэнк (UCB, explore/exploit).</p>
               </div>
             </div>
 
@@ -412,7 +384,6 @@ export default function RecommendationsPage() {
           </div>
         </main>
 
-        {/* POI Detail Modal */}
         <POIDetailModal
           poi={selectedPoi}
           open={detailOpen}
@@ -420,7 +391,6 @@ export default function RecommendationsPage() {
           onSave={handleSave}
         />
 
-        {/* Footer */}
         <footer className="border-t py-6 bg-white/80 backdrop-blur-sm">
           <div className="container text-center text-neutral-500 text-sm">
             © 2025 StarTrail AI. Intelligent POI Search & Recommendations.

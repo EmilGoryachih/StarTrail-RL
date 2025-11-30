@@ -86,6 +86,10 @@ export interface POIOutDTO {
   lon: number;
   score: number;
   description: string;
+  source?: string;
+  ucb_score?: number | null;
+  avg_reward?: number | null;
+  shown_count?: number | null;
 }
 
 // Services
@@ -136,6 +140,9 @@ export const PoiService = {
   },
   async rlFeedback(poiId: string, reward: number): Promise<void> {
     await request('/rl/feedback', { method: 'POST', body: { poi_id: poiId, reward } });
+  },
+  async rlRecommendations(limit = 10): Promise<POIOutDTO[]> {
+    return request<POIOutDTO[]>(`/rl/recommendations?limit=${limit}`);
   },
 };
 

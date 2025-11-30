@@ -20,9 +20,6 @@ class RLInteractionRepository:
         return entity.to_dict()
 
     async def get_user_stats(self, user_id: UUID) -> Tuple[Dict[str, Tuple[int, float]], int]:
-        """
-        Returns per-poi (count, sum_reward) and total count for a user.
-        """
         stmt = (
             select(
                 RLInteraction.poi_id,
@@ -42,6 +39,9 @@ class RLInteractionRepository:
             total_count += int(cnt)
 
         return stats, total_count
+
+    async def increment_shown(self, user_id: UUID, poi_ids: list[str]) -> None:
+        return
 
     async def list_recent(self, user_id: UUID, limit: int = 50) -> List[dict]:
         stmt = (

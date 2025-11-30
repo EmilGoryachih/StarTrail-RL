@@ -1,4 +1,3 @@
-# app/models/dtoModels/UserDTO.py
 from uuid import UUID
 from typing import List
 
@@ -7,9 +6,6 @@ from pydantic import BaseModel, EmailStr, Field
 from app.models.InterestsEnum import InterestsEnum
 
 class UserCreateDTO(BaseModel):
-    """
-    Request body for user registration
-    """
     first_name: str                 = Field(..., max_length=50, example="Alice")
     last_name:  str                 = Field(..., max_length=50, example="Smith")
     email:      EmailStr            = Field(..., example="alice@example.com")
@@ -20,9 +16,6 @@ class UserCreateDTO(BaseModel):
     additional_interests: str       = Field(..., max_length=200)
 
 class UserOutDTO(BaseModel):
-    """
-    Response model for user data
-    """
     id:                    UUID
     first_name:            str                 = Field(..., max_length=50)
     last_name:             str                 = Field(..., max_length=50)

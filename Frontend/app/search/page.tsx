@@ -142,15 +142,8 @@ export default function SearchPage() {
     if (!token) return;
     
     try {
-      const { UserService, PoiService } = await import('@/lib/api-config');
+      const { UserService } = await import('@/lib/api-config');
       await UserService.addPoiToFavoritesEndpointApiUserFavoritesPoiIdPost(id);
-      // Send positive reward to RL service
-      try {
-        await PoiService.rlFeedback(id, 1.0);
-      } catch (rlError) {
-        console.warn('RL feedback failed:', rlError);
-        // Don't fail the whole operation if RL feedback fails
-      }
       toast.success('Добавлено в избранное!', {
         description: 'Место сохранено в вашем списке',
       });
@@ -164,7 +157,6 @@ export default function SearchPage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 relative overflow-hidden">
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-indigo-400/30 to-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-br from-pink-400/20 to-rose-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -199,7 +191,6 @@ export default function SearchPage() {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-8 bg-white/60 backdrop-blur-2xl backdrop-saturate-150 border border-white/20 shadow-2xl p-8 rounded-2xl">
-            {/* Query Section */}
             <div className="space-y-4">
               <div className="flex items-center gap-2 mb-2">
                 <SearchIcon className="h-5 w-5 text-indigo-600" />
@@ -214,7 +205,6 @@ export default function SearchPage() {
               />
             </div>
 
-            {/* City Selection */}
             <div className="space-y-4">
               <div className="flex items-center gap-2 mb-2">
                 <MapPin className="h-5 w-5 text-indigo-600" />
@@ -248,7 +238,6 @@ export default function SearchPage() {
               </div>
             </div>
 
-            {/* Tags Section */}
             <div className="space-y-4">
               <div className="flex items-center gap-2 mb-2">
                 <Tag className="h-5 w-5 text-indigo-600" />
@@ -363,7 +352,6 @@ export default function SearchPage() {
         </div>
       </main>
 
-      {/* POI Detail Modal */}
       <POIDetailModal
         poi={selectedPoi}
         open={detailOpen}

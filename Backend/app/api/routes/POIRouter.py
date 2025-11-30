@@ -22,9 +22,6 @@ def search_poi(
     service: POIService       = Depends(get_poi_service),
     tags: Optional[List[str]] = None,
 ):
-    """
-    Search POIs by free-text query and optional city filter.
-    """
     return service.search_in_city(query=q, city=city, top_n=limit)
 
 @router.get(
@@ -37,10 +34,6 @@ def recommend_poi(
     service:      POIService = Depends(get_poi_service),
     limit:        int        = Query(10, ge=1, le=50),
 ):
-    """
-    Возвращает до `limit` персональных рекомендаций для аутентифицированного пользователя,
-    на основе его `current_user.interests`, `current_user.additional_interests` и `current_user.city`.
-    """
     return service.recommend_by_interests(
         interests=current_user.interests,
         additional_interests=current_user.additional_interests,

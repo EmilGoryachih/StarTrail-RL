@@ -1,4 +1,3 @@
-# app/models/dbModels/POIEntity.py
 from sqlalchemy import Column, String, Float, Text, ARRAY
 from app.models.dbModels.Entity import EntityDB
 

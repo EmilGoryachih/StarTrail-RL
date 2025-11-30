@@ -27,7 +27,6 @@ async def add_user(dto: UserCreateDTO, session: AsyncSession) -> UserOutDTO:
         last_name=dto.last_name,
         email=str(dto.email),
         hashed_password=hashed_pw,
-        # ** new fields **
         city=dto.city,
         about_me=dto.about_me,
         interests=[i.value for i in dto.interests],
@@ -35,7 +34,6 @@ async def add_user(dto: UserCreateDTO, session: AsyncSession) -> UserOutDTO:
     )
 
     saved = await repo.add_user(entity)
-    # repo.add_user returns entity.to_dict(); pydantic will pick it up
     return UserOutDTO(**saved)
 
 

@@ -86,7 +86,6 @@ class AuthService:
         )
         refresh_token = self.create_refresh_token({"sub": user.email})
 
-        # Сохраняем refresh-токен в БД
         repo = RefreshTokenRepository(session)
         await repo.save_token(
             token=refresh_token,
@@ -114,7 +113,6 @@ class AuthService:
             headers={"WWW-Authenticate": "Bearer"},
         )
 
-        # 1) decode & validate JWT
         try:
             payload = jwt.decode(dto.refresh_token, SECRET_KEY, algorithms=[ALGORITHM])
             email: Optional[str] = payload.get("sub")
@@ -123,17 +121,14 @@ class AuthService:
         except InvalidTokenError:
             raise creds_exc
 
-        # 2) достаем из БД запись
         repo = RefreshTokenRepository(session)
         record = await repo.get_token(dto.refresh_token)
         if not record or record.is_revoked or record.expires_at < datetime.now(timezone.utc):
             raise creds_exc
 
-        # 3) генерируем новую пару
         new_access  = self.create_access_token({"sub": email})
         new_refresh = self.create_refresh_token({"sub": email})
 
-        # 4) ПЕРЕЗАПИСЫВАЕМ старую запись в БД
         await repo.update_token(
             token_id=record.id,
             new_token=new_refresh,
@@ -142,7 +137,6 @@ class AuthService:
             ip=request.client.host,
         )
 
-        # 5) возвращаем клиенту
         return TokenDTO(
             access_token=new_access,
             refresh_token=new_refresh,

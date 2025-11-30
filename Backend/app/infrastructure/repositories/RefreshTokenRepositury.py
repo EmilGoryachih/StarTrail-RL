@@ -1,4 +1,3 @@
-# app/infrastructure/repositories/RefreshTokenRepository.py
 from typing import Optional
 from uuid import UUID, uuid4
 from datetime import datetime, timedelta, timezone
@@ -57,9 +56,6 @@ class RefreshTokenRepository:
         user_agent: Optional[str] = None,
         ip: Optional[str] = None,
     ) -> dict:
-        """
-        Обновляет существующую запись: новый JWT, expires_at, user_agent и ip.
-        """
         expires_at = datetime.now(timezone.utc) + timedelta(minutes=expires_in_minutes)
         stmt = (
             update(RefreshTokensEntity)

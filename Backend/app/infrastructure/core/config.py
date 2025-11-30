@@ -1,11 +1,9 @@
-# app/infrastructure/core/config.py
 import os
 from pathlib import Path
 from dotenv import load_dotenv  # pip install python-dotenv
 
-# 1) Найти .env в корне проекта
 BASE_DIR = Path(__file__).resolve().parents[3]
-load_dotenv(BASE_DIR / ".env")    # <-- грузим все переменные в os.environ
+load_dotenv(BASE_DIR / ".env")
 
 from typing import Any
 from pydantic import PostgresDsn, field_validator
@@ -27,8 +25,6 @@ class Settings(BaseSettings):
     OWNER_PASSWORD: str = "owner"
     ASYNC_DATABASE_URI: PostgresDsn | None = None
 
-    # теперь не обязательно указывать env_file,
-    # Pydantic возьмёт переменные из os.environ
     model_config = SettingsConfigDict()
 
     @field_validator("ASYNC_DATABASE_URI", mode="after")

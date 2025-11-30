@@ -1,5 +1,3 @@
-"""Centralised application logger configuration."""
-
 from __future__ import annotations
 
 import logging
@@ -9,8 +7,6 @@ from loguru import logger
 
 
 class InterceptHandler(logging.Handler):
-    """Redirect standard logging messages to ``loguru`` logger."""
-
     def emit(self, record: logging.LogRecord) -> None:  # pragma: no cover - thin wrapper
         try:
             level = logger.level(record.levelname).name
@@ -20,8 +16,6 @@ class InterceptHandler(logging.Handler):
 
 
 def setup_logger() -> None:
-    """Configure loguru and redirect standard logging."""
-
     logger.remove()
     logger.add("app.log", rotation="10 MB", level="INFO")
     logger.add(sys.stdout, level="INFO")

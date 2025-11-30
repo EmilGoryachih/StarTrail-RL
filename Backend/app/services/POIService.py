@@ -1,4 +1,5 @@
 import os
+import time
 import faiss
 import numpy as np
 import pandas as pd
@@ -9,11 +10,12 @@ from typing import List, Optional
 from app.config.interest_tags import interest_tags
 from app.models import InterestsEnum
 from app.models.dtoModels.POIOutDTO import POIOutDTO
+from app.infrastructure.logger import logger
 
 REPO_ROOT    = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 INDEX_FILE   = os.path.join(REPO_ROOT, "Model", "Indexes", "poi_ivfpq.index")
 META_FILE    = os.path.join(REPO_ROOT, "Model", "Dataset", "poi_dataset_enriched_incremental.csv")
-EMBED_MODEL  = "sentence-transformers/LaBSE"
+EMBED_MODEL  = os.getenv("EMBED_MODEL", "/app/cache/all-MiniLM-L6-v2")
 DEVICE       = "cpu"
 NLIST_PROBE  = 50
 TOP_N        = 10
@@ -22,11 +24,22 @@ EXPAND_K     = 1000
 ALCOHOL_TAGS  = {"amenity:bar", "amenity:pub", "shop:alcohol", "shop:beverages"}
 ALCOHOL_TYPES = {"bar", "pub", "wine_shop", "beer", "liquor_store"}
 
+t0 = time.time()
+logger.info("Step 1/3: loading FAISS index (%s)...", INDEX_FILE)
 index = faiss.read_index(INDEX_FILE)
 index.nprobe = NLIST_PROBE
-df = pd.read_csv(META_FILE, dtype=str).set_index("id")
+logger.info("FAISS index loaded in %.2fs", time.time() - t0)
 
+t1 = time.time()
+logger.info("Step 2/3: loading metadata CSV (%s)...", META_FILE)
+df = pd.read_csv(META_FILE, dtype=str).set_index("id")
+logger.info("Metadata loaded in %.2fs", time.time() - t1)
+
+t2 = time.time()
+logger.info("Step 3/3: loading SentenceTransformer model (%s)...", EMBED_MODEL)
 embedder = SentenceTransformer(EMBED_MODEL, device=DEVICE)
+logger.info("Model loaded in %.2fs", time.time() - t2)
+logger.info("Total init time: %.2fs", time.time() - t0)
 
 @lru_cache(maxsize=512)
 def encode_query(q: str) -> np.ndarray:

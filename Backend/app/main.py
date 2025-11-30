@@ -1,5 +1,3 @@
-# app/main.py
-
 from fastapi import FastAPI, APIRouter, Request, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
@@ -10,7 +8,6 @@ from app.infrastructure.exception_handler import global_exception_handler
 from app.infrastructure.init_db import init_db
 from app.api.main import api_router
 
-# Собираем все наши маршруты
 main_router = APIRouter()
 main_router.include_router(api_router)
 
@@ -18,12 +15,11 @@ app = FastAPI(
     title="StarTrail API",
     description="AI-powered POI Search & Recommendation System - Backend API",
     version="1.0.0",
-    docs_url="/docs",  # Swagger UI
-    redoc_url="/redoc",  # ReDoc
-    openapi_url="/openapi.json",  # OpenAPI schema
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json",
 )
 
-# Подключаем CORS, чтобы фронтенд мог обращаться к бэку
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000"],  # фронтенд на этом адресе
@@ -32,15 +28,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Регистрируем маршруты под префиксом /api
 app.include_router(main_router, prefix="/api")
 
-# Перехватчик ошибок
 app.add_exception_handler(Exception, global_exception_handler)
 app.add_exception_handler(HTTPException, global_exception_handler)
 app.add_exception_handler(RequestValidationError, global_exception_handler)
 
-# Middleware для логирования каждого запроса
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     logger.info("➡️  %s %s", request.method, request.url)
